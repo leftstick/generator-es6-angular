@@ -15,6 +15,7 @@ import 'angular-loading-bar';
 import 'angular-theme-spinner';
 import 'angular-smart-table';
 import 'noty';
+import 'animate.css/animate.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-additions/dist/bootstrap-additions.css';
 import 'font-awesome/css/font-awesome.css';

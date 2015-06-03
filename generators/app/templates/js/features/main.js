@@ -6,16 +6,9 @@
  *
  */
 'use strict';
-export default [];
-// (function(define) {
-//     'use strict';
 
-//     define([
-//         './about/main',
-//         './home/main',
-//         './common/main'
-//     ], function(about, home, common) {
-//         return [about, home].concat(common);
-//     });
+import _ from 'lodash';
+import home from './home/main';
+import common from './common/main';
 
-// }(define));
+export default _.flatten([home, common]);

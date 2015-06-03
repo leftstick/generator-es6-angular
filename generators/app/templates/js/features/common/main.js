@@ -2,18 +2,11 @@
  *  Entrance of common service
  *
  *
- *  @author  Hao.Zuo
- *  @date    Apr 28th, 2015
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import ui from './ui/main';
 
-    define([
-        'lodash',
-        './ui/main'
-    ], function() {
-        return _.flatten([].slice.call(arguments, 1));
-    });
-
-}(define));
+export default ui;

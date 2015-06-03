@@ -5,34 +5,29 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import $ from 'jquery';
+import FeatureBase from 'FeatureBase';
+import tpl from './TopNavbar.html';
+import asideTpl from './Aside.html';
 
-    define(['FeatureBase', 'jquery', 'tpl!./TopNavbar.html', 'tpl!./Aside.html'], function(Base, $, tpl, asideTpl) {
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('TopnavModule');
+        this.$body = $('body');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('TopnavModule');
-            };
+    beforeStart() {
+        this.$body.prepend(tpl);
+    }
 
-            this.constructor = function() {
-                this.$body = $('body');
-            };
+    run() {
+        this.mod.run(['$templateCache', function($templateCache) {
+            $templateCache.put('aside', asideTpl);
+        }]);
+        this.mod.controller('HeaderCtrl', [function() {}]);
+    }
+}
 
-            this.beforeStart = function() {
-                this.$body.prepend(tpl());
-            };
-
-            this.run = function() {
-                this.mod.run(['$templateCache', function($templateCache) {
-                    $templateCache.put('aside', asideTpl());
-                }]);
-                this.mod.controller('HeaderCtrl', [function() {}]);
-            };
-        });
-
-        return Feature;
-    });
-
-})(define);
+export default Feature;

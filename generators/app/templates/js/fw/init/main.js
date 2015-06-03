@@ -11,5 +11,6 @@
  */
 'use strict';
 import header from './Header';
+import body from './Body';
 
-export default [header];
+export default [header, body];

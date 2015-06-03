@@ -5,36 +5,29 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import FeatureBase from 'FeatureBase';
+import $ from 'jquery';
+import tpl from './Footer.html';
 
-    define(['FeatureBase', 'jquery', 'tpl!common/ui/Footer.html', 'tpl!etc/config.json'], function(Base, $, tpl, config) {
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('FooterModule');
+        this.config = require('config.json');
+        this.$body = $('body');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('FooterModule');
-            };
+    beforeStart() {
+        this.$body.append(tpl);
+    }
 
-            this.constructor = function() {
-                this.config = JSON.parse(config());
-                this.$body = $('body');
-            };
+    run() {
+        var self = this;
+        this.mod.controller('FooterCtrl', ['$scope', function($scope) {
+            $scope.config = self.config;
+        }]);
+    }
+}
 
-            this.beforeStart = function() {
-                this.$body.append(tpl());
-            };
-
-            this.run = function() {
-                var self = this;
-                this.mod.controller('FooterCtrl', ['$scope', function($scope) {
-                    $scope.config = self.config;
-                }]);
-            };
-        });
-
-        return Feature;
-
-    });
-
-})(define);
+export default Feature;

@@ -5,54 +5,49 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import FeatureBase from 'FeatureBase';
+import angular from 'angular';
+import tpl from './Error.html';
 
-    define(['FeatureBase', 'angular', 'tpl!./Error.html'], function(Base, angular, tpl) {
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('ErrorModal');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('ErrorModal');
-            };
+    run() {
+        this.mod.run(['events', '$timeout', '$rootScope', '$templateCache', function(events, $timeout, $rootScope, $templateCache) {
+            $templateCache.put('errorTpl', tpl);
 
-            this.run = function() {
-                this.mod.run(['events', '$timeout', '$rootScope', '$templateCache', function(events, $timeout, $rootScope, $templateCache) {
-                    $templateCache.put('errorTpl', tpl());
+            events.on('error', function(opts) {
+                if (!opts) {
+                    return;
+                }
 
-                    events.on('error', function(opts) {
-                        if (!opts) {
-                            return;
-                        }
+                var scope = $rootScope.$new();
 
-                        var scope = $rootScope.$new();
+                scope.close = function($hide) {
+                    $hide();
+                    if (angular.isFunction(opts.onClose)) {
+                        opts.onClose();
+                    }
+                };
 
-                        scope.close = function($hide) {
-                            $hide();
-                            if (angular.isFunction(opts.onClose)) {
-                                opts.onClose();
-                            }
-                        };
-
-                        $timeout(function() {
-                            events.emit('modal', {
-                                scope: scope,
-                                title: 'Exception',
-                                backdrop: 'static',
-                                content: opts.content,
-                                animation: 'am-fade-and-slide-top',
-                                template: 'errorTpl'
-                            });
-                        }, 0);
+                $timeout(function() {
+                    events.emit('modal', {
+                        scope: scope,
+                        title: 'Exception',
+                        backdrop: 'static',
+                        content: opts.content,
+                        animation: 'am-fade-and-slide-top',
+                        template: 'errorTpl'
                     });
+                }, 0);
+            });
 
-                }]);
-            };
+        }]);
+    }
+}
 
-        });
-
-        return Feature;
-
-    });
-
-})(define);
+export default Feature;

@@ -5,22 +5,16 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import alerts from './Alerts';
+import autofocus from './Autofocus';
+import confirm from './Confirm';
+import error from './Error';
+import footer from './Footer';
+import info from './Info';
+import modal from './Modal';
+import routeIndicator from './RouteIndicator';
+import stRatio from './StRatio';
+import topNavbar from './TopNavbar';
 
-    define([
-        './Alerts',
-        './Autofocus',
-        './Confirm',
-        './Error',
-        './Footer',
-        './Info',
-        './Modal',
-        './RouteIndicator',
-        './StRatio',
-        './TopNavbar'
-    ], function() {
-        return [].slice.call(arguments);
-    });
-
-}(define));
+export default [alerts, autofocus, confirm, error, footer, info, modal, routeIndicator, stRatio, topNavbar];

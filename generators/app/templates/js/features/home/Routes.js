@@ -6,17 +6,14 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
 
-    define(['tpl!./partials/home.html'], function(tpl) {
-        return [{
-            id: 'home',
-            isDefault: true,
-            when: '/home',
-            controller: 'HomeController',
-            template: tpl()
-        }];
-    });
+import tpl from './partials/home.html';
 
-}(define));
+export default [{
+    id: 'home',
+    isDefault: true,
+    when: '/home',
+    controller: 'HomeController',
+    template: tpl
+}];

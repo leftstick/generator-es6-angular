@@ -10,10 +10,7 @@
 
 class InitBase {
 
-    constructor(features, app) {
-        this.features = features;
-        this.app = app;
-    }
+    constructor() {}
 
     run() {}
 }

@@ -6,31 +6,25 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import FeatureBase from 'FeatureBase';
 
-    define(['FeatureBase'], function(Base) {
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('AutofocusModule');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('AutofocusModule');
-            };
-
-            this.run = function() {
-                this.mod.directive('autofocus', function() {
-                    return {
-                        restrict: 'A',
-                        link: function($scope, element) {
-                            element[0].focus();
-                        }
-                    };
-                });
+    run() {
+        this.mod.directive('autofocus', function() {
+            return {
+                restrict: 'A',
+                link: function($scope, element) {
+                    element[0].focus();
+                }
             };
         });
+    }
+}
 
-        return Feature;
-
-    });
-
-})(define);
+export default Feature;

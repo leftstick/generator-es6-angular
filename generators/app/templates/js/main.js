@@ -56,7 +56,7 @@ class App {
     }
 
     registerService() {
-        Services.forEach(Services, function(Service) {
+        Services.forEach(function(Service) {
             (new Service(this.features, this.app)).run();
         }, this);
     }

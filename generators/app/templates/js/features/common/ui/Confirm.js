@@ -5,52 +5,46 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import FeatureBase from 'FeatureBase';
+import tpl from './Confirm.html';
 
-    define(['FeatureBase', 'tpl!./Confirm.html'], function(Base, tpl) {
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('ConfirmModal');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('ConfirmModal');
-            };
+    run() {
+        this.mod.run(['events', '$timeout', '$rootScope', '$templateCache', function(events, $timeout, $rootScope, $templateCache) {
 
-            this.run = function() {
-                this.mod.run(['events', '$timeout', '$rootScope', '$templateCache', function(events, $timeout, $rootScope, $templateCache) {
+            $templateCache.put('confirmTpl', tpl);
 
-                    $templateCache.put('confirmTpl', tpl());
+            events.on('confirm', function(opts) {
+                if (!opts) {
+                    return;
+                }
 
-                    events.on('confirm', function(opts) {
-                        if (!opts) {
-                            return;
-                        }
+                var scope = $rootScope.$new();
 
-                        var scope = $rootScope.$new();
+                scope.confirm = function($hide) {
+                    $hide();
+                    if (angular.isFunction(opts.onConfirm)) {
+                        opts.onConfirm();
+                    }
+                };
 
-                        scope.confirm = function($hide) {
-                            $hide();
-                            if (angular.isFunction(opts.onConfirm)) {
-                                opts.onConfirm();
-                            }
-                        };
+                events.emit('modal', {
+                    scope: scope,
+                    title: 'Confirm',
+                    content: opts.content,
+                    animation: 'am-fade-and-slide-top',
+                    template: 'confirmTpl'
+                });
+            });
 
-                        events.emit('modal', {
-                            scope: scope,
-                            title: 'Confirm',
-                            content: opts.content,
-                            animation: 'am-fade-and-slide-top',
-                            template: 'confirmTpl'
-                        });
-                    });
+        }]);
+    }
+}
 
-                }]);
-            };
-
-        });
-
-        return Feature;
-
-    });
-
-})(define);
+export default Feature;

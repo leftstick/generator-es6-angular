@@ -20,11 +20,11 @@ gulp.task('webpack', function(callback) {
 gulp.task('dev', function(callback) {
     var WebpackDevServer = require('webpack-dev-server');
     var config = require('./webpack.config');
-    var compiler = webpack(config);
+    var myConfig = Object.create(config);
+    myConfig.devtool = "eval";
+    myConfig.debug = true;
 
-    new WebpackDevServer(compiler, {
-        publicPath: '/js/'
-    }).listen(8080, 'localhost', function(err) {
+    new WebpackDevServer(webpack(myConfig)).listen(8080, 'localhost', function(err) {
         if (err) {
             throw new gutil.PluginError('webpack-dev-server', err);
         }

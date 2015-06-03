@@ -9,7 +9,7 @@ module.exports = {
         index: './js/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'js'),
+        path: path.resolve(__dirname),
         filename: '[name].bundle.js',
         chunkFilename: '[id].chunk.js'
     },
@@ -27,9 +27,12 @@ module.exports = {
         }, {
             test: /\.json$/,
             loader: 'json'
-        },{
-          test: /\.[eot|svg|ttf|woff|woff2]\w*/,
-          loader: "file-loader"
+        }, {
+            test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+            loader: 'file'
+        }, {
+            test: /\.html$/,
+            loader: 'raw'
         }]
     },
     resolve: {
@@ -41,6 +44,6 @@ module.exports = {
                 warnings: false
             }
         }),
-        new webpack.optimize.CommonsChunkPlugin('commons.js')
+        new webpack.optimize.CommonsChunkPlugin('commons.bundle.js')
     ]
 };

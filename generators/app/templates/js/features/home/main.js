@@ -8,43 +8,28 @@
  *
  * ******************************************************************************************************
  */
-(function(define) {
-    'use strict';
+'use strict';
 
-    define([
-        'FeatureBase',
-        './Routes',
-        './controller/HomeController',
-        './service/HomeService',
-        'tpl!./partials/custom.html'
-    ], function(Base,
-        Routes,
-        HomeController,
-        HomeService,
-        customTpl) {
+import FeatureBase from 'FeatureBase';
+import Routes from './Routes';
+import HomeController from './controller/HomeController';
+import HomeService from './service/HomeService';
+import customTpl from './partials/custom.html';
 
-        var Feature = Base.extend(function() {
+class Feature extends FeatureBase {
 
-            this.initializer = function() {
-                this.super.initializer('home');
-            };
+    constructor() {
+        super('home');
+        this.routes = Routes;
+    }
 
-            this.constructor = function() {
-                this.routes = Routes;
-            };
+    run() {
+        this.mod.controller('HomeController', HomeController);
+        this.mod.service('HomeService', HomeService);
+        this.mod.run(['$templateCache', function($templateCache) {
+            $templateCache.put('customTpl', customTpl);
+        }]);
+    }
+}
 
-            this.run = function() {
-                this.mod.controller('HomeController', HomeController);
-                this.mod.service('HomeService', HomeService);
-                this.mod.run(['$templateCache', function($templateCache) {
-                    $templateCache.put('customTpl', customTpl());
-                }]);
-            };
-
-        });
-
-        return Feature;
-
-    });
-
-}(define));
+export default Feature;

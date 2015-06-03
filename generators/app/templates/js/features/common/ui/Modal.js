@@ -5,49 +5,42 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
+import FeatureBase from 'FeatureBase';
 
-    define(['FeatureBase', 'lodash'], function(Base, _) {
+var defaults = {
+    animation: 'am-fade',
+    backdropAnimation: 'am-fade',
+    placement: 'top',
+    title: '',
+    content: '',
+    html: false,
+    backdrop: true,
+    keyboard: true,
+    show: true,
+    container: false,
+    contentTemplate: false,
+    prefixEvent: 'modal',
+    id: ''
+};
 
-        var defaults = {
-            animation: 'am-fade',
-            backdropAnimation: 'am-fade',
-            placement: 'top',
-            title: '',
-            content: '',
-            html: false,
-            backdrop: true,
-            keyboard: true,
-            show: true,
-            container: false,
-            contentTemplate: false,
-            prefixEvent: 'modal',
-            id: ''
-        };
+class Feature extends FeatureBase {
 
-        var Feature = Base.extend(function() {
+    constructor() {
+        super('ModalWrapper');
+    }
 
-            this.initializer = function() {
-                this.super.initializer('ModalWrapper');
-            };
+    run() {
+        this.mod.run(['events', '$modal', function(events, $modal) {
 
-            this.run = function() {
-                this.mod.run(['events', '$modal', function(events, $modal) {
+            events.on('modal', function(opts) {
+                var options = _.defaults(opts, defaults);
+                options.title = opts.title;
+                $modal(options);
+            });
 
-                    events.on('modal', function(opts) {
-                        var options = _.defaults(opts, defaults);
-                        options.title = opts.title;
-                        $modal(options);
-                    });
+        }]);
+    }
+}
 
-                }]);
-            };
-
-        });
-
-        return Feature;
-
-    });
-
-})(define);
+export default Feature;

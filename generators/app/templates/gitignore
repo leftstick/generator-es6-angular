@@ -9,4 +9,4 @@ build
 
 npm-debug.log
 
-bundle*.js
+*.bundle.js
