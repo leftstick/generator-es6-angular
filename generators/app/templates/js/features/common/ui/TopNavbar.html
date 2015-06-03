@@ -1,0 +1,24 @@
+<header ng-controller="HeaderCtrl">
+    <nav class="navbar navbar-default navbar-fixed-top" bs-navbar>
+      <div class="container-fluid" bs-collapse>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-template="aside" data-placement="left" data-animation="am-slide-left" bs-aside="aside" data-container="body">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="<% if(answers.pushState){ %>home<% }else{ %>#/home<% } %>" style="padding: 5px 25px 5px 15px;">
+              <img alt="Brand" width="40" height="40" src="img/logo.png">
+          </a>
+        </div>
+
+        <ul class="nav navbar-nav hidden-xs">
+          <li data-match-route="/home"><a href="<% if(answers.pushState){ %>home<% }else{ %>#/home<% } %>">Home</a></li>
+          <li data-match-route="/about"><a href="<% if(answers.pushState){ %>about<% }else{ %>#/about<% } %>">About</a></li>
+        </ul>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div style="width: 100%; height: 50px;"></div>
+</header>

@@ -1,0 +1,26 @@
+<div class="modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header" ng-show="title">
+                <button type="button" class="close" ng-click="closeCustom($hide)">×</button>
+                <h4 class="modal-title"><span ng-bind="title" style="vertical-align: middle;"></span></h4>
+            </div>
+            <div class="modal-body">
+                <h4>Text in a modal</h4>
+                <p>Hello Modal<br>This is a multiline message!</p>
+                <pre>2 + 3 = 5</pre>
+                <h4>Popover in a modal</h4>
+                <p>
+                    This <a href="#" role="button" class="btn btn-default" data-title="A Title" data-content="And here's some amazing content. It's very engaging. right?" bs-popover>button</a> should trigger a popover on click.
+                </p>
+                <h4>Tooltips in a modal</h4>
+                <p>
+                    <a href="#" data-title="Tooltip" bs-tooltip>This link</a> and <a href="#" data-title="Tooltip" bs-tooltip>that link</a> should have tooltips on hover.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" ng-click="closeCustom($hide)">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header" ng-show="title">
+                <button type="button" class="close" ng-click="close($hide)">×</button>
+                <h4 class="modal-title text-danger"><i class="fa fa-times-circle fa-2x" style="vertical-align: middle;"></i>&nbsp;<span ng-bind="title" style="vertical-align: middle;"></span></h4>
+            </div>
+            <div class="modal-body text-warning" ng-bind-html="content"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" ng-click="close($hide)">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

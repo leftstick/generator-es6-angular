@@ -1,0 +1,15 @@
+<div class="modal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header" ng-show="title">
+                <button type="button" class="close" ng-click="$hide()">×</button>
+                <h4 class="modal-title color-primary" ng-bind="title"></h4>
+            </div>
+            <div class="modal-body" ng-bind-html="content"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" ng-click="$hide()">Cancel</button>
+                <button type="button" class="btn btn-danger" ng-click="confirm($hide)">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

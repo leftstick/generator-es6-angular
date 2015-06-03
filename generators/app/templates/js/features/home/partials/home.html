@@ -1,0 +1,131 @@
+<div class="container" role="main">
+
+    <div class="jumbotron" style="height: 200px; padding: 10px 60px;">
+        <h1>Code Example</h1>
+        <p>Following demos might help you develop your own app, Feel free to register <a href="https://github.com/leftstick/generator-require-angular/issues" target="_blank">issue</a> while encountering problems, Or send me e-mail(<a href="mailto:leftstick@qq.com">leftstick@qq.com</a>)</p>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>noty usage</h1>
+            </div>
+            <p>
+                <button type="button" class="btn btn-success" ng-click="showSuccessNoty()">Success</button>
+                <button type="button" class="btn btn-info" ng-click="showInfoNoty()">Information</button>
+                <button type="button" class="btn btn-danger" ng-click="showErrorNoty()">Failure</button>
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>modal usage</h1>
+            </div>
+            <p>
+                <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
+                <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
+                <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
+                <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Tooltips usage</h1>
+            </div>
+            <div class="input-group col-xs-8 col-sm-6">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button" data-trigger="click" data-placement="bottom" data-type="success" data-title="Punch me, now!" bs-tooltip>Click me</button>
+                </span>
+                <input type="text" class="form-control" data-placement="right" data-container="body" placeholder="Focus tooltip" data-trigger="focus" bs-tooltip data-title="I'm here">
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Popover usage</h1>
+            </div>
+            <p>
+                <button type="button" class="btn btn-info" data-placement="bottom" data-animation="am-flip-x" bs-popover data-title="popver" data-content="I'm waiting for you!">
+                    Click me
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Typeaheads usage</h1>
+            </div>
+            <div class="input-group col-xs-8 col-sm-6">
+                <span class="input-group-addon"><i class="fa fa-globe"></i>&nbsp;nations</span>
+                <input type="text" class="form-control" ng-model="selectedState" bs-options="state for state in states" placeholder="Typing nation" bs-typeahead>
+            </div>
+            <br/>
+            Your choice is:  <span class="label label-primary">{{ selectedState }}</span>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Datepickers usage</h1>
+            </div>
+            <div class="input-group col-xs-8 col-sm-6">
+                <span class="input-group-addon"><i class="fa fa-calendar"></i>&nbsp;Choose Date</span>
+                <input type="text" class="form-control" ng-model="selectedDate" data-trigger="focus" data-autoclose="true" bs-datepicker data-container="body">
+            </div>
+            <br/>
+            Your choice is:  <span class="label label-warning">{{ selectedDate | date:'yyyy-MM-dd' }}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Select usage</h1>
+            </div>
+            <div class="input-group col-xs-8 col-sm-6">
+                <span class="input-group-addon"><i class="fa fa-bars"></i>&nbsp;Dropdown</span>
+                <button type="button" class="btn btn-default" ng-model="selectedMenu" bs-options="menu.value as menu.label for menu in menus" bs-select>
+                    Action <span class="caret"></span>
+                </button>
+            </div>
+            <br/>
+            Your choice is:  <span class="label label-primary">{{ selectedMenu }}</span>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Radio usage</h1>
+            </div>
+            <div class="btn-group" ng-model="button.radio" bs-radio-group>
+                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="left"/>Left</label>
+                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="middle"/>Middle</label>
+                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="right"/>Right</label>
+            </div>
+            <br/><br/>
+            Your choice is:  <span class="label label-danger">{{ button.radio }}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="page-header">
+                <h1>Dropdown usage</h1>
+            </div>
+            <div class="input-group col-xs-8 col-sm-6">
+                <button type="button" class="btn btn-danger" data-animation="am-flip-x" bs-dropdown="dropdowns" data-html="true">
+                    Click to active
+                </button>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+
+        </div>
+    </div>
+
+
+</div> <!-- /container -->

@@ -1,0 +1,26 @@
+{
+  "name": "generator-es6-angular",
+  "version": "1.0.0",
+  "description": "generator-es6-angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leftstick/generator-es6-angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leftstick/generator-es6-angular/issues"
+  },
+  "homepage": "https://github.com/leftstick/generator-es6-angular",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator", "es6", "webpack"
+  ],
+  "author": "Howard.Zuo",
+  "license": "MIT",
+  "dependencies": {
+    "date-util": "^1.2.1",
+    "lodash": "^3.9.0-npm-packages",
+    "yeoman-generator": "^0.20.1"
+  }
+}
