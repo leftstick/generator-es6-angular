@@ -39,11 +39,6 @@ module.exports = {
         root: [path.resolve(__dirname, 'js/fw/lib/'), path.resolve(__dirname, 'etc/')]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
-        new webpack.optimize.CommonsChunkPlugin('commons.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin('common.bundle.js')
     ]
 };

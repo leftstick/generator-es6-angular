@@ -14,7 +14,7 @@ class Feature extends FeatureBase {
 
     constructor() {
         super('FooterModule');
-        this.config = require('config.json');
+        this.config = __config;
         this.$body = $('body');
     }
 

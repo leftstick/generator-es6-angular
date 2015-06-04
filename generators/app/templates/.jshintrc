@@ -14,7 +14,8 @@
         "alert": true,
         "__dirname": true,
         "escape": true,
-        "unescape": true
+        "unescape": true,
+        "__config": true
     },
     "globalstrict": true,
     "quotmark": true,

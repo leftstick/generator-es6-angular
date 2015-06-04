@@ -13,7 +13,7 @@ import ConfiguratorBase from 'ConfiguratorBase';
 class Configurator extends ConfiguratorBase {
     constructor(features, app) {
         super(features, app);
-        this.config = require('config.json');
+        this.config = __config;
     }
 
     run() {

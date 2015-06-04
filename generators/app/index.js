@@ -84,7 +84,7 @@ var gen = generators.Base.extend({
         var self = this;
         var _ = require('lodash');
 
-        self.fs.copyTpl(self.templatePath('etc/config.json'), self.destinationPath('etc/config.json'), self.obj);
+        self.fs.copyTpl(self.templatePath('etc/config.js'), self.destinationPath('etc/config.js'), self.obj);
         self.copy(self.templatePath('img/logo.png'), self.destinationPath('img/logo.png'));
         self.directory(self.templatePath('js'), self.destinationPath('js'), function(body) {
             return _.template(body, {

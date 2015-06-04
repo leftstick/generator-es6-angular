@@ -1,6 +1,13 @@
+/**
+ *  splash.js give a splash-screen before the app is loaded.
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
 'use strict';
 
-import splash from 'splash-screen';
+import Splash from 'splash-screen';
 import 'splash-screen/splash.min.css';
 
-splash.enable();
+Splash.enable();

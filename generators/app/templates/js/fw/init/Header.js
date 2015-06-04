@@ -14,7 +14,7 @@ class Initializer extends InitBase {
     constructor(features, app) {
         super(features, app);
         this.head = $(document.head);
-        this.config = require('config.json');
+        this.config = __config;
     }
 
     title(t) {

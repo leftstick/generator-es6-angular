@@ -6,8 +6,14 @@ var webpack = require('webpack');
 
 gulp.task('webpack', function(callback) {
     var config = require('./webpack.config');
+    var myConfig = Object.create(config);
+    // myConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
+    //     compress: {
+    //         warnings: false
+    //     }
+    // }));
 
-    webpack(config, function(err, stats) {
+    webpack(myConfig, function(err, stats) {
         if (err) {
             throw new gutil.PluginError('webpack', err);
         }
@@ -21,7 +27,7 @@ gulp.task('dev', function(callback) {
     var WebpackDevServer = require('webpack-dev-server');
     var config = require('./webpack.config');
     var myConfig = Object.create(config);
-    myConfig.devtool = "eval";
+    myConfig.devtool = 'sourcemap';
     myConfig.debug = true;
 
     new WebpackDevServer(webpack(myConfig)).listen(8080, 'localhost', function(err) {
