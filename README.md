@@ -14,23 +14,23 @@ Yeoman generator for es6 based angular skeleton with webpack
 
 Install `yo`: `npm install -g yo`
 
+Install `gulp`: `npm install -g gulp`
+
 Install `bower`: `npm install -g bower`
 
-Install `sero-cli`: `npm install -g sero-cli`
-
-Install gen: `npm install -g generator-es6-angular`
+Install generator: `npm install -g generator-es6-angular`
 
 Run: `yo es6-angular`
 
 > Give the answers that `generator` required
 
-## Run ##
+## How to debug your app ##
 
 Once the project generated, move into the created directory with the given `name`.
 
-Run `sero`, and choose the second item `Start a static web server for current working directory` from launched UI to start a static server(all options can be left with default value).
+Run `gulp dev` to start a debug web server for current working directory.
 
-Open [http://localhost:8080](http://localhost:8080) to watch the demo
+Open [http://localhost:8080/webpack-dev-server/index.html](http://localhost:8080/webpack-dev-server/index.html), and have fun.
 
 [npm-url]: https://npmjs.org/package/generator-es6-angular
 [npm-image]: https://badge.fury.io/js/generator-es6-angular.png
