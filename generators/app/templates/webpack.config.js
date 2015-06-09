@@ -5,13 +5,11 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        splash: './js/splash.js',
         index: './js/index.js'
     },
     output: {
         path: path.resolve(__dirname),
-        filename: '[name].bundle.js',
-        chunkFilename: '[id].chunk.js'
+        filename: '[name].bundle.js'
     },
     module: {
         loaders: [{

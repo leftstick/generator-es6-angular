@@ -7,6 +7,14 @@
  */
 'use strict';
 
-import App from './main';
+require.ensure([], function() {
 
-(new App()).run();
+    require('splash-screen/splash.min.css');
+    require('splash-screen').enable();
+});
+
+require.ensure([], function() {
+
+    var App = require('./main');
+    (new App()).run();
+});
