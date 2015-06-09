@@ -18,6 +18,8 @@ Install `gulp`: `npm install -g gulp`
 
 Install `bower`: `npm install -g bower`
 
+Install `sero`: `npm install -g sero-cli`
+
 Install generator: `npm install -g generator-es6-angular`
 
 Run: `yo es6-angular`
@@ -31,6 +33,15 @@ Once the project generated, move into the created directory with the given `name
 Run `gulp dev` to start a debug web server for current working directory.
 
 Open [http://localhost:8080/webpack-dev-server/index.html](http://localhost:8080/webpack-dev-server/index.html), and have fun.
+
+
+## How to release your app ##
+
+Run `gulp webpack` to compile all the source code into webpack bundles.
+
+And run `sero`, then choose the second item `Start a static web server for current working directory` from launched UI to start a static server(all options can be left with default value). 
+
+Open [http://localhost:8080](http://localhost:8080) to watch the released version
 
 [npm-url]: https://npmjs.org/package/generator-es6-angular
 [npm-image]: https://badge.fury.io/js/generator-es6-angular.png
