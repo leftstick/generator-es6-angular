@@ -8,6 +8,7 @@
 'use strict';
 
 import _ from 'lodash';
+import 'jquery';
 import angular from 'angular';
 import Initializers from './fw/init/main';
 import Extensions from './fw/ext/main';

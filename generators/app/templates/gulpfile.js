@@ -7,11 +7,11 @@ var webpack = require('webpack');
 gulp.task('webpack', function(callback) {
     var config = require('./webpack.config');
     var myConfig = Object.create(config);
-    // myConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
-    //     compress: {
-    //         warnings: false
-    //     }
-    // }));
+    myConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
+        compress: {
+            warnings: false
+        }
+    }));
 
     webpack(myConfig, function(err, stats) {
         if (err) {
@@ -38,6 +38,6 @@ gulp.task('dev', function(callback) {
         gutil.log('[webpack-dev-server]', 'http://localhost:8080/webpack-dev-server/index.html');
 
         // keep the server alive or continue?
-        // callback();
+        callback();
     });
 });

@@ -6,17 +6,14 @@
  *  @date    <%= answers.date %>
  *
  */
-(function(define) {
-    'use strict';
+'use strict';
 
-    define(['tpl!./partials/about.html'], function(tpl) {
-        return [{
-            id: 'about',
-            isDefault: false,
-            when: '/about',
-            controller: 'AboutController',
-            template: tpl()
-        }];
-    });
+import tpl from './partials/about.html';
 
-}(define));
+export default [{
+    id: 'about',
+    isDefault: false,
+    when: '/about',
+    controller: 'AboutController',
+    template: tpl
+}];

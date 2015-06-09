@@ -8,37 +8,24 @@
  *
  * ******************************************************************************************************
  */
-(function(define) {
-    'use strict';
+'use strict';
 
-    define([
-        'FeatureBase',
-        './Routes',
-        './controller/AboutController',
-        './service/AboutService'
-    ], function(Base,
-        Routes,
-        AboutController,
-        AboutService) {
+import FeatureBase from 'FeatureBase';
+import Routes from './Routes';
+import AboutController from './controller/AboutController';
+import AboutService from './service/AboutService';
 
-        var Feature = Base.extend(function() {
+class Feature extends FeatureBase {
 
-            this.initializer = function() {
-                this.super.initializer('about');
-            };
+    constructor() {
+        super('about');
+        this.routes = Routes;
+    }
 
-            this.constructor = function() {
-                this.routes = Routes;
-            };
+    run() {
+        this.mod.controller('AboutController', AboutController);
+        this.mod.service('AboutService', AboutService);
+    }
+}
 
-            this.run = function() {
-                this.mod.controller('AboutController', AboutController);
-                this.mod.service('AboutService', AboutService);
-            };
-
-        });
-
-        return Feature;
-    });
-
-}(define));
+export default Feature;

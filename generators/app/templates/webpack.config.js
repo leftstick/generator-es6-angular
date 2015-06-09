@@ -37,6 +37,11 @@ module.exports = {
         root: [path.resolve(__dirname, 'js/fw/lib/'), path.resolve(__dirname, 'etc/')]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
         new webpack.optimize.CommonsChunkPlugin('common.bundle.js')
     ]
 };
