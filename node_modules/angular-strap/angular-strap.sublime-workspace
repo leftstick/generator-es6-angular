@@ -1,0 +1,4098 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"backdropElement"
+			],
+			[
+				"modal",
+				"modalElement"
+			],
+			[
+				"bac",
+				"backdropElement"
+			],
+			[
+				"bsT",
+				"bsTabsCtrl"
+			],
+			[
+				"get",
+				"getHours"
+			],
+			[
+				"tab-content",
+				"tab-content-primary"
+			],
+			[
+				"mode",
+				"modelValue"
+			],
+			[
+				"bs",
+				"bsTabsCtrl"
+			],
+			[
+				"view",
+				"viewChangeListeners"
+			],
+			[
+				"selecte",
+				"selectedIcon"
+			],
+			[
+				"tran",
+				"trancludeElem"
+			],
+			[
+				"on",
+				"onResize"
+			],
+			[
+				"offset",
+				"offsetBottom"
+			],
+			[
+				"ini",
+				"initialOffsetTop"
+			],
+			[
+				"isN",
+				"isNaN"
+			],
+			[
+				"firs",
+				"firstDate"
+			],
+			[
+				"pars",
+				"parsedOptions"
+			],
+			[
+				"mul",
+				"multipleEl"
+			],
+			[
+				"today",
+				"todayDate"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"selec",
+				"selectedMonth"
+			],
+			[
+				"date",
+				"dateValue"
+			],
+			[
+				"selected",
+				"selectedIndex"
+			],
+			[
+				"tem",
+				"templateEl"
+			],
+			[
+				"content",
+				"contentTemplate"
+			],
+			[
+				"parse",
+				"parsedTime"
+			],
+			[
+				"compile",
+				"compileDirective"
+			],
+			[
+				"locale",
+				"localeProvider"
+			],
+			[
+				"requ",
+				"requestAnimationFrame"
+			],
+			[
+				"is",
+				"isSelected"
+			],
+			[
+				"_w",
+				"_week"
+			],
+			[
+				"lan",
+				"langData"
+			],
+			[
+				"off",
+				"offsetParent"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"act",
+				"activeElement"
+			],
+			[
+				"active",
+				"activeIndex"
+			],
+			[
+				"length",
+				"minLength"
+			],
+			[
+				"par",
+				"parsedOptions"
+			],
+			[
+				"Sel",
+				"SelectFactory"
+			],
+			[
+				"type",
+				"typeahead"
+			],
+			[
+				"s",
+				"selectedAddress"
+			],
+			[
+				"group",
+				"groupByFn"
+			],
+			[
+				"sand",
+				"sandboxEl"
+			],
+			[
+				"san",
+				"sandboxEl"
+			],
+			[
+				"auto",
+				"autoprefixer"
+			],
+			[
+				"sor",
+				"sortedElements"
+			],
+			[
+				"so",
+				"sortedElements"
+			],
+			[
+				"activa",
+				"activateElement"
+			],
+			[
+				"b",
+				"body"
+			],
+			[
+				"tracke",
+				"trackedElements"
+			],
+			[
+				"track",
+				"trackedOffsets"
+			],
+			[
+				"target",
+				"targetElement"
+			],
+			[
+				"tooltip",
+				"tooltipScope"
+			],
+			[
+				"offs",
+				"offsetWidth"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"body",
+				"bodyElement"
+			],
+			[
+				"elem",
+				"elementPosition"
+			],
+			[
+				"clo",
+				"clonedElement"
+			],
+			[
+				"actu",
+				"actualWidth"
+			],
+			[
+				"ba",
+				"backdropElement"
+			],
+			[
+				"defe",
+				"deferred"
+			],
+			[
+				"show",
+				"showBackdrop"
+			],
+			[
+				"pop",
+				"popoverProvider"
+			],
+			[
+				"code",
+				"codeElement"
+			],
+			[
+				"spli",
+				"splitString"
+			],
+			[
+				"elemen",
+				"elementHtml"
+			],
+			[
+				"trigger",
+				"triggerHandler"
+			],
+			[
+				"Apple",
+				"AppleIncRootCertificate"
+			],
+			[
+				"csr",
+				"csrFixture"
+			],
+			[
+				"As",
+				"AsciiValue"
+			],
+			[
+				"publi",
+				"publicKey"
+			],
+			[
+				"cryp",
+				"cryptoCredentials"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"fil",
+				"readFileSync"
+			],
+			[
+				"icon",
+				"iconExclamationSign"
+			],
+			[
+				"full",
+				"fullNameUserList"
+			],
+			[
+				"ne",
+				"networkUpdated"
+			],
+			[
+				"upda",
+				"updatedUserList"
+			],
+			[
+				"print_r",
+				"printer_draw_rectangle"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"device",
+				"deviceContact"
+			],
+			[
+				"user",
+				"userDevices"
+			],
+			[
+				"netwo",
+				"networkCounts"
+			],
+			[
+				"net",
+				"networkCounts"
+			],
+			[
+				"Mesage",
+				"MessageBox"
+			],
+			[
+				"te",
+				"templateHelpers"
+			],
+			[
+				"tar",
+				"targetUserList2"
+			],
+			[
+				"byPla",
+				"byPlatformCount"
+			],
+			[
+				"network",
+				"networkCounts"
+			],
+			[
+				"popover",
+				"popoverInstance"
+			],
+			[
+				"popove",
+				"popoverInstance"
+			],
+			[
+				"User",
+				"UsersFormCtrl"
+			],
+			[
+				"mongo",
+				"mongoDatabase"
+			],
+			[
+				"match",
+				"matchingUsers"
+			],
+			[
+				"facebook",
+				"facebookEnabled"
+			],
+			[
+				"array_inte",
+				"array_intersect_key"
+			],
+			[
+				"mat",
+				"matchingUsers"
+			],
+			[
+				"Success",
+				"successfully"
+			],
+			[
+				"forma",
+				"formattedCards"
+			],
+			[
+				"field",
+				"fieldGroupFields"
+			],
+			[
+				"ma",
+				"matchingInvite"
+			],
+			[
+				"delega",
+				"delegateEvents"
+			],
+			[
+				"response",
+				"responseText"
+			],
+			[
+				"firl",
+				"fieldGroupFields"
+			],
+			[
+				"templa",
+				"templateOptions"
+			],
+			[
+				"dynam",
+				"dynamicCollapse"
+			],
+			[
+				"record",
+				"recordPhoneNumbers"
+			],
+			[
+				"ava",
+				"availableContacts"
+			],
+			[
+				"auth",
+				"authUserNetwork"
+			],
+			[
+				"array_in",
+				"array_intersect_key"
+			],
+			[
+				"upd",
+				"updatedCards"
+			],
+			[
+				"func_",
+				"func_get_args"
+			],
+			[
+				"targe",
+				"targetUserDevices"
+			],
+			[
+				"js",
+				"JSON"
+			],
+			[
+				"has",
+				"hasMatchingEmail"
+			],
+			[
+				"hasM",
+				"hasMatchingPhoneNumber"
+			],
+			[
+				"matching",
+				"matchingRecord"
+			],
+			[
+				"Sync",
+				"SyncContact"
+			],
+			[
+				"web",
+				"webkit-transition"
+			],
+			[
+				"stop",
+				"stopPropagation  (function)"
+			],
+			[
+				"class",
+				"class_exists"
+			],
+			[
+				"clien",
+				"clientAccessToken"
+			],
+			[
+				"server",
+				"serverAccessToken"
+			],
+			[
+				"respon",
+				"responseText"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"Inter",
+				"InternalErrorException  (class)"
+			],
+			[
+				"Not",
+				"NotFoundException  (class)"
+			],
+			[
+				"url",
+				"urlencode"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "docs/scripts/app.js",
+			"settings":
+			{
+				"buffer_size": 1673,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docs/styles/main.less",
+			"settings":
+			{
+				"buffer_size": 5747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.2.0/components/angular.js",
+			"settings":
+			{
+				"buffer_size": 789268,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.4.0/components/angular.js",
+			"settings":
+			{
+				"buffer_size": 1028208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.4.0/components/angular-sanitize.js",
+			"settings":
+			{
+				"buffer_size": 24534,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.4.0/components/angular-mocks.js",
+			"settings":
+			{
+				"buffer_size": 82276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.4.0/components/angular-animate.js",
+			"settings":
+			{
+				"buffer_size": 128922,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.4.0/karma.conf.js",
+			"settings":
+			{
+				"buffer_size": 2090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tooltip/test/tooltip.spec.js",
+			"settings":
+			{
+				"buffer_size": 51914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tooltip/tooltip.js",
+			"settings":
+			{
+				"buffer_size": 29340,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/dropdown/dropdown.js",
+			"settings":
+			{
+				"buffer_size": 4903,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/typeahead/typeahead.js",
+			"settings":
+			{
+				"buffer_size": 10479,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/timepicker/timepicker.js",
+			"settings":
+			{
+				"buffer_size": 23209,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/dropdown/test/dropdown.spec.js",
+			"settings":
+			{
+				"buffer_size": 17747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.2.0/karma.conf.js",
+			"settings":
+			{
+				"buffer_size": 2090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 3877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/modal/modal.js",
+			"settings":
+			{
+				"buffer_size": 11404,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/helpers.js",
+			"settings":
+			{
+				"buffer_size": 1678,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.2.0/components/angular-sanitize.js",
+			"settings":
+			{
+				"buffer_size": 21815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.2.0/components/angular-mocks.js",
+			"settings":
+			{
+				"buffer_size": 68823,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/~1.2.0/components/angular-animate.js",
+			"settings":
+			{
+				"buffer_size": 77784,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git dif",
+				"git: diff"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Toggle Annotations"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"previw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Run CSScomb JS"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"mark",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"mak",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"hsl",
+				"HSL: Convert All RGB to HSL"
+			],
+			[
+				"sor",
+				"Sort Lines"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"sorc",
+				"Sort Lines (Case Sensitive)"
+			],
+			[
+				"hsla",
+				"HSL: Convert All RGB to HSL"
+			],
+			[
+				"cssco",
+				"Sort via CSScomb"
+			],
+			[
+				"h",
+				"HTMLPrettify"
+			],
+			[
+				"rett",
+				"HTMLPrettify"
+			],
+			[
+				"",
+				"BracketHighlighter: Select Tag Name (closing and opening)"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"htm",
+				"HTMLPrettify"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"subl",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"linte",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"js",
+				"JSHint"
+			],
+			[
+				"rmeove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"reformat",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"sub",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"subli",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"PRE",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pre",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"doc",
+				"Snippet: Start Docblock"
+			],
+			[
+				"Upgra",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"diff cu",
+				"Git: Diff Current File"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git lo",
+				"Git: Log Current File"
+			],
+			[
+				"git graph",
+				"Git: Graph Current File"
+			],
+			[
+				"git cu",
+				"Git: Log Current File"
+			],
+			[
+				"upg",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"docblo",
+				"Snippet: Start Docblock"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"repos",
+				"Package Control: Add Repository Channel"
+			],
+			[
+				"add rep",
+				"Package Control: Add Repository"
+			],
+			[
+				"u",
+				"SFTP: Upload File"
+			],
+			[
+				"uplo",
+				"SFTP: Upload File"
+			],
+			[
+				"upl",
+				"SFTP: Upload File"
+			],
+			[
+				"Git",
+				"Git: Annotate"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"di",
+				"Git: Diff Current File"
+			],
+			[
+				"Lint",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"Subli",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"b",
+				"Git: Blame"
+			]
+		],
+		"width": 529.0
+	},
+	"console":
+	{
+		"height": 115.0,
+		"history":
+		[
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/olivier/Projects/angular-strap",
+		"/Users/olivier/Projects/angular-strap/docs",
+		"/Users/olivier/Projects/angular-strap/docs/scripts",
+		"/Users/olivier/Projects/angular-strap/docs/styles",
+		"/Users/olivier/Projects/angular-strap/docs/styles/docs",
+		"/Users/olivier/Projects/angular-strap/docs/styles/main",
+		"/Users/olivier/Projects/angular-strap/node_modules",
+		"/Users/olivier/Projects/angular-strap/node_modules/debug-utils",
+		"/Users/olivier/Projects/angular-strap/src/dropdown",
+		"/Users/olivier/Projects/angular-strap/src/dropdown/test",
+		"/Users/olivier/Projects/angular-strap/src/modal",
+		"/Users/olivier/Projects/angular-strap/src/timepicker",
+		"/Users/olivier/Projects/angular-strap/src/tooltip/test",
+		"/Users/olivier/Projects/angular-strap/src/typeahead",
+		"/Users/olivier/Projects/angular-strap/test",
+		"/Users/olivier/Projects/angular-strap/test/~1.2.0/components"
+	],
+	"file_history":
+	[
+		"/Users/olivier/Projects/angular-strap/dist/angular-strap.js",
+		"/Users/olivier/Projects/angular-strap/gulpfile.js",
+		"/Users/olivier/Projects/angular-strap/README.md",
+		"/Users/olivier/Projects/angular-strap/src/tooltip/tooltip.js",
+		"/Users/olivier/Projects/angular-strap/test/karma.conf.js",
+		"/Users/olivier/Projects/angular-strap/test/~1.2.0/karma.conf.js",
+		"/Users/olivier/Projects/angular-strap/.tmp/modules/tooltip.tpl.min.js",
+		"/Users/olivier/Projects/angular-strap/src/tooltip/test/tooltip.spec.js",
+		"/Users/olivier/Projects/angular-strap/package.json",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/app.js",
+		"/Users/olivier/Projects/angular-strap/pages/index.html",
+		"/Users/olivier/Projects/angular-strap/docs/index.html",
+		"/Users/olivier/Projects/angular-strap/src/tooltip/docs/tooltip.demo.html",
+		"/Users/olivier/Projects/angular-strap/.tmp/modules/alert.tpl.min.js",
+		"/Users/olivier/Projects/angular-strap/.tmp/angular-strap.tpl.min.js",
+		"/Users/olivier/Projects/angular-strap/pages/styles/docs.css",
+		"/Users/olivier/Projects/angular-strap/pages/dist/angular-strap.tpl.min.js",
+		"/Users/olivier/Projects/angular-strap/.tmp/index.html",
+		"/Users/olivier/Projects/angular-strap/dist/modules/tooltip.js",
+		"/Users/olivier/Projects/angular-strap/src/typeahead/typeahead.js",
+		"/Users/olivier/Projects/angular-strap/src/select/select.js",
+		"/Users/olivier/Projects/angular-strap/src/datepicker/test/datepicker.spec.js",
+		"/Users/olivier/Projects/angular-strap/docs/bower.json",
+		"/Users/olivier/Projects/angular-strap/.tmp/karma.conf.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/test/karma.conf.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/index.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/test/karma.js",
+		"/Users/olivier/Projects/angular-strap/test/gulp.js",
+		"/Users/olivier/Projects/angular-strap/src/helpers/parse-options.js",
+		"/Users/olivier/Projects/angular-strap/src/typeahead/test/typeahead.spec.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/docs/views.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/index/dist.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/index/cdn.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/index/libs.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/styles/dist.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/scripts/dist.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/package.json",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/views/dist.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/config/index.js",
+		"/Users/olivier/Projects/angular-strap/pages/docs.min.js",
+		"/Users/olivier/Projects/angular-strap/pages/dist/angular-strap.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/config/defaults/library.js",
+		"/Users/olivier/Projects/angular-strap/docs/views/partials/aside.tpl.html",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/docs/copy.js",
+		"/Users/olivier/Projects/angular-strap/ngfactory.json",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/lib/channels/index/src.js",
+		"/Users/olivier/Projects/angular-strap/pages/docs.tpl.js",
+		"/Users/olivier/Projects/angular-strap/pages/fontawesome-webfont.woff2",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/config/defaults/docs.js",
+		"/Users/olivier/Projects/angular-strap/pages/angular-strap.tpl.js",
+		"/Users/olivier/Projects/ng-tools/gulp-ng-channels/node_modules/gulp-nginclude/src/index.js",
+		"/Users/olivier/Projects/angular-strap/src/modal/docs/modal.demo.html",
+		"/Users/olivier/Projects/angular-strap/src/aside/docs/aside.demo.html",
+		"/Users/olivier/Projects/angular-strap/src/popover/docs/popover.demo.html",
+		"/Users/olivier/Projects/angular-strap/src/alert/docs/alert.demo.html",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/src/views.js",
+		"/Users/olivier/Projects/angular-strap/pages/docs.js",
+		"/Users/olivier/Projects/ng-tools/ng-factory/lib/tasks/docs/scripts.js",
+		"/Users/olivier/Projects/angular-strap/pages/docs",
+		"/Users/olivier/Projects/angular-strap/src/navbar/navbar.js",
+		"/Users/olivier/Projects/bootstrap-additions/docs/index.html",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/services/indent.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/directives/code.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/directives/highlight-block.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/angular-plunkr.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/controllers/main.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/directives/append-source.js",
+		"/Users/olivier/Projects/angular-strap/docs/styles/docs/sidebar.less",
+		"/Users/olivier/Projects/angular-strap/pages/angular-strap.tpl.min.js",
+		"/Users/olivier/Projects/angular-strap/docs/styles/main.less",
+		"/Users/olivier/Projects/angular-strap/docs/styles/docs.less",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/angular-strap.tpl.js",
+		"/Users/olivier/Projects/angular-strap/docs/scripts/script.min.js",
+		"/Users/olivier/Projects/angular-strap/.dev/dev.html",
+		"/Users/olivier/Projects/angular-strap/src/modal/modal.tpl.html",
+		"/Users/olivier/Projects/angular-strap/src/modal/modal.js",
+		"/Users/olivier/Projects/angular-strap/src/dropdown/test/dropdown.spec.js",
+		"/Users/olivier/Projects/angular-strap/src/dropdown/dropdown.js",
+		"/Users/olivier/Projects/angular-strap/src/tooltip/tooltip.tpl.html",
+		"/Users/olivier/Projects/angular-motion/ngfactory.json",
+		"/Users/olivier/Projects/angular-motion/dist/angular-motion.css",
+		"/Users/olivier/Projects/angular-motion/gulpfile.js",
+		"/Users/olivier/Projects/angular-strap/gulpfile.new.js",
+		"/Users/olivier/Projects/angular-strap/src/datepicker/datepicker.js",
+		"/Users/olivier/Projects/angular-motion/dist/angular-motion.min.css.map",
+		"/Users/olivier/Projects/angular-strap/src/typeahead/docs/typeahead.demo.html",
+		"/Users/olivier/Projects/angular-strap/.travis.yml",
+		"/Users/olivier/Projects/angular-strap/bower.json",
+		"/Users/olivier/Projects/angular-strap/src/tab/test/tab.spec.js",
+		"/Users/olivier/Projects/angular-strap/test/helpers.js",
+		"/Users/olivier/Projects/angular-strap/src/modal/test/modal.spec.js",
+		"/Users/olivier/Projects/angular-strap/dist/modules/timepicker.js",
+		"/Users/olivier/Projects/angular-strap/node_modules/gulp-connect/node_modules/connect/node_modules/multiparty/test/standalone/test-invalid.js",
+		"/Users/olivier/Projects/angular-strap/src/scrollspy/scrollspy.js",
+		"/Users/olivier/Projects/angular-strap/src/affix/affix.js",
+		"/Users/olivier/Projects/angular-strap/src/tab/tab.js",
+		"/Users/olivier/Projects/angular-strap/src/button/button.js",
+		"/Users/olivier/Projects/angular-strap/src/dropdown/docs/dropdown.demo.js",
+		"/Users/olivier/Projects/angular-strap/docs/styles/docs/examples.less",
+		"/Users/olivier/Projects/angular-strap/src/dropdown/docs/dropdown.demo.html",
+		"/Users/olivier/Dropbox/Developer/angular/angular-stepper/bower.json",
+		"/Users/olivier/Dropbox/Developer/angular/angular-stepper/package.json",
+		"/Users/olivier/Dropbox/Projects/ng-factory/lib/templates/docs/modules/ng-factory/services/hljs.js",
+		"/Users/olivier/Dropbox/Projects/ng-factory/lib/templates/docs/modules/ng-factory/services/indent.js",
+		"/Users/olivier/Dropbox/Projects/ng-factory/lib/templates/docs/scripts/directives/append-source.tpl.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/popover/docs/popover.tpl.content.demo.html",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/popover/docs/popover.tpl.demo.html",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/popover/docs/popover.demo.html",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/tooltip/tooltip.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/bower_components/angular-animate/angular-animate.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/typeahead/typeahead.tpl.html",
+		"/Users/olivier/Dropbox/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/helpers/parse-options.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/timepicker/timepicker.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/timepicker/test/timepicker.spec.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/typeahead/test/typeahead.spec.js",
+		"/Users/olivier/Dropbox/Projects/angular-strap/src/typeahead/typeahead.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/.dev/dev.html",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/.dev/app.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/src/timepicker/docs/timepicker.demo.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/src/timepicker/test/timepicker.spec.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/docs/views/navbar.html",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/docs/index.html",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/docs/styles/main.less",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/docs/styles/main/animations.less",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/docs/scripts/app.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/test/karma.conf.js",
+		"/Users/olivier/DropboxBackup/Projects/angular-strap/package.json"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/olivier/Projects/angular-strap/src",
+			"/Users/olivier/Projects/angular-strap/docs/views",
+			"/Users/olivier/DropboxBackup/Projects/angular-strap",
+			"/Users/olivier/DropboxBackup/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap/bower_components/angular",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap/bower_components/bootstrap/less",
+			"/Users/olivier/Dropbox/Projects/angular-strap/bower_components/angular",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap/bower_components",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap-bs3/src",
+			"/Users/olivier/Dropbox/Projects/angular-strap-bs3/bower_components",
+			"/Users/olivier/Dropbox/Projects/angular-strap/src/directives",
+			"/Users/olivier/Dropbox/Developer/angular/angular-strap/src/directives",
+			"/Users/olivier/Dropbox/Developer/angular/angular-strap/src",
+			"/Users/olivier/Downloads/openssl-1.0.1c",
+			"/opt/local/include/openssl",
+			"/Users/olivier/Downloads/openssl-1.0.1c",
+			"/Users/olivier/Dropbox/Sites/node-mdm",
+			"/Users/olivier/Downloads/openssl-1.0.1c",
+			"/Users/olivier/Downloads/openssl-1.0.1c/crypto/cms",
+			"/Users/olivier/Downloads/openssl-1.0.1c/demos/cms",
+			"/Users/olivier/Downloads/openssl-1.0.1c/crypto/cms",
+			"/opt/local/include/node",
+			"/Users/olivier/Dropbox/Sites/node-mdm/node_modules",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/libraries/lithium",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app/ux",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/extensions",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/extensions",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/cordova/android/Beelink/assets/www",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/extensions",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app/view",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Developer/lithium/assetic/src/Assetic",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/mobile/sencha/Beelink/app",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/libraries/assetic",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/controllers",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile/store",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/controllers",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/controllers",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile/view",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/css/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile/view",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/beelink/libraries/Cake",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/config",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/controllers",
+			"/Users/olivier/Dropbox/Sites/beelink/beelink/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/wimi/webroot/js/mobile",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/wimi/webroot/js",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/wimi/webroot/css/mobile",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/libraries/lithium/template",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/libraries/lithium",
+			"/Users/olivier/Dropbox/Sites/wimi-mobile/libraries/lithium/template"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cursor:",
+			"1.3",
+			"1.3 ",
+			"$tooltip.$element",
+			"$dropdown.$element",
+			"tipElement",
+			"template",
+			"2",
+			"1.2.0",
+			"$emit",
+			"angular.module",
+			"'ng:test/clean', ",
+			"docs",
+			"serve",
+			"ngOptionsDire",
+			"ngOptions",
+			"ng-options",
+			"ng-select",
+			"1.3.13",
+			"countScopes",
+			"countScopes\ncountScopes",
+			"countScopes",
+			"defer",
+			"Promise",
+			"q",
+			"templates:test",
+			"clean:test",
+			"fileName",
+			"options",
+			"assetsDirs",
+			"src",
+			"dist",
+			"docs",
+			"src",
+			"\"",
+			".tpl.demo.html",
+			"build",
+			"$location",
+			"Keyboard",
+			"keyboard",
+			"Keyboard",
+			"keyboard",
+			"liElement",
+			"liElements",
+			"['backdrop']",
+			"backdrop",
+			"\"\"",
+			"['backdrop']",
+			"backdropElement",
+			"6",
+			"modalLinker",
+			"fetchTemplate",
+			"scope.$is",
+			"$isShown",
+			"html",
+			"scope.title",
+			"template",
+			"\"",
+			"html",
+			"'<div class=\"tooltip\"><div class=\"tooltip-inner\">foo: {{title}}</div></div>'",
+			"$sce",
+			"template",
+			"tooltip",
+			"templates",
+			"countScopes",
+			"\"",
+			"$affix",
+			"$affix.",
+			"'",
+			"$affix",
+			"fetchTemplate",
+			"httpBackend",
+			"templateCache",
+			"$compile",
+			"options-template",
+			"$tab",
+			"bsTabsCtrl",
+			"alert",
+			"$$rAF",
+			"minL",
+			"show",
+			"Bottom",
+			"options.delay",
+			"isNumeric",
+			", { panel: { active: 1 } }",
+			"prefixEvent",
+			"$animate.leave",
+			"21",
+			"}}",
+			" gaze: ",
+			"{glob: ",
+			"tab",
+			"18",
+			"step",
+			"parsedTime",
+			"20",
+			"1.3.0-beta.13",
+			"bsTabs",
+			"tab",
+			"active",
+			"in",
+			"bower",
+			"2.0.0/",
+			"templateCache",
+			"</div>",
+			"bsCollapseCtrl",
+			"height",
+			"()",
+			"tab",
+			"pane",
+			"bsTabsCtrl",
+			"panes",
+			"tab",
+			"activeTab",
+			"tabs",
+			"content",
+			"tab",
+			"Tab",
+			"tab",
+			"isNumeric",
+			"$timepicker.$build",
+			"isAm",
+			"switchMeridian",
+			"typeStringDateFormat",
+			"typeStringDateFormatAlternative",
+			"iit",
+			"typeStringDateFormat",
+			"picker.$date"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".demo.tpl.html",
+			"if(angular.isString(newValue)) newValue = !!newValue.match",
+			"$$rAF.flush();",
+			"$$rAF",
+			" ",
+			"am-flip-x",
+			"am-fade",
+			"",
+			"module to be loaded",
+			"helpers.dimensions",
+			"github.com/mgcrea/angular-strap/blob/master/src/helpers/dimensions.js",
+			"ngStrap.helpers",
+			"clog.info",
+			" ",
+			"=\"",
+			"AppiraterPlugin",
+			"Appirater",
+			"(CDVInvokedUrlCommand *)command;",
+			"command",
+			"",
+			"CDVInvokedUrlCommand *",
+			"PushNotification",
+			"-emailcomposer",
+			"EmailComposer",
+			"cordova-authorization-status",
+			"AuthorizationStatus",
+			"ActionSheet",
+			"Ext.form.Panel",
+			"Beelink.ux",
+			"Ext.define('Beelink.ux",
+			"'Beelink",
+			"Ext.define('Beelink",
+			"Ext.define('Ext.ux",
+			"Ext.define('Mg.ux",
+			"Mg.ux",
+			"'Beelink",
+			"Ext.define('Beelink",
+			"Assetic\\Util\\Process",
+			"Assetic\\Util\\ProcessBuilder",
+			"\"",
+			"@import \"./../",
+			"@import \"libs/bootstrap/",
+			"@import \"libs/bootstrap",
+			"$this->_renderJson",
+			"$authUser->email",
+			"$linkedUser->email",
+			"App.getStore('RestoreContact')",
+			"App.getStore('Contact')",
+			"App.getModel('Contact')",
+			"App.getModel('Email')",
+			"App.getModel('PhoneNumber')",
+			"App.getViewport().mask();",
+			"App.getViewport().unmask();",
+			"getStore('Network')",
+			"this.getStore('Network')",
+			"getStore('Network')",
+			"Ext.getStore",
+			"App.getStore('SyncContact')",
+			"App.getStore('RestoreContact')",
+			"App.getStore('Backup')",
+			"App.getStore('Network')",
+			"App.getStore('Contact')",
+			"App.getStore('Network')",
+			"App.getStore('Backup')",
+			" ",
+			"var self = this, displayName;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "docs/scripts/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								87
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/docs/scripts/app.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "docs/styles/main.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4745,
+								4745
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/docs/styles/main.less",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3530.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/~1.2.0/components/angular.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 789268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789268,
+								789268
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.2.0/components/angular.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1785.0,
+						"translation.y": 331359.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test/~1.4.0/components/angular.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1028208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1028208,
+								1028208
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.4.0/components/angular.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1293.0,
+						"translation.y": 419713.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "test/~1.4.0/components/angular-sanitize.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24534,
+								24534
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.4.0/components/angular-sanitize.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test/~1.4.0/components/angular-mocks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 82276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82276,
+								82276
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.4.0/components/angular-mocks.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 35829.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "test/~1.4.0/components/angular-animate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 128922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128922,
+								128922
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.4.0/components/angular-animate.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 52614.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "test/~1.4.0/karma.conf.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1036,
+								1048
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.4.0/karma.conf.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 70.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/tooltip/test/tooltip.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 51914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8194,
+								8194
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/tooltip/test/tooltip.spec.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 19.0,
+						"translation.y": 3130.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/tooltip/tooltip.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 29340,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24990,
+								24990
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/tooltip/tooltip.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 9941.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/dropdown/dropdown.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4903,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2648,
+								2648
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/dropdown/dropdown.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/typeahead/typeahead.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10479,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5425,
+								5425
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/typeahead/typeahead.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2001.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/timepicker/timepicker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15868,
+								15868
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/timepicker/timepicker.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5094.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/dropdown/test/dropdown.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10982,
+								10982
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/dropdown/test/dropdown.spec.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3349.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "test/~1.2.0/karma.conf.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1048,
+								1036
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.2.0/karma.conf.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3877,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3270,
+								3270
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/gulpfile.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1007.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "src/modal/modal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11404,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7403,
+								7403
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/src/modal/modal.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2898.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "test/helpers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1454,
+								1454
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/helpers.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 17.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "test/~1.2.0/components/angular-sanitize.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21815,
+								21815
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.2.0/components/angular-sanitize.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8754.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "test/~1.2.0/components/angular-mocks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68823,
+								68823
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.2.0/components/angular-mocks.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 31944.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "test/~1.2.0/components/angular-animate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77784,
+								77784
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"git_savvy.file_path": "/Users/olivier/Projects/angular-strap/test/~1.2.0/components/angular-animate.js",
+							"git_savvy.repo_path": "/Users/olivier/Projects/angular-strap",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 24580.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 102.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"pinned_build_system": "",
+	"project": "angular-strap.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"tool",
+				"angular-strap/dist/modules/tooltip.js"
+			],
+			[
+				"datepick",
+				"angular-strap/src/datepicker/datepicker.js"
+			],
+			[
+				"index",
+				"angular-strap/docs/index.html"
+			],
+			[
+				"angu",
+				"angular-strap/bower_components/angular/angular.js"
+			],
+			[
+				"bow",
+				"angular-strap/bower.json"
+			],
+			[
+				"dev",
+				"angular-strap/.dev/dev.html"
+			],
+			[
+				"gulp",
+				"angular-strap/gulpfile.js"
+			],
+			[
+				"datepicker",
+				"angular-strap/src/datepicker/datepicker.js"
+			],
+			[
+				"datepi",
+				"angular-strap/dist/modules/datepicker.js"
+			],
+			[
+				"tootl",
+				"angular-strap/src/tooltip/tooltip.js"
+			],
+			[
+				"toolt",
+				"angular-strap/dist/modules/tooltip.js"
+			],
+			[
+				"modal",
+				"angular-strap/dist/modules/modal.js"
+			],
+			[
+				"inde",
+				"angular-strap/docs/index.html"
+			],
+			[
+				"toolti",
+				"angular-strap/dist/modules/tooltip.js"
+			],
+			[
+				"alert",
+				"angular-strap/dist/modules/alert.js"
+			],
+			[
+				"angular.js",
+				"angular-strap/bower_components/angular/angular.js"
+			],
+			[
+				".tra",
+				"angular-strap/.travis.yml"
+			],
+			[
+				"dev.",
+				"angular-strap/.dev/dev.html"
+			],
+			[
+				"tooltip",
+				"angular-strap/dist/modules/tooltip.js"
+			],
+			[
+				"select",
+				"angular-strap/dist/modules/select.js"
+			],
+			[
+				"typeahead.sp",
+				"angular-strap/src/typeahead/test/typeahead.spec.js"
+			],
+			[
+				"momen",
+				"angular-strap/bower_components/momentjs/moment.js"
+			],
+			[
+				"gruntfile",
+				"angular-strap/Gruntfile.js"
+			],
+			[
+				"tooltip.less",
+				"angular-strap-bs3/bower_components/bootstrap/less/tooltip.less"
+			],
+			[
+				"modal.less",
+				"angular-strap-bs3/bower_components/bootstrap/less/modals.less"
+			],
+			[
+				"app.js",
+				"angular-strap-docs/js/app.js"
+			],
+			[
+				"modal.de",
+				"angular-strap-bs3/src/modal/docs/modal.demo.html"
+			],
+			[
+				"animations",
+				"angular-strap-bs3/.dev/styles/animations.less"
+			],
+			[
+				".dev/index",
+				"angular-strap-bs3/.dev/index.html"
+			],
+			[
+				"main",
+				"angular-strap-bs3/.dev/styles/main.less"
+			],
+			[
+				"main.less",
+				"app/styles/main.less"
+			],
+			[
+				"basic",
+				"beelink/config/bootstrap/basics.php"
+			],
+			[
+				"basics",
+				"beelink/config/bootstrap/basics.php"
+			],
+			[
+				"web",
+				"beelink/views/layouts/webfront.html.php"
+			],
+			[
+				"login",
+				"Beelink/app/view/sessions/LoginForm.js"
+			],
+			[
+				"model",
+				"beelink/models/Model.php"
+			],
+			[
+				"default.json",
+				"Beelink/resources/locale/en/default.json"
+			],
+			[
+				"documentset",
+				"lithium/lithium/data/collection/DocumentSet.php"
+			],
+			[
+				"mongodb",
+				"lithium/lithium/data/source/MongoDb.php"
+			],
+			[
+				"collect",
+				"lithium/lithium/util/Collection.php"
+			],
+			[
+				"collection",
+				"lithium/lithium/data/Collection.php"
+			],
+			[
+				"user",
+				"beelink/models/Users.php"
+			],
+			[
+				"simpleme",
+				"beelink/libraries/Swift/classes/Swift/Mime/SimpleMessage.php"
+			],
+			[
+				"stats",
+				"beelink/controllers/StatsController.php"
+			],
+			[
+				"default",
+				"Beelink/resources/locale/fr/default.json"
+			],
+			[
+				"backupscontr",
+				"beelink/controllers/BackupsController.php"
+			],
+			[
+				"under",
+				"beelink/webroot/js/libs/underscore.string.js"
+			],
+			[
+				"mobile",
+				"beelink/views/layouts/mobile.html.php"
+			],
+			[
+				"se",
+				"beelink/views/layouts/sencha.html.php"
+			],
+			[
+				"webfro",
+				"beelink/views/layouts/webfront.html.php"
+			],
+			[
+				"mobile.",
+				"beelink/views/layouts/mobile.html.php"
+			],
+			[
+				"helium",
+				"beelink/webroot/js/libs/helium.js"
+			],
+			[
+				"bootstrap.js",
+				"beelink/webroot/js/libs/bootstrap.js"
+			],
+			[
+				"cardform",
+				"beelink/webroot/js/webapp/views/CardForm.js"
+			],
+			[
+				"side",
+				"beelink/views/elements/layouts/sidebar.html.php"
+			],
+			[
+				"heliu",
+				"beelink/webroot/js/libs/helium.js"
+			],
+			[
+				"bootstrap",
+				"beelink/webroot/js/libs/bootstrap.js"
+			],
+			[
+				"webap",
+				"beelink/views/layouts/webapp.html.php"
+			],
+			[
+				"weba",
+				"beelink/views/layouts/webapp.html.php"
+			],
+			[
+				"webapp.le",
+				"beelink/webroot/css/webapp/webapp.less"
+			],
+			[
+				"back",
+				"beelink/webroot/js/libs/backbone.js"
+			],
+			[
+				"webapp.less",
+				"beelink/webroot/css/webapp/webapp.less"
+			],
+			[
+				"sencha",
+				"beelink/webroot/js/libs/sencha-touch-all-debug-2.0.js"
+			],
+			[
+				"",
+				"beelink/webroot/js/libs/helium.js"
+			],
+			[
+				"webapp",
+				"beelink/views/layouts/webapp.html.php"
+			],
+			[
+				"webfr",
+				"beelink/webroot/js/webfront/webfront.js"
+			],
+			[
+				"sessions/",
+				"beelink/views/sessions/home.html.php"
+			],
+			[
+				"webfront",
+				"beelink/views/layouts/webfront.html.php"
+			],
+			[
+				"bootstrap.css",
+				"beelink/webroot/css/libs/bootstrap.css"
+			],
+			[
+				"usersro",
+				"beelink/webroot/js/webapp/routers/UsersRouter.js"
+			],
+			[
+				"backups",
+				"beelink/controllers/BackupsController.php"
+			],
+			[
+				"sessions",
+				"beelink/webroot/js/mobile/controller/Sessions.js"
+			],
+			[
+				"phonegap",
+				"beelink/webroot/js/libs/phonegap-1.4.1-ios.js"
+			],
+			[
+				"sessio",
+				"beelink/controllers/SessionsController.php"
+			],
+			[
+				"backupform",
+				"beelink/webroot/js/mobile/view/backup/BackupForm.js"
+			],
+			[
+				"networkshow",
+				"beelink/webroot/js/mobile/view/network/NetworkShowPendingSource.js"
+			],
+			[
+				"networklist",
+				"beelink/webroot/js/mobile/view/network/NetworkList.js"
+			],
+			[
+				"button",
+				"beelink/webroot/css/mobile/button.less"
+			],
+			[
+				"contactproxy",
+				"beelink/webroot/js/mobile/model/proxy/ContactProxy.js"
+			],
+			[
+				"sessions.js",
+				"beelink/webroot/js/mobile/controller/Sessions.js"
+			],
+			[
+				"use",
+				"beelink/controllers/UsersController.php"
+			],
+			[
+				"core.les",
+				"beelink/webroot/css/webapp/core.less"
+			],
+			[
+				"cardcontainer",
+				"beelink/webroot/js/webapp/views/CardContainer.js"
+			],
+			[
+				"core.less",
+				"beelink/webroot/css/webapp/core.less"
+			],
+			[
+				"sessi",
+				"beelink/config/bootstrap/session.php"
+			],
+			[
+				"backbone",
+				"beelink/webroot/js/libs/backbone.js"
+			],
+			[
+				"session",
+				"beelink/controllers/SessionsController.php"
+			],
+			[
+				"cardfor",
+				"beelink/webroot/js/webapp/views/CardForm.js"
+			],
+			[
+				"cardfrom",
+				"beelink/libraries/_source/swiftmailer/test-suite/lib/simpletest/docs/source/fr/overview.xml"
+			],
+			[
+				"formhelper",
+				"libraries/Cake/View/Helper/FormHelper.php"
+			],
+			[
+				"phonenu",
+				"beelink/views/elements/templates/phoneNumber.html.php"
+			],
+			[
+				"field",
+				"beelink/webroot/js/webapp/extensions/form/FieldGroup.js"
+			],
+			[
+				"email",
+				"beelink/webroot/js/webapp/extensions/field/Email.js"
+			],
+			[
+				"phonenumb",
+				"beelink/views/elements/templates/phoneNumber.html.php"
+			],
+			[
+				"phonenum",
+				"beelink/webroot/js/webapp/extensions/field/PhoneNumber.js"
+			],
+			[
+				"fieldgrou",
+				"beelink/webroot/js/webapp/extensions/form/FieldGroup.js"
+			],
+			[
+				"desk",
+				"beelink/views/layouts/desktop.html.bak.php"
+			],
+			[
+				"backbon",
+				"beelink/webroot/js/libs/backbone.js"
+			],
+			[
+				"sess",
+				"beelink/controllers/SessionsController.php"
+			],
+			[
+				"pages",
+				"beelink/controllers/PagesController.php"
+			],
+			[
+				"senc",
+				"beelink/views/layouts/sencha.html.php"
+			],
+			[
+				"form",
+				"libraries/lithium/template/helper/Form.php"
+			],
+			[
+				"html",
+				"beelink/extensions/helper/Html.php"
+			],
+			[
+				"add",
+				"beelink/views/sessions/add.html.php"
+			],
+			[
+				"controller",
+				"libraries/lithium/action/Controller.php"
+			],
+			[
+				"add.",
+				"beelink/views/posts/add.html.php"
+			],
+			[
+				"dispatch",
+				"libraries/lithium/action/DispatchException.php"
+			],
+			[
+				"inflec",
+				"libraries/lithium/util/Inflector.php"
+			],
+			[
+				"core.",
+				"beelink/webroot/js/desktop/core.js"
+			],
+			[
+				"core.js",
+				"beelink/webroot/js/desktop/core.js"
+			],
+			[
+				"form.php",
+				"libraries/lithium/template/helper/Form.php"
+			],
+			[
+				"htmlhelp",
+				"libraries/lithium/template/helper/Html.php"
+			],
+			[
+				"butt",
+				"beelink/webroot/css/mobile/button.less"
+			],
+			[
+				"locale",
+				"beelink/webroot/js/mobile/lib/i18n/Locale.js"
+			],
+			[
+				"contactpro",
+				"beelink/webroot/js/mobile/model/proxy/ContactProxy.js"
+			],
+			[
+				"cards",
+				"beelink/webroot/js/mobile/view/card/CardEditForm.js"
+			],
+			[
+				"backupfo",
+				"beelink/webroot/js/mobile/view/backup/BackupForm.js"
+			],
+			[
+				"users",
+				"beelink/controllers/UsersController.php"
+			],
+			[
+				"backups.js",
+				"beelink/webroot/js/mobile/controller/Backups.js"
+			],
+			[
+				"phonega",
+				"beelink/webroot/js/mobile/lib/PhonegapPicker.js"
+			],
+			[
+				"backupfor",
+				"beelink/webroot/js/mobile/view/backup/BackupForm.js"
+			],
+			[
+				"app",
+				"beelink/webroot/js/mobile/app.js"
+			],
+			[
+				"backup",
+				"beelink/controllers/BackupsController.php"
+			],
+			[
+				"local",
+				"beelink/webroot/js/mobile/lib/i18n/Locale.js"
+			],
+			[
+				"logi",
+				"beelink/webroot/js/sencha/view/Login.js"
+			],
+			[
+				"backupf",
+				"beelink/webroot/js/mobile/view/backup/BackupForm.js"
+			],
+			[
+				"phone",
+				"beelink/webroot/js/mobile/lib/PhonegapPicker.js"
+			],
+			[
+				"butto",
+				"beelink/webroot/css/mobile/button.less"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/olivier/Dropbox/Sites/beelink/beelink/beelink.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 271.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
