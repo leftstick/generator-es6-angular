@@ -4,14 +4,22 @@ var gulp = require('gulp');
 var gutil = require('gulp-util');
 var webpack = require('webpack');
 
-gulp.task('webpack', function(callback) {
+gulp.task('release', function(callback) {
+    var path = require('path');
     var config = require('./webpack.config');
     var myConfig = Object.create(config);
+
+    myConfig.output.path = path.resolve(__dirname, 'build');
     myConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
         compress: {
             warnings: false
         }
     }));
+
+    gulp.src(['etc/*', 'img/*', 'mock/*', 'favicon.ico', 'index.html'], {
+            'base': '.'
+        })
+        .pipe(gulp.dest('build/'));
 
     webpack(myConfig, function(err, stats) {
         if (err) {
