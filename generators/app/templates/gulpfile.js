@@ -9,6 +9,8 @@ gulp.task('release', function(callback) {
     var config = require('./webpack.config');
     var myConfig = Object.create(config);
 
+    require('rimraf').sync('build/');
+
     myConfig.output.path = path.resolve(__dirname, 'build');
     myConfig.plugins.push(new webpack.optimize.UglifyJsPlugin({
         compress: {
