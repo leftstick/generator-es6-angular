@@ -1,6 +1,6 @@
 <div class="container" role="main">
 
-    <div class="jumbotron" style="height: 200px; padding: 10px 60px;">
+    <div class="jumbotron" style="padding: 10px 60px;">
         <h1>Code Example</h1>
         <p>Following demos might help you developing your own app, Feel free to register <a href="https://github.com/leftstick/generator-es6-angular/issues" target="_blank">issue</a> while encountering problems, Or send me e-mail(<a href="mailto:leftstick@qq.com">leftstick@qq.com</a>)</p>
     </div>
@@ -10,23 +10,32 @@
             <div class="page-header">
                 <h1>noty usage</h1>
             </div>
-            <p>
+            <div class="">
                 <button type="button" class="btn btn-success" ng-click="showSuccessNoty()">Success</button>
                 <button type="button" class="btn btn-info" ng-click="showInfoNoty()">Information</button>
                 <button type="button" class="btn btn-danger" ng-click="showErrorNoty()">Failure</button>
-            </p>
+            </div>
         </div>
 
         <div class="col-xs-12 col-sm-6">
             <div class="page-header">
                 <h1>modal usage</h1>
             </div>
-            <p>
+            <div class="hidden-xs" role="group">
                 <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
                 <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
                 <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
                 <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
-            </p>
+            </div>
+            <div class="visible-xs" role="group" style="margin-bottom: 15px;">
+                <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
+                <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="visible-xs" role="group">
+                <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
+                <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
+            </div>
         </div>
     </div>
 

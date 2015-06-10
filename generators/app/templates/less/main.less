@@ -4,12 +4,21 @@
 @import "./datapicker";
 @import "./footer";
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+html,
+body{
+    height: 100%;
 }
 
-.main {
-    flex: 1 0 auto;
+body{
+    min-height: 100vh;
+}
+
+div[ng-view]{
+    min-height: 100%;
+    padding-top: 65px;
+    padding-bottom: 45px;
+    margin-bottom: -45px;
+    > .container{
+        min-height: 100%;
+    }
 }
