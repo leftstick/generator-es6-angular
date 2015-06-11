@@ -62,7 +62,7 @@ Open [http://localhost:8080](http://localhost:8080) to watch the released versio
 
 1. [yeoman](http://yeoman.io/)
 2. [gulp](http://gulpjs.com/)
-3. [es6-features]https://github.com/lukehoban/es6features)
+3. [es6-features](https://github.com/lukehoban/es6features)
 4. [angular](https://angularjs.org/)
 
 
