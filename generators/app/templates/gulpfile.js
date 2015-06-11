@@ -19,8 +19,8 @@ gulp.task('release', function(callback) {
     }));
 
     gulp.src(['etc/*', 'img/*', 'mock/*', 'favicon.ico', 'index.html'], {
-            'base': '.'
-        })
+        'base': '.'
+    })
         .pipe(gulp.dest('build/'));
 
     webpack(myConfig, function(err, stats) {
@@ -40,14 +40,16 @@ gulp.task('dev', function(callback) {
     myConfig.devtool = 'sourcemap';
     myConfig.debug = true;
 
-    new WebpackDevServer(webpack(myConfig)).listen(8080, 'localhost', function(err) {
+    new WebpackDevServer(webpack(myConfig), {
+        historyApiFallback: true
+    }).listen(8080, 'localhost', function(err) {
         if (err) {
             throw new gutil.PluginError('webpack-dev-server', err);
         }
         // Server listening
         gutil.log('[webpack-dev-server]', 'http://localhost:8080/webpack-dev-server/index.html');
 
-        // keep the server alive or continue?
-        // callback();
+    // keep the server alive or continue?
+    // callback();
     });
 });
