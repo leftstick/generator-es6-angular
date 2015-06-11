@@ -62,8 +62,15 @@ Open [http://localhost:8080](http://localhost:8080) to watch the released versio
 
 1. [yeoman](http://yeoman.io/)
 2. [gulp](http://gulpjs.com/)
-3. [es6-features](https://github.com/lukehoban/es6features)
-4. [angular](https://angularjs.org/)
+3. [webpack](http://webpack.github.io/)
+4. [es6-features](https://github.com/lukehoban/es6features)
+5. [jquery](http://jquery.com/)
+6. [angular](https://angularjs.org/)
+7. [Bootstrap](http://getbootstrap.com/)
+8. [angular-strap](http://mgcrea.github.io/angular-strap/)
+9. [fontawesome](http://fontawesome.io/)
+10. [angular-smart-table](http://lorenzofox3.github.io/smart-table-website/)
+11. [noty](http://ned.im/noty/)
 
 
 ## LICENSE ##
