@@ -56,6 +56,11 @@ var gen = generators.Base.extend({
             name: 'pushState',
             message: 'Use html5 mode?',
             default: true
+        }, {
+            type: 'list',
+            name: 'registry',
+            message: 'Which registry would you use?',
+            choices: ['https://registry.npm.taobao.org', 'https://registry.npmjs.org']
         }], function(answers) {
             require('date-util');
             this.answers = answers;
@@ -102,7 +107,9 @@ var gen = generators.Base.extend({
         self.copy(self.templatePath('webpack.config.js'), self.destinationPath('webpack.config.js'));
     },
     install: function() {
-        this.npmInstall();
+        this.npmInstall(undefined, {
+            registry: this.answers.registry
+        });
     },
     end: function() {
         this.log.ok('Project ' + this.answers.name + ' generated!!!');

@@ -9,7 +9,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname),
-        filename: '[name].bundle.js'
+        filename: '[name].bundle.js',
+        chunkFilename: '[id].bundle.js'
     },
     module: {
         loaders: [{
