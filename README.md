@@ -9,6 +9,8 @@ Yeoman generator for es6 based angular skeleton with webpack
 
 > You can view the online demo at: [http://leftstick.github.io/generator-es6-angular](http://leftstick.github.io/generator-es6-angular)
 
+> You can checkout the brief introduction of this skeleton at: [introduction-es6-angular](http://leftstick.github.io/introduction-es6-angular/)
+
 
 ## Prerequisites ##
 
