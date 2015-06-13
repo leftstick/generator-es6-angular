@@ -98,7 +98,7 @@ var gen = generators.Base.extend({
         });
         self.directory(self.templatePath('less'), self.destinationPath('less'));
         self.directory(self.templatePath('mock'), self.destinationPath('mock'));
-        self.copy(self.templatePath('.jshintrc'), self.destinationPath('.jshintrc'));
+        self.copy(self.templatePath('jshintrc'), self.destinationPath('.jshintrc'));
         self.copy(self.templatePath('favicon.ico'), self.destinationPath('favicon.ico'));
         self.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
         self.copy(self.templatePath('gulpfile.js'), self.destinationPath('gulpfile.js'));
