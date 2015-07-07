@@ -6,7 +6,7 @@ var gen = generators.Base.extend({
     initializing: function() {
 
         try {
-            this.username = process.env['USER'] || process.env['USERPROFILE'].split(require('path').sep)[2];
+            this.username = process.env.USER || process.env.USERPROFILE.split(require('path').sep)[2];
         } catch (e) {
             this.username = '';
         }
@@ -15,59 +15,67 @@ var gen = generators.Base.extend({
         var done = this.async();
         var self = this;
 
-        this.prompt([{
-            type: 'input',
-            name: 'name',
-            message: 'Your project name',
-            validate: function(name) {
-                if (!name) {
-                    return 'Project name cannot be empty';
-                }
-                if (!/\w+/.test(name)) {
-                    return 'Project name should only consist of 0~9, a~z, A~Z, _, .';
-                }
+        this.prompt([
+            {
+                type: 'input',
+                name: 'name',
+                message: 'Your project name',
+                validate: function(name) {
+                    if (!name) {
+                        return 'Project name cannot be empty';
+                    }
+                    if (!/\w+/.test(name)) {
+                        return 'Project name should only consist of 0~9, a~z, A~Z, _, .';
+                    }
 
-                var fs = require('fs');
-                if (!fs.existsSync(self.destinationPath(name))) {
+                    var fs = require('fs');
+                    if (!fs.existsSync(self.destinationPath(name))) {
+                        return true;
+                    }
+                    if (require('fs').statSync(self.destinationPath(name)).isDirectory()) {
+                        return 'Project already exist';
+                    }
                     return true;
                 }
-                if (require('fs').statSync(self.destinationPath(name)).isDirectory()) {
-                    return 'Project already exist';
-                }
-                return true;
+            },
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Your project description',
+                default: ''
+            },
+            {
+                type: 'input',
+                name: 'username',
+                message: 'Your name',
+                default: this.username
+            },
+            {
+                type: 'input',
+                name: 'email',
+                message: 'Your email',
+                default: ''
+            },
+            {
+                type: 'confirm',
+                name: 'pushState',
+                message: 'Use html5 mode?',
+                default: true
+            },
+            {
+                type: 'list',
+                name: 'registry',
+                message: 'Which registry would you use?',
+                choices: [
+                    'https://registry.npm.taobao.org',
+                    'https://registry.npmjs.org'
+                ]
             }
-        }, {
-            type: 'input',
-            name: 'description',
-            message: 'Your project description',
-            default: ''
-        }, {
-            type: 'input',
-            name: 'username',
-            message: 'Your name',
-            default: this.username
-        }, {
-            type: 'input',
-            name: 'email',
-            message: 'Your email',
-            default: ''
-        }, {
-            type: 'confirm',
-            name: 'pushState',
-            message: 'Use html5 mode?',
-            default: true
-        }, {
-            type: 'list',
-            name: 'registry',
-            message: 'Which registry would you use?',
-            choices: ['https://registry.npm.taobao.org', 'https://registry.npmjs.org']
-        }], function(answers) {
+        ], function(answers) {
             require('date-util');
             this.answers = answers;
             this.answers.date = new Date().format('mmm d, yyyy');
-            this.obj = {
-                answers: this.answers
-            };
+            this.obj = {answers: this.answers};
             done();
         }.bind(this));
     },
@@ -103,13 +111,11 @@ var gen = generators.Base.extend({
         self.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
         self.copy(self.templatePath('gulpfile.js'), self.destinationPath('gulpfile.js'));
         self.copy(self.templatePath('index.html'), self.destinationPath('index.html'));
-        self.fs.copyTpl(self.templatePath('package.json'), self.destinationPath('package.json'), self.obj);
+        self.fs.copyTpl(self.templatePath('package.json_vm'), self.destinationPath('package.json'), self.obj);
         self.copy(self.templatePath('webpack.config.js'), self.destinationPath('webpack.config.js'));
     },
     install: function() {
-        this.npmInstall(undefined, {
-            registry: this.answers.registry
-        });
+        this.npmInstall(undefined, {registry: this.answers.registry});
     },
     end: function() {
         this.log.ok('Project ' + this.answers.name + ' generated!!!');
