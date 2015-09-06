@@ -1,0 +1,62 @@
+[
+            {
+                "subjectId": 418,
+                "subjectName": "基因芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 417,
+                "subjectName": "大师芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 416,
+                "subjectName": "令过芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 415,
+                "subjectName": "更话芯片",
+                "indexDelta": 0.0453254
+            },
+            {
+                "subjectId": 414,
+                "subjectName": "动画芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 413,
+                "subjectName": "麻辣起片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 412,
+                "subjectName": "就花片",
+                "indexDelta": 0.0453254
+            },
+            {
+                "subjectId": 411,
+                "subjectName": "令过芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 410,
+                "subjectName": "更话芯片",
+                "indexDelta": 0.0453254
+            },
+            {
+                "subjectId": 409,
+                "subjectName": "动画芯片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 408,
+                "subjectName": "麻辣起片",
+                "indexDelta": -0.0453254
+            },
+            {
+                "subjectId": 407,
+                "subjectName": "就花片",
+                "indexDelta": 0.0453254
+            }
+        ]
