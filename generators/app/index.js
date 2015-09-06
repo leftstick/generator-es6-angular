@@ -98,7 +98,7 @@ var gen = generators.Base.extend({
         var _ = require('lodash');
 
         self.fs.copyTpl(self.templatePath('etc/config.js'), self.destinationPath('etc/config.js'), self.obj);
-        self.copy(self.templatePath('img/logo.png'), self.destinationPath('img/logo.png'));
+        self.directory(self.templatePath('img'), self.destinationPath('img'));
         self.directory(self.templatePath('js'), self.destinationPath('js'), function(body) {
             return _.template(body, {
                 interpolate: /<%=([\s\S]+?)%>/g
@@ -106,8 +106,6 @@ var gen = generators.Base.extend({
         });
         self.directory(self.templatePath('less'), self.destinationPath('less'));
         self.directory(self.templatePath('mock'), self.destinationPath('mock'));
-        self.copy(self.templatePath('jshintrc'), self.destinationPath('.jshintrc'));
-        self.copy(self.templatePath('favicon.ico'), self.destinationPath('favicon.ico'));
         self.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
         self.copy(self.templatePath('gulpfile.js'), self.destinationPath('gulpfile.js'));
         self.copy(self.templatePath('index.html'), self.destinationPath('index.html'));
@@ -115,7 +113,9 @@ var gen = generators.Base.extend({
         self.copy(self.templatePath('webpack.config.js'), self.destinationPath('webpack.config.js'));
     },
     install: function() {
-        this.npmInstall(undefined, {registry: this.answers.registry});
+        this.npmInstall(undefined, {
+            registry: this.answers.registry
+        });
     },
     end: function() {
         this.log.ok('Project ' + this.answers.name + ' generated!!!');

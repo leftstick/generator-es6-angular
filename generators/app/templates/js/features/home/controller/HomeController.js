@@ -71,7 +71,7 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
             scope: $scope,
             title: 'It\'s custom dialog',
             animation: 'am-fade-and-slide-top',
-            template: 'customTpl'
+            templateUrl: 'customTpl'
         });
     };
 
@@ -90,9 +90,7 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
             $scope.menus = data;
         });
 
-    $scope.button = {
-        radio: 'right'
-    };
+    $scope.button = {radio: 'right'};
 
     HomeService.getDropdown()
         .success(function(data) {
@@ -106,9 +104,7 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
         }
         tab.active = true;
         _.chain($scope.tabs)
-            .reject({
-                name: tab.name
-            })
+            .reject({name: tab.name})
             .each(function(t) {
                 t.active = false;
             });
@@ -117,4 +113,11 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
     $scope.$on('$destroy', function() {});
 };
 
-export default ['$scope', 'events', 'utils', 'HomeService', '$alert', HomeController];
+export default [
+    '$scope',
+    'events',
+    'utils',
+    'HomeService',
+    '$alert',
+    HomeController
+];

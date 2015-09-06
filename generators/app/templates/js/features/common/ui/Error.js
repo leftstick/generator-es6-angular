@@ -17,36 +17,42 @@ class Feature extends FeatureBase {
     }
 
     run() {
-        this.mod.run(['events', '$timeout', '$rootScope', '$templateCache', function(events, $timeout, $rootScope, $templateCache) {
-            $templateCache.put('errorTpl', tpl);
+        this.mod.run([
+            'events',
+            '$timeout',
+            '$rootScope',
+            '$templateCache',
+            function(events, $timeout, $rootScope, $templateCache) {
+                $templateCache.put('errorTpl', tpl);
 
-            events.on('error', function(opts) {
-                if (!opts) {
-                    return;
-                }
-
-                var scope = $rootScope.$new();
-
-                scope.close = function($hide) {
-                    $hide();
-                    if (angular.isFunction(opts.onClose)) {
-                        opts.onClose();
+                events.on('error', function(opts) {
+                    if (!opts) {
+                        return;
                     }
-                };
 
-                $timeout(function() {
-                    events.emit('modal', {
-                        scope: scope,
-                        title: 'Exception',
-                        backdrop: 'static',
-                        content: opts.content,
-                        animation: 'am-fade-and-slide-top',
-                        template: 'errorTpl'
-                    });
-                }, 0);
-            });
+                    var scope = $rootScope.$new();
 
-        }]);
+                    scope.close = function($hide) {
+                        $hide();
+                        if (angular.isFunction(opts.onClose)) {
+                            opts.onClose();
+                        }
+                    };
+
+                    $timeout(function() {
+                        events.emit('modal', {
+                            scope: scope,
+                            title: 'Exception',
+                            backdrop: 'static',
+                            content: opts.content,
+                            animation: 'am-fade-and-slide-top',
+                            templateUrl: 'errorTpl'
+                        });
+                    }, 0);
+                });
+
+            }
+        ]);
     }
 }
 

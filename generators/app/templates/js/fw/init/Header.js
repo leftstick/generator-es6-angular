@@ -42,17 +42,12 @@ class Initializer extends InitBase {
             href: '/' + (this.config.base ? this.config.base + '/' : '')
         });
 
-        this.meta({
-            'charset': 'utf-8'
-        });
+        this.meta({'charset': 'utf-8'});
         this.meta({
             'name': 'viewport',
             'content': 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.0, user-scalable=yes, minimal-ui'
         });
-        this.meta({
-            'name': 'renderer',
-            'content': 'webkit'
-        });
+        this.meta({'name': 'renderer', 'content': 'webkit'});
         this.meta({
             'http-equiv': 'X-UA-Compatible',
             'content': 'IE=edge,chrome=1'
