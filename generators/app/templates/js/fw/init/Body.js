@@ -7,12 +7,12 @@
  *
  */
 'use strict';
-import InitBase from 'InitBase';
-import $ from 'jquery';
+import InitBase from 'lib/InitBase';
+import angular from 'angular';
 
 class Initializer extends InitBase {
     run() {
-        $('body').append('<div ng-view autoscroll="true"></div>');
+        angular.element(document.body).append('<div ng-view autoscroll="true" class="main"></div>');
     }
 }
 

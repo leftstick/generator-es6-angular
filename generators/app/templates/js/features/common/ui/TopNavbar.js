@@ -6,8 +6,8 @@
  *
  */
 'use strict';
-import $ from 'jquery';
-import FeatureBase from 'FeatureBase';
+import angular from 'angular';
+import FeatureBase from 'lib/FeatureBase';
 import tpl from './TopNavbar.html';
 import asideTpl from './Aside.html';
 
@@ -15,7 +15,7 @@ class Feature extends FeatureBase {
 
     constructor() {
         super('TopnavModule');
-        this.$body = $('body');
+        this.$body = angular.element(document.body);
     }
 
     beforeStart() {
@@ -23,10 +23,15 @@ class Feature extends FeatureBase {
     }
 
     run() {
-        this.mod.run(['$templateCache', function($templateCache) {
-            $templateCache.put('aside', asideTpl);
-        }]);
-        this.mod.controller('HeaderCtrl', [function() {}]);
+        this.mod.run([
+            '$templateCache',
+            function($templateCache) {
+                $templateCache.put('aside', asideTpl);
+            }
+        ]);
+        this.mod.controller('HeaderCtrl', [
+            function() {}
+        ]);
     }
 }
 

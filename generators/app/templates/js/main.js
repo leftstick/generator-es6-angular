@@ -8,13 +8,12 @@
 'use strict';
 
 import _ from 'lodash';
-import 'jquery';
 import angular from 'angular';
-import Initializers from './fw/init/main';
-import Extensions from './fw/ext/main';
-import Configurators from './fw/config/main';
-import Services from './fw/service/main';
-import Features from './features/main';
+import Initializers from 'init/main';
+import Extensions from 'ext/main';
+import Configurators from 'config/main';
+import Services from 'service/main';
+import Features from 'features/main';
 import Splash from 'splash-screen';
 
 class App {

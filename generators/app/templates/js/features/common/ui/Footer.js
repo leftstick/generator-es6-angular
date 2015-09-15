@@ -6,8 +6,8 @@
  *
  */
 'use strict';
-import FeatureBase from 'FeatureBase';
-import $ from 'jquery';
+import FeatureBase from 'lib/FeatureBase';
+import angular from 'angular';
 import tpl from './Footer.html';
 
 class Feature extends FeatureBase {
@@ -15,7 +15,7 @@ class Feature extends FeatureBase {
     constructor() {
         super('FooterModule');
         this.config = __config;
-        this.$body = $('body');
+        this.$body = angular.element(document.body);
     }
 
     beforeStart() {
@@ -24,9 +24,12 @@ class Feature extends FeatureBase {
 
     run() {
         var self = this;
-        this.mod.controller('FooterCtrl', ['$scope', function($scope) {
-            $scope.config = self.config;
-        }]);
+        this.mod.controller('FooterCtrl', [
+            '$scope',
+            function($scope) {
+                $scope.config = self.config;
+            }
+        ]);
     }
 }
 

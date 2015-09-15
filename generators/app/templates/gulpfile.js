@@ -9,26 +9,15 @@ gulp.task('release', function(callback) {
     var replace = require('gulp-replace');
     var config = require('./webpack.config');
 
-    config.output.filename = '[hash].[name].bundle.js';
-    config.output.chunkFilename = '[hash].[id].bundle.js';
-    config.plugins.pop();
-    config.plugins.push(new webpack.optimize.CommonsChunkPlugin('[hash].common.bundle.js'));
-
     require('rimraf').sync('build/');
 
-    config.output.path = path.resolve(__dirname, 'build');
     config.plugins.push(new webpack.optimize.UglifyJsPlugin({
         compress: {
             warnings: false
         }
     }));
 
-    gulp.src([
-        'etc/*',
-        'img/*',
-        'mock/*',
-        'favicon.ico'
-    ], {'base': '.'})
+    gulp.src(['etc/*', 'img/*', 'mock/*'], {'base': '.'})
         .pipe(gulp.dest('build/'));
 
     webpack(config, function(err, stats) {
@@ -50,9 +39,15 @@ gulp.task('dev', function(callback) {
     var config = require('./webpack.config');
     config.devtool = 'sourcemap';
     config.debug = true;
+    config.output.filename = config.output.filename.replace(/\[hash\]\./, '');
+    config.output.chunkFilename = config.output.chunkFilename.replace(/\[hash\]\./, '');
+
+    config.plugins.pop();
+    config.plugins.push(new webpack.optimize.CommonsChunkPlugin('common.bundle.js'));
 
     new WebpackDevServer(webpack(config), {
-        historyApiFallback: true
+        historyApiFallback: true,
+        publicPath: '/js/'
     }).listen(8080, 'localhost', function(err) {
         if (err) {
             throw new gutil.PluginError('webpack-dev-server', err);

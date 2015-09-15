@@ -15,16 +15,7 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
     $scope.$alert = $alert;
 
     var noty = function(type, msg) {
-        events.emit('alert', {
-            type: type,
-            message: msg,
-            onShow: function() {
-                console.log('displaying');
-            },
-            onClose: function() {
-                console.log('closed');
-            }
-        });
+        events.emit('alert', {type: type, message: msg});
     };
 
     $scope.showSuccessNoty = function() {

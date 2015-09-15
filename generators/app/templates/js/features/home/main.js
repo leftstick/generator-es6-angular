@@ -10,7 +10,7 @@
  */
 'use strict';
 
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
 import HomeController from './controller/HomeController';
 import HomeService from './service/HomeService';
@@ -26,9 +26,12 @@ class Feature extends FeatureBase {
     run() {
         this.mod.controller('HomeController', HomeController);
         this.mod.service('HomeService', HomeService);
-        this.mod.run(['$templateCache', function($templateCache) {
-            $templateCache.put('customTpl', customTpl);
-        }]);
+        this.mod.run([
+            '$templateCache',
+            function($templateCache) {
+                $templateCache.put('customTpl', customTpl);
+            }
+        ]);
     }
 }
 

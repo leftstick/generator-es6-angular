@@ -10,7 +10,7 @@
  */
 'use strict';
 
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
 import AboutController from './controller/AboutController';
 import AboutService from './service/AboutService';

@@ -8,19 +8,21 @@
  */
 'use strict';
 import _ from 'lodash';
-import $ from 'jquery';
-import FeatureBase from 'FeatureBase';
+import angular from 'angular';
+import FeatureBase from 'lib/FeatureBase';
 
 class Feature extends FeatureBase {
 
     constructor() {
         super('RouteIndicator');
-        this.$body = $('body');
+        this.$body = angular.element(document.body);
     }
 
     run() {
         var self = this;
-        this.mod.run(['$rootScope', 'Routes',
+        this.mod.run([
+            '$rootScope',
+            'Routes',
             function($rootScope, Routes) {
                 var classes = _.pluck(Routes, 'id').join(' ');
                 $rootScope.$on('$routeChangeSuccess', function(e, route) {

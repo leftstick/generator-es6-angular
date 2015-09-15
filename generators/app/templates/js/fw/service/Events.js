@@ -9,7 +9,7 @@
  *
  */
 'use strict';
-import ServiceBase from 'ServiceBase';
+import ServiceBase from 'lib/ServiceBase';
 import _ from 'lodash';
 import angular from 'angular';
 
@@ -19,35 +19,38 @@ class Service extends ServiceBase {
     }
 
     run() {
-        this.app.factory('events', ['$rootScope', function($rootScope) {
-            var factory = {};
+        this.app.factory('events', [
+            '$rootScope',
+            function($rootScope) {
+                var factory = {};
 
-            var listeners = {};
+                var listeners = {};
 
-            factory.emit = function(eventName, data) {
-                if (!eventName) {
-                    return;
-                }
-                $rootScope.$broadcast(eventName, data);
-            };
+                factory.emit = function(eventName, data) {
+                    if (!eventName) {
+                        return;
+                    }
+                    $rootScope.$broadcast(eventName, data);
+                };
 
-            factory.on = function(eventName, callback) {
-                if (!listeners[eventName]) {
-                    listeners[eventName] = [];
-                    $rootScope.$on(eventName, function(event, data) {
-                        _.each(listeners[eventName], function(listener) {
-                            listener(data);
+                factory.on = function(eventName, callback) {
+                    if (!listeners[eventName]) {
+                        listeners[eventName] = [];
+                        $rootScope.$on(eventName, function(event, data) {
+                            _.each(listeners[eventName], function(listener) {
+                                listener(data);
+                            });
                         });
-                    });
 
-                }
-                if (angular.isFunction(callback)) {
-                    listeners[eventName].push(callback);
-                }
-            };
+                    }
+                    if (angular.isFunction(callback)) {
+                        listeners[eventName].push(callback);
+                    }
+                };
 
-            return factory;
-        }]);
+                return factory;
+            }
+        ]);
     }
 }
 

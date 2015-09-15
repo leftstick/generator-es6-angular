@@ -6,7 +6,7 @@
  *
  */
 'use strict';
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 import angular from 'angular';
 import tpl from './Info.html';
 

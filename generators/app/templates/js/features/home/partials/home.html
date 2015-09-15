@@ -1,8 +1,8 @@
 <div class="container" role="main">
 
     <div class="jumbotron" style="padding: 10px 60px;">
-        <h1>Code Example</h1>
-        <p>Following demos might help you developing your own app, Feel free to register <a href="https://github.com/leftstick/generator-es6-angular/issues" target="_blank">issue</a> while encountering problems, Or send me e-mail(<a href="mailto:leftstick@qq.com">leftstick@qq.com</a>)</p>
+        <h1>AMD AngularJS Skeleton</h1>
+        <p>This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register <a href="https://github.com/leftstick/generator-require-angular/issues" target="_blank">issue</a> while encountering problems, Or send me e-mail(<a href="mailto:leftstick@qq.com">leftstick@qq.com</a>)</p>
     </div>
 
     <div class="row">
@@ -10,31 +10,32 @@
             <div class="page-header">
                 <h1>noty usage</h1>
             </div>
-            <div class="">
+            <p>
                 <button type="button" class="btn btn-success" ng-click="showSuccessNoty()">Success</button>
                 <button type="button" class="btn btn-info" ng-click="showInfoNoty()">Information</button>
                 <button type="button" class="btn btn-danger" ng-click="showErrorNoty()">Failure</button>
-            </div>
+            </p>
         </div>
 
         <div class="col-xs-12 col-sm-6">
             <div class="page-header">
                 <h1>modal usage</h1>
             </div>
-            <div class="hidden-xs" role="group">
-                <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
-                <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
-                <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
-                <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
-            </div>
-            <div class="visible-xs" role="group" style="margin-bottom: 15px;">
-                <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
-                <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
-                <div style="clear: both;"></div>
-            </div>
-            <div class="visible-xs" role="group">
-                <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
-                <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
+            <div class="row">
+                <div class="col-sm-12 hidden-xs hidden-sm">
+                    <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
+                    <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
+                    <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
+                    <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg">
+                    <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
+                    <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
+                </div>
+                <div class="col-xs-12 hidden-md hidden-lg" style="margin-top: 10px;">
+                    <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
+                    <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
+                </div>
             </div>
         </div>
     </div>
@@ -70,7 +71,7 @@
                 <h1>Typeaheads usage</h1>
             </div>
             <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="fa fa-globe"></i>&nbsp;nations</span>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i>&nbsp;nations</span>
                 <input type="text" class="form-control" ng-model="selectedState" bs-options="state for state in states" placeholder="Typing nation" bs-typeahead>
             </div>
             <br/>
@@ -82,7 +83,7 @@
                 <h1>Datepickers usage</h1>
             </div>
             <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="fa fa-calendar"></i>&nbsp;Choose Date</span>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>&nbsp;Choose Date</span>
                 <input type="text" class="form-control" ng-model="selectedDate" data-trigger="focus" data-autoclose="true" bs-datepicker data-container="body">
             </div>
             <br/>
@@ -96,7 +97,7 @@
                 <h1>Select usage</h1>
             </div>
             <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="fa fa-bars"></i>&nbsp;Dropdown</span>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-menu-hamburger"></i>&nbsp;Dropdown</span>
                 <button type="button" class="btn btn-default" ng-model="selectedMenu" bs-options="menu.value as menu.label for menu in menus" bs-select>
                     Action <span class="caret"></span>
                 </button>

@@ -8,8 +8,13 @@
  */
 'use strict';
 import app from './AppConfig';
-import loading from './LoadingBarConfig';
+import notifier from './NotifierConfig';
 import router from './RouterConfig';
 import sso from './SSOConfig';
 
-export default [app, loading, router, sso];
+export default [
+    app,
+    notifier,
+    router,
+    sso
+];

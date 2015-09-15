@@ -9,7 +9,7 @@
  */
 'use strict';
 import _ from 'lodash';
-import ConfiguratorBase from 'ConfiguratorBase';
+import ConfiguratorBase from 'lib/ConfiguratorBase';
 
 class Configurator extends ConfiguratorBase {
     constructor(features, app) {

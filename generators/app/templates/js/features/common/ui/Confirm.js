@@ -6,7 +6,7 @@
  *
  */
 'use strict';
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 import tpl from './Confirm.html';
 
 class Feature extends FeatureBase {

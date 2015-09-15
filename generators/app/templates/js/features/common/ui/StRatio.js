@@ -7,7 +7,7 @@
  *
  **/
 'use strict';
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 
 class Feature extends FeatureBase {
 

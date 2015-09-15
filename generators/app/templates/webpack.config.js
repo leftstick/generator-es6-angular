@@ -8,41 +8,45 @@ module.exports = {
         index: './js/index.js'
     },
     output: {
-        path: path.resolve(__dirname),
-        filename: '[name].bundle.js',
-        chunkFilename: '[id].bundle.js'
+        path: path.resolve(__dirname, 'build', 'js'),
+        filename: '[hash].[name].bundle.js',
+        chunkFilename: '[hash].[id].bundle.js',
+        publicPath: 'js/'
     },
     module: {
-        loaders: [{
-            test: /\.css$/,
-            loader: 'style!css!autoprefixer?browsers=last 5 version!'
-        }, {
-            test: /\.less$/,
-            loader: 'style!css!autoprefixer?browsers=last 5 version!less!'
-        }, {
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: /(node_modules|bower_components)/
-        }, {
-            test: /\.json$/,
-            loader: 'json'
-        }, {
-            test: /\.(eot|svg|ttf|woff|woff2)\w*/,
-            loader: 'file'
-        }, {
-            test: /\.html$/,
-            loader: 'raw'
-        }]
+        loaders: [
+            {
+                test: /\.css$/,
+                loader: 'style!css!autoprefixer?browsers=last 5 version!'
+            },
+            {
+                test: /\.less$/,
+                loader: 'style!css!autoprefixer?browsers=last 5 version!less!'
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel',
+                exclude: /(node_modules|bower_components)/
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+                loader: 'file'
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw'
+            }
+        ]
     },
     resolve: {
-        root: [path.resolve(__dirname, 'js/fw/lib/'), path.resolve(__dirname, 'etc/')]
+        root: [
+            path.resolve(__dirname),
+            path.resolve(__dirname, 'js/'),
+            path.resolve(__dirname, 'js/fw/'),
+            path.resolve(__dirname, 'etc/')
+        ]
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-        }),
-        new webpack.optimize.CommonsChunkPlugin('common.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin('[hash].common.bundle.js')
     ]
 };

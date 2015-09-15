@@ -7,31 +7,31 @@
  *
  */
 'use strict';
-import InitBase from 'InitBase';
-import $ from 'jquery';
+import InitBase from 'lib/InitBase';
+import angular from 'angular';
 
 class Initializer extends InitBase {
     constructor(features, app) {
         super(features, app);
-        this.head = $(document.head);
+        this.head = angular.element(document.head);
         this.config = __config;
     }
 
     title(t) {
-        var title = $('<title></title>');
+        var title = angular.element('<title></title>');
         title.text(t);
         this.head.append(title);
     }
 
     base(attr) {
-        var base = $('<base>');
+        var base = angular.element('<base>');
         base.attr(attr);
         this.head.find('base').remove();
         this.head.append(base);
     }
 
     meta(attr) {
-        var meta = $('<meta>');
+        var meta = angular.element('<meta>');
         meta.attr(attr);
         this.head.append(meta);
     }

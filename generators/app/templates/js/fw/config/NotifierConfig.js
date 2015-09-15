@@ -1,5 +1,6 @@
 /**
- *  SSOConfig set authorised configuration.
+ *  NotifierConfig set angular-sweetnotifier needed configuration
+ *
  *
  *  @author  <%= answers.username %>
  *  @date    <%= answers.date %>
@@ -15,10 +16,10 @@ class Configurator extends ConfiguratorBase {
 
     run() {
         this.app.config([
-            '$httpProvider',
-            function($httpProvider) {
-                $httpProvider.defaults.headers.common.Accept = 'application/json;charset=utf-8';
-                $httpProvider.defaults.withCredentials = true;
+            'notifierProvider',
+            function(notifierProvider) {
+                notifierProvider.setPlacement('top', 'right');
+                notifierProvider.setUseNativeWhileBlur(true);
             }
         ]);
     }

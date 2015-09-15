@@ -6,7 +6,7 @@
  *
  */
 'use strict';
-import FeatureBase from 'FeatureBase';
+import FeatureBase from 'lib/FeatureBase';
 
 var defaults = {
     animation: 'am-fade',
@@ -31,15 +31,19 @@ class Feature extends FeatureBase {
     }
 
     run() {
-        this.mod.run(['events', '$modal', function(events, $modal) {
+        this.mod.run([
+            'events',
+            '$modal',
+            function(events, $modal) {
 
-            events.on('modal', function(opts) {
-                var options = _.defaults(opts, defaults);
-                options.title = opts.title;
-                $modal(options);
-            });
+                events.on('modal', function(opts) {
+                    var options = _.defaults(opts, defaults);
+                    options.title = opts.title;
+                    $modal(options);
+                });
 
-        }]);
+            }
+        ]);
     }
 }
 
