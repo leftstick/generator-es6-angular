@@ -2,15 +2,15 @@
  *
  *  config.js which contains the configuration of app, and it should never be cached
  *
- *  @author  haozuo
- *  @date    Sep 6, 2015
+ *  @author  Howard.Zuo
+ *  @date    Sep 15, 2015
  *
  **/
 (function(global) {
     'use strict';
 
     global.__config = {
-        'appname': 'hello',
+        'appname': 'es6-angular',
         'base': 'generator-es6-angular',
         'version': '1.0.0',
         'icp': 'ICP here',
