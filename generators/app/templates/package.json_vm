@@ -25,7 +25,7 @@
     "angular-route": "1.4.5",
     "angular-sanitize": "1.4.5",
     "angular-strap": "2.3.1",
-    "angular-sweetnotifier ": "2.0.3",
+    "angular-sweetnotifier": "2.0.3",
     "angular-theme-spinner": "1.2.2",
     "angular-smart-table": "2.1.3",
     "angular-motion": "0.4.2",
