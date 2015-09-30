@@ -18,6 +18,8 @@ Yeoman generator for es6 based angular skeleton with webpack
 2. Install [gulp](http://gulpjs.com/): `npm install -g gulp`
 3. Install __this__: `npm install -g generator-es6-angular`
 
+> prepend with `sudo` if you are running on `*nix` OS.
+
 ## Use `generator-es6-angular` ##
 
 `yo es6-angular`
