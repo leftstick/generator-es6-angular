@@ -60,7 +60,13 @@ class App {
     }
 
     destroySplash() {
+        var _this = this;
         Splash.destroy();
+        setTimeout(function() {
+            if (Splash.isRunning()) {
+                _this.destroySplash();
+            }
+        }, 100);
     }
 
     launch() {
