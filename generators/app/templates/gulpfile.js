@@ -11,12 +11,6 @@ gulp.task('release', function(callback) {
 
     require('rimraf').sync('build/');
 
-    config.plugins.push(new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        }
-    }));
-
     gulp.src(['etc/*', 'img/*', 'mock/*'], {'base': '.'})
         .pipe(gulp.dest('build/'));
 

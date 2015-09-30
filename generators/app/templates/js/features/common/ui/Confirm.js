@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 import FeatureBase from 'lib/FeatureBase';
 import tpl from './Confirm.html';
 

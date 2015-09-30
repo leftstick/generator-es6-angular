@@ -5,11 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
-/**
- * @constructor
- */
 var HomeService = function($http, utils) {
 
     this.getStates = function() {

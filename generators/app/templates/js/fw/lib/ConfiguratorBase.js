@@ -6,8 +6,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
 class ConfiguratorBase {
 
     constructor(features, app) {

@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 import angular from 'angular';
 import FeatureBase from 'lib/FeatureBase';
 import tpl from './TopNavbar.html';

@@ -5,11 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
-/**
- * @constructor
- */
 var AboutService = function($http, utils) {
 
     this.getDemoList = function() {

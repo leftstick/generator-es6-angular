@@ -5,11 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
-/**
- * @constructor
- */
 var HomeController = function($scope, events, utils, HomeService, $alert) {
 
     $scope.$alert = $alert;

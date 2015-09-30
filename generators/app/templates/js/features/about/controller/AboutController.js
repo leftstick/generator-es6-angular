@@ -5,11 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
-/**
- * @constructor
- */
 var AboutController = function($scope, AboutService, events) {
 
     $scope.showSpinner = true;
@@ -20,12 +15,15 @@ var AboutController = function($scope, AboutService, events) {
             $scope.originDemolist = data;
             $scope.demolist = [].concat($scope.originDemolist);
         }).error(function(err) {
-            events.emit('error', {
-                content: err
-            });
-        });
+        events.emit('error', {content: err});
+    });
 
     $scope.$on('$destroy', function() {});
 };
 
-export default ['$scope', 'AboutService', 'events', AboutController];
+export default [
+    '$scope',
+    'AboutService',
+    'events',
+    AboutController
+];

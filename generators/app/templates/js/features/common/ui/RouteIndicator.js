@@ -6,7 +6,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 import _ from 'lodash';
 import angular from 'angular';
 import FeatureBase from 'lib/FeatureBase';

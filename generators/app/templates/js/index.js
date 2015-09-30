@@ -5,8 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
 require.ensure([], function() {
 
     require('splash-screen/splash.min.css');

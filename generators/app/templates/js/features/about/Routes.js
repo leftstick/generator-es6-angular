@@ -6,14 +6,14 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
 import tpl from './partials/about.html';
 
-export default [{
-    id: 'about',
-    isDefault: false,
-    when: '/about',
-    controller: 'AboutController',
-    template: tpl
-}];
+export default [
+    {
+        id: 'about',
+        isDefault: false,
+        when: '/about',
+        controller: 'AboutController',
+        template: tpl
+    }
+];

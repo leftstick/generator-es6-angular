@@ -5,8 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-
 import _ from 'lodash';
 import angular from 'angular';
 import Initializers from 'init/main';
