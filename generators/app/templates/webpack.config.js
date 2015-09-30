@@ -40,8 +40,7 @@ module.exports = {
         root: [
             path.resolve(__dirname),
             path.resolve(__dirname, 'js/'),
-            path.resolve(__dirname, 'js/fw/'),
-            path.resolve(__dirname, 'etc/')
+            path.resolve(__dirname, 'js/fw/')
         ]
     },
     plugins: [
