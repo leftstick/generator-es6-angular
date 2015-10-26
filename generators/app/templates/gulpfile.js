@@ -7,7 +7,7 @@ var webpack = require('webpack');
 gulp.task('release', function(callback) {
     var path = require('path');
     var replace = require('gulp-replace');
-    var config = require('./webpack.config');
+    var config = require('./webpack.config.prod');
 
     require('rimraf').sync('build/');
 
@@ -30,14 +30,7 @@ gulp.task('release', function(callback) {
 
 gulp.task('dev', function(callback) {
     var WebpackDevServer = require('webpack-dev-server');
-    var config = require('./webpack.config');
-    config.devtool = 'sourcemap';
-    config.debug = true;
-    config.output.filename = config.output.filename.replace(/\[hash\]\./, '');
-    config.output.chunkFilename = config.output.chunkFilename.replace(/\[hash\]\./, '');
-
-    config.plugins.pop();
-    config.plugins.push(new webpack.optimize.CommonsChunkPlugin('common.bundle.js'));
+    var config = require('./webpack.config.dev');
 
     new WebpackDevServer(webpack(config), {
         historyApiFallback: true,
