@@ -21,11 +21,33 @@ describe('Testing HomeService', function() {
         expect(HomeService).not.to.equal(null);
     }));
 
-    it('service respond data should be returned', inject(function($httpBackend, HomeService) {
+    it('service /states respond data should be returned', inject(function($httpBackend, HomeService) {
         $httpBackend.when('GET', '/states')
             .respond({'title': 'corrent title'});
         var data;
         HomeService.getStates().success(function(d) {
+            data = d;
+        });
+        $httpBackend.flush();
+        expect(data.title).to.equal('corrent title');
+    }));
+
+    it('service /menus respond data should be returned', inject(function($httpBackend, HomeService) {
+        $httpBackend.when('GET', '/menus')
+            .respond({'title': 'corrent title'});
+        var data;
+        HomeService.getMenus().success(function(d) {
+            data = d;
+        });
+        $httpBackend.flush();
+        expect(data.title).to.equal('corrent title');
+    }));
+
+    it('service /dropdown respond data should be returned', inject(function($httpBackend, HomeService) {
+        $httpBackend.when('GET', '/dropdown')
+            .respond({'title': 'corrent title'});
+        var data;
+        HomeService.getDropdown().success(function(d) {
             data = d;
         });
         $httpBackend.flush();
