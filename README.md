@@ -60,6 +60,15 @@ Run `sero server -r . -p 8080`, a static web server launched at port 8080.
 Open [http://localhost:8080](http://localhost:8080) to watch the released version.
 
 
+## Execute unit-test ##
+
+Move the root of the created project.
+
+Run `gulp test` to execute all unit-test cases.
+
+> I've only implemented few references, if you'd like to write more unit-test cases, follow the reference would be a good idea
+
+
 ## References ##
 
 1. [yeoman](http://yeoman.io/)
@@ -71,6 +80,9 @@ Open [http://localhost:8080](http://localhost:8080) to watch the released versio
 7. [angular-strap](http://mgcrea.github.io/angular-strap/)
 8. [angular-smart-table](http://lorenzofox3.github.io/smart-table-website/)
 9. [angular-sweetnotifier](https://github.com/leftstick/angular-sweetnotifier)
+10. [karma](http://karma-runner.github.io/0.13/index.html)
+11. [mocha](https://mochajs.org/)
+12. [chai](http://chaijs.com/)
 
 
 ## LICENSE ##

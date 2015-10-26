@@ -1,6 +1,6 @@
 {
   "name": "generator-es6-angular",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "generator-es6-angular",
   "repository": {
     "type": "git",
@@ -21,6 +21,6 @@
   "dependencies": {
     "date-util": "^1.2.1",
     "lodash": "^3.10.1",
-    "yeoman-generator": "^0.20.3"
+    "yeoman-generator": "^0.21.1"
   }
 }
