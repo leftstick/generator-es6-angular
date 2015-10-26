@@ -6,6 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import angular from 'angular';
 
 class FeatureBase {

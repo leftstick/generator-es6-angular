@@ -8,7 +8,7 @@
 var AboutService = function($http, utils) {
 
     this.getDemoList = function() {
-        return $http.get(utils.getapi('/demolist'));
+        return $http.get(utils.getApi('/demolist'));
     };
 
 };

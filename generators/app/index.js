@@ -106,10 +106,17 @@ var gen = generators.Base.extend({
         });
         self.directory(self.templatePath('less'), self.destinationPath('less'));
         self.directory(self.templatePath('mock'), self.destinationPath('mock'));
+        self.directory(self.templatePath('test'), self.destinationPath('test'), function(body) {
+            return _.template(body, {
+                interpolate: /<%=([\s\S]+?)%>/g
+            })(self.obj);
+        });
         self.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
         self.copy(self.templatePath('gulpfile.js'), self.destinationPath('gulpfile.js'));
         self.copy(self.templatePath('index.html'), self.destinationPath('index.html'));
         self.fs.copyTpl(self.templatePath('package.json_vm'), self.destinationPath('package.json'), self.obj);
+        self.copy(self.templatePath('karma.conf.js'), self.destinationPath('karma.conf.js'));
+        self.copy(self.templatePath('webpack.config.test.js'), self.destinationPath('webpack.config.test.js'));
         self.copy(self.templatePath('webpack.config.dev.js'), self.destinationPath('webpack.config.dev.js'));
         self.copy(self.templatePath('webpack.config.prod.js'), self.destinationPath('webpack.config.prod.js'));
     },

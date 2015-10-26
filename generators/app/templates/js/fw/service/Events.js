@@ -8,6 +8,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import ServiceBase from 'lib/ServiceBase';
 import _ from 'lodash';
 import angular from 'angular';

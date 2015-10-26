@@ -7,6 +7,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import _ from 'lodash';
 import ConfiguratorBase from 'lib/ConfiguratorBase';
 

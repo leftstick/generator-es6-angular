@@ -6,6 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import app from './AppConfig';
 import notifier from './NotifierConfig';
 import router from './RouterConfig';

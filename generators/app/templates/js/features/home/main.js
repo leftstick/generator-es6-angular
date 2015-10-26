@@ -8,6 +8,7 @@
  *
  * ******************************************************************************************************
  */
+'use strict';
 import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
 import HomeController from './controller/HomeController';

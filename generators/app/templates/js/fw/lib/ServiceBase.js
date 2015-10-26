@@ -6,6 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 class ServiceBase {
 
     constructor(features, app) {

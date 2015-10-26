@@ -6,6 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import InitBase from 'lib/InitBase';
 import angular from 'angular';
 

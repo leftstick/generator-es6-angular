@@ -7,6 +7,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import ServiceBase from 'lib/ServiceBase';
 import _ from 'lodash';
 import angular from 'angular';
@@ -90,7 +91,7 @@ class Service extends ServiceBase {
                     }
                 };
 
-                this.getapi = function(path) {
+                this.getApi = function(path) {
                     var newPath = path;
                     if (_.startsWith(path, '/')) {
                         newPath = path.substring(1);

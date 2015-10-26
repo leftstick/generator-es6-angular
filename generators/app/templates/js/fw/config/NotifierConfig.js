@@ -6,6 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import ConfiguratorBase from 'lib/ConfiguratorBase';
 
 class Configurator extends ConfiguratorBase {

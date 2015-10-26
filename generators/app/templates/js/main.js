@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import _ from 'lodash';
 import angular from 'angular';
 import Initializers from 'init/main';
@@ -20,20 +21,20 @@ class App {
         require('../less/main.less');
         this.appName = '<%= answers.name %>';
         this.features = [];
-        _.each(Features, function(Feature) {
+        Features.forEach(function(Feature) {
             this.features.push(new Feature());
         }, this);
     }
 
     findDependencies() {
-        this.depends = _.clone(Extensions);
+        this.depends = Extensions.slice(0);
         this.depends.push(..._.chain(this.features).filter('export').pluck('export').value());
     }
 
     beforeStart() {
         Initializers.forEach(function(Initializer) {
-            (new Initializer()).run();
-        });
+            (new Initializer(this.features)).run();
+        }, this);
 
         this.features.forEach(function(feature) {
             feature.beforeStart();
@@ -62,6 +63,7 @@ class App {
     destroySplash() {
         var _this = this;
         Splash.destroy();
+        require('splash-screen/splash.min.css').unuse();
         setTimeout(function() {
             if (Splash.isRunning()) {
                 _this.destroySplash();

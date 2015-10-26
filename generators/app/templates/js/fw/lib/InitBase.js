@@ -8,7 +8,9 @@
  */
 class InitBase {
 
-    constructor() {}
+    constructor(features) {
+        this.features = features;
+    }
 
     run() {}
 }
