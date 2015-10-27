@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 var AboutController = function($scope, AboutService, events) {
 
     $scope.showSpinner = true;

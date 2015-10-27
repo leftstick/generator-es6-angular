@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 var HomeService = function($http, utils) {
 
     this.getStates = function() {
