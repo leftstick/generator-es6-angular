@@ -70,7 +70,7 @@ Run `gulp test` to execute all unit-test cases.
 
 ## note ##
 
-If you'd like to add [jquery](http://jquery.com/), you have to modify the `webpack.config.dev.js` and `webpack.config.prod.js` with following plugin added:
+If you'd like to add [jquery](http://jquery.com/) as replacement of `jqLite`, you have to modify the `webpack.config.dev.js` and `webpack.config.prod.js` with following plugin added:
 
 ```javascript
 new webpack.ProvidePlugin({
