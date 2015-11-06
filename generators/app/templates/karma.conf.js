@@ -11,11 +11,13 @@ module.exports = function(config) {
             'test/test.bundle.js'
         ],
         frameworks: [
-            'mocha'
+            'mocha',
+            'chai-sinon'
         ],
         logLevel: config.LOG_INFO,
         plugins: [
             'karma-mocha',
+            'karma-chai-sinon',
             'karma-chrome-launcher'
         ],
         singleRun: true

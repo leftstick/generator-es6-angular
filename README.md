@@ -68,6 +68,16 @@ Run `gulp test` to execute all unit-test cases.
 
 > I've only implemented few references, if you'd like to write more unit-test cases, follow the reference would be a good idea
 
+## note ##
+
+If you'd like to add [jquery](http://jquery.com/), you have to modify the `webpack.config.dev.js` and `webpack.config.prod.js` with following plugin added:
+
+```javascript
+new webpack.ProvidePlugin({
+    $: 'jquery',
+    'window.jQuery': 'jquery'
+}),
+```
 
 ## References ##
 
@@ -83,6 +93,7 @@ Run `gulp test` to execute all unit-test cases.
 10. [karma](http://karma-runner.github.io/0.13/index.html)
 11. [mocha](https://mochajs.org/)
 12. [chai](http://chaijs.com/)
+13. [sinon](http://sinonjs.org/)
 
 
 ## LICENSE ##

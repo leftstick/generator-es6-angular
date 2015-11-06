@@ -27,7 +27,12 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel',
-                exclude: /(node_modules|bower_components)/
+                exclude: /(node_modules|bower_components)/,
+                query: {
+                    presets: [
+                        'es2015'
+                    ]
+                }
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2)\w*/,

@@ -1,7 +1,5 @@
 'use strict';
 
-import { expect } from 'chai';
-
 import MockUtils from 'tools/MockUtils';
 import load from 'tools/FeatureLoader';
 
