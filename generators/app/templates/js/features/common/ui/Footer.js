@@ -5,9 +5,11 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
 import FeatureBase from 'lib/FeatureBase';
 import angular from 'angular';
 import tpl from './Footer.html';
+import __config from 'etc/config';
 
 class Feature extends FeatureBase {
 

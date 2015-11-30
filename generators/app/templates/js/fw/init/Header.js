@@ -9,6 +9,7 @@
 'use strict';
 import InitBase from 'lib/InitBase';
 import angular from 'angular';
+import __config from 'etc/config';
 
 class Initializer extends InitBase {
     constructor(features, app) {
@@ -38,10 +39,6 @@ class Initializer extends InitBase {
 
     run() {
         this.title(this.config.appname);
-        this.base({
-            href: '/' + (this.config.base ? this.config.base + '/' : '')
-        });
-
         this.meta({'charset': 'utf-8'});
         this.meta({
             'name': 'viewport',

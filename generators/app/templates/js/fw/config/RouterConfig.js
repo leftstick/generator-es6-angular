@@ -10,6 +10,7 @@
 'use strict';
 import _ from 'lodash';
 import ConfiguratorBase from 'lib/ConfiguratorBase';
+import __config from 'etc/config';
 
 class Configurator extends ConfiguratorBase {
     constructor(features, app) {

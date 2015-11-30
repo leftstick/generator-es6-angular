@@ -18,7 +18,6 @@ import Splash from 'splash-screen';
 class App {
 
     constructor() {
-        require('../less/main.less');
         this.appName = '<%= answers.name %>';
         this.features = [];
         Features.forEach(function(Feature) {
