@@ -17,8 +17,8 @@ class Configurator extends ConfiguratorBase {
         this.config = __config;
     }
 
-    run() {
-        this.app.constant('CONF', this.config);
+    execute() {
+        this.constant('CONF', this.config);
     }
 }
 

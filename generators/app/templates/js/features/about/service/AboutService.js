@@ -14,4 +14,6 @@ var AboutService = function($http, utils) {
 
 };
 
-export default ['$http', 'utils', AboutService];
+AboutService.$inject = ['$http', 'utils'];
+
+export default AboutService;

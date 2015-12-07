@@ -13,7 +13,8 @@ class InitBase {
         this.features = features;
     }
 
-    run() {}
+    execute() {
+    }
 }
 
 export default InitBase;

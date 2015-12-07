@@ -100,11 +100,12 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
     $scope.$on('$destroy', function() {});
 };
 
-export default [
+HomeController.$inject = [
     '$scope',
     'events',
     'utils',
     'HomeService',
-    '$alert',
-    HomeController
+    '$alert'
 ];
+
+export default HomeController;

@@ -22,9 +22,10 @@ var AboutController = function($scope, AboutService, events) {
     $scope.$on('$destroy', function() {});
 };
 
-export default [
+AboutController.$inject = [
     '$scope',
     'AboutService',
-    'events',
-    AboutController
+    'events'
 ];
+
+export default AboutController;

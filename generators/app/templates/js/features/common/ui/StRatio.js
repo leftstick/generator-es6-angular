@@ -6,6 +6,8 @@
  *  @date    <%= answers.date %>
  *
  **/
+'use strict';
+
 import FeatureBase from 'lib/FeatureBase';
 
 class Feature extends FeatureBase {
@@ -14,18 +16,18 @@ class Feature extends FeatureBase {
         super('StRatioModule');
     }
 
-    run() {
-        var dir = function() {
-            return {
-                restrict: 'A',
-                link: function($scope, element, attr) {
-                    var ratio = +(attr.stRatio);
-                    element.css('width', ratio + '%');
-                }
-            };
+    stRatio() {
+        return {
+            restrict: 'A',
+            link: function($scope, element, attr) {
+                var ratio = +(attr.stRatio);
+                element.css('width', ratio + '%');
+            }
         };
+    }
 
-        this.mod.directive('stRatio', [dir]);
+    execute() {
+        this.directive('stRatio', this.stRatio);
     }
 }
 

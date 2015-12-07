@@ -8,37 +8,36 @@
  */
 'use strict';
 import InitBase from 'lib/InitBase';
-import angular from 'angular';
+import { element } from 'angular';
 import __config from 'etc/config';
 
 class Initializer extends InitBase {
     constructor(features, app) {
         super(features, app);
-        this.head = angular.element(document.head);
-        this.config = __config;
+        this.head = element(document.head);
     }
 
     title(t) {
-        var title = angular.element('<title></title>');
+        var title = element('<title></title>');
         title.text(t);
         this.head.append(title);
     }
 
     base(attr) {
-        var base = angular.element('<base>');
+        var base = element('<base>');
         base.attr(attr);
         this.head.find('base').remove();
         this.head.append(base);
     }
 
     meta(attr) {
-        var meta = angular.element('<meta>');
+        var meta = element('<meta>');
         meta.attr(attr);
         this.head.append(meta);
     }
 
-    run() {
-        this.title(this.config.appname);
+    execute() {
+        this.title(__config.appname);
         this.meta({'charset': 'utf-8'});
         this.meta({
             'name': 'viewport',

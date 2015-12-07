@@ -6,7 +6,6 @@
  *
  */
 'use strict';
-import _ from 'lodash';
 import angular from 'angular';
 import Initializers from 'init/main';
 import Extensions from 'ext/main';
@@ -27,12 +26,18 @@ class App {
 
     findDependencies() {
         this.depends = Extensions.slice(0);
-        this.depends.push(..._.chain(this.features).filter('export').pluck('export').value());
+        var featureNames = this.features.filter(function(feature) {
+            return feature.export;
+        })
+            .map(function(feature) {
+                return feature.export;
+            });
+        this.depends.push(...featureNames);
     }
 
     beforeStart() {
         Initializers.forEach(function(Initializer) {
-            (new Initializer(this.features)).run();
+            (new Initializer(this.features)).execute();
         }, this);
 
         this.features.forEach(function(feature) {
@@ -42,20 +47,20 @@ class App {
 
     createApp() {
         this.features.forEach(function(feature) {
-            feature.run();
+            feature.execute();
         });
         this.app = angular.module(this.appName, this.depends);
     }
 
     configApp() {
         Configurators.forEach(function(Configurator) {
-            (new Configurator(this.features, this.app)).run();
+            (new Configurator(this.features, this.app)).execute();
         }, this);
     }
 
     registerService() {
         Services.forEach(function(Service) {
-            (new Service(this.features, this.app)).run();
+            (new Service(this.features, this.app)).execute();
         }, this);
     }
 

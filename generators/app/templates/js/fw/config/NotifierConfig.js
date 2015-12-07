@@ -14,14 +14,14 @@ class Configurator extends ConfiguratorBase {
         super(features, app);
     }
 
-    run() {
-        this.app.config([
-            'notifierProvider',
-            function(notifierProvider) {
-                notifierProvider.setPlacement('top', 'right');
-                notifierProvider.setUseNativeWhileBlur(true);
-            }
-        ]);
+    notifierConfig(notifierProvider) {
+        notifierProvider.setPlacement('top', 'right');
+        notifierProvider.setUseNativeWhileBlur(true);
+    }
+
+    execute() {
+        this.notifierConfig.$inject = ['notifierProvider'];
+        this.config(this.notifierConfig);
     }
 }
 

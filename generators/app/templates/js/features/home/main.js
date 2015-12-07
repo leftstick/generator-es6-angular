@@ -22,10 +22,10 @@ class Feature extends FeatureBase {
         this.routes = Routes;
     }
 
-    run() {
-        this.mod.controller('HomeController', HomeController);
-        this.mod.service('HomeService', HomeService);
-        this.mod.run([
+    execute() {
+        this.controller('HomeController', HomeController);
+        this.service('HomeService', HomeService);
+        this.run([
             '$templateCache',
             function($templateCache) {
                 $templateCache.put('customTpl', customTpl);

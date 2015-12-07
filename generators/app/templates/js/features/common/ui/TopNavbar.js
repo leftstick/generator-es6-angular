@@ -5,7 +5,9 @@
  *  @date    <%= answers.date %>
  *
  */
-import angular from 'angular';
+'use strict';
+
+import { element } from 'angular';
 import FeatureBase from 'lib/FeatureBase';
 import tpl from './TopNavbar.html';
 import asideTpl from './Aside.html';
@@ -14,23 +16,26 @@ class Feature extends FeatureBase {
 
     constructor() {
         super('TopnavModule');
-        this.$body = angular.element(document.body);
+        this.$body = element(document.body);
     }
 
     beforeStart() {
         this.$body.prepend(tpl);
     }
 
-    run() {
-        this.mod.run([
-            '$templateCache',
-            function($templateCache) {
-                $templateCache.put('aside', asideTpl);
-            }
-        ]);
-        this.mod.controller('HeaderCtrl', [
-            function() {}
-        ]);
+    templateCaching($templateCache) {
+        $templateCache.put('aside', asideTpl);
+    }
+
+    HeaderCtrl($scope) {
+    }
+
+    execute() {
+        this.templateCaching.$inject = ['$templateCache'];
+        this.run(this.templateCaching);
+
+        this.HeaderCtrl.$inject = ['$scope'];
+        this.controller('HeaderCtrl', this.HeaderCtrl);
     }
 }
 

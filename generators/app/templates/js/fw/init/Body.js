@@ -8,11 +8,11 @@
  */
 'use strict';
 import InitBase from 'lib/InitBase';
-import angular from 'angular';
+import { element } from 'angular';
 
 class Initializer extends InitBase {
-    run() {
-        angular.element(document.body).append('<div ng-view autoscroll="true" class="main"></div>');
+    execute() {
+        element(document.body).append('<div ng-view autoscroll="true" class="main"></div>');
     }
 }
 

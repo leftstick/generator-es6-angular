@@ -21,9 +21,9 @@ class Feature extends FeatureBase {
         this.routes = Routes;
     }
 
-    run() {
-        this.mod.controller('AboutController', AboutController);
-        this.mod.service('AboutService', AboutService);
+    execute() {
+        this.controller('AboutController', AboutController);
+        this.service('AboutService', AboutService);
     }
 }
 

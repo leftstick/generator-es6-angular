@@ -5,6 +5,8 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
+
 import FeatureBase from 'lib/FeatureBase';
 
 var defaults = {
@@ -29,20 +31,17 @@ class Feature extends FeatureBase {
         super('ModalWrapper');
     }
 
-    run() {
-        this.mod.run([
-            'events',
-            '$modal',
-            function(events, $modal) {
+    modalEvent(events, $modal) {
+        events.on('modal', function(opts) {
+            var options = _.defaults(opts, defaults);
+            options.title = opts.title;
+            $modal(options);
+        });
+    }
 
-                events.on('modal', function(opts) {
-                    var options = _.defaults(opts, defaults);
-                    options.title = opts.title;
-                    $modal(options);
-                });
-
-            }
-        ]);
+    execute() {
+        this.modalEvent.$inject = ['events', '$modal'];
+        this.run(this.modalEvent);
     }
 }
 

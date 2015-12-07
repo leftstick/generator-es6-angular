@@ -14,15 +14,17 @@ class Feature extends FeatureBase {
         super('AutofocusModule');
     }
 
-    run() {
-        this.mod.directive('autofocus', function() {
-            return {
-                restrict: 'A',
-                link: function($scope, element) {
-                    element[0].focus();
-                }
-            };
-        });
+    autoFocus() {
+        return {
+            restrict: 'A',
+            link: function($scope, element) {
+                element[0].focus();
+            }
+        };
+    }
+
+    execute() {
+        this.directive('autofocus', this.autoFocus);
     }
 }
 

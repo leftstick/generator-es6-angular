@@ -5,6 +5,8 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
+
 import alerts from './Alerts';
 import autofocus from './Autofocus';
 import confirm from './Confirm';

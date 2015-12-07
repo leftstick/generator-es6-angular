@@ -8,14 +8,14 @@
  */
 'use strict';
 import InitBase from 'lib/InitBase';
-import { pluck } from 'lodash';
+import pluck from 'lib/Pluck';
 
 class Initializer extends InitBase {
     constructor(features, app) {
         super(features, app);
     }
 
-    run() {
+    execute() {
         if (!this.features || this.features.length === 0) {
             console.warn('No features loaded');
             return;

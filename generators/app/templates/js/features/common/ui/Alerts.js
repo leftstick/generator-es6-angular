@@ -5,8 +5,10 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
+
 import FeatureBase from 'lib/FeatureBase';
-import angular from 'angular';
+import { element } from 'angular';
 
 var TYPES = {
     warning: 'warning',
@@ -32,29 +34,27 @@ var TITLES = {
 class Feature extends FeatureBase {
     constructor() {
         super('Alerts');
-        this.$body = angular.element(document.body);
+        this.$body = element(document.body);
     }
 
     beforeStart() {
         this.$body.append('<sweetnotifier></sweetnotifier>');
     };
 
-    run() {
-        this.mod.run([
-            'events',
-            'notifier',
-            function(events, notifier) {
+    alertEvent(events, notifier) {
+        events.on('alert', function(data) {
+            notifier.emit({
+                type: TYPES[data.type],
+                title: TITLES[data.type],
+                content: data.message,
+                timeout: TIMEOUTS[data.type]
+            });
+        });
+    }
 
-                events.on('alert', function(data) {
-                    notifier.emit({
-                        type: TYPES[data.type],
-                        title: TITLES[data.type],
-                        content: data.message,
-                        timeout: TIMEOUTS[data.type]
-                    });
-                });
-            }
-        ]);
+    execute() {
+        this.alertEvent.$inject = ['events', 'notifier'];
+        this.run(this.alertEvent);
     }
 }
 

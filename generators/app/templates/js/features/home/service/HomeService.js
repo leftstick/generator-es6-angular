@@ -22,4 +22,6 @@ var HomeService = function($http, utils) {
 
 };
 
-export default ['$http', 'utils', HomeService];
+HomeService.$inject = ['$http', 'utils'];
+
+export default HomeService;
