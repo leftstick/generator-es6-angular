@@ -31,8 +31,9 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this.indicator.$inject = ['$rootScope', 'Routes'];
-        this.mod.run(this.indicator);
+        var indicator = this.indicator.bind(this);
+        indicator.$inject = ['$rootScope', 'Routes'];
+        this.run(indicator);
     }
 }
 

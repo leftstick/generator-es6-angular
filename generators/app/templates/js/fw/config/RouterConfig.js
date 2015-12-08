@@ -19,13 +19,13 @@ class Configurator extends ConfiguratorBase {
 
     routeConfig($locationProvider, $routeProvider){
         //config each router
-        routes.forEach(function(ro) {
+        this.routes.forEach(function(ro) {
             $routeProvider
                 .when(ro.when, omit(ro, ['when']));
         });
 
         //config default page
-        var defaultRouter = routes.filter(function(route) {
+        var defaultRouter = this.routes.filter(function(route) {
             return route.isDefault;
         })[0];
         if (defaultRouter) {
@@ -47,7 +47,7 @@ class Configurator extends ConfiguratorBase {
             return;
         }
 
-        var routes = this.features
+        this.routes = this.features
             .filter(function(feature) {
                 return feature.routes && feature.routes.length > 0;
             })
@@ -58,7 +58,7 @@ class Configurator extends ConfiguratorBase {
                 return previous.concat(current);
             }, []);
 
-        var defaultRoutes = routes.filter(function(route) {
+        var defaultRoutes = this.routes.filter(function(route) {
             return route.isDefault;
         });
 
@@ -69,7 +69,7 @@ class Configurator extends ConfiguratorBase {
             console.warn('You have set [' + defaultRoutes.length + '] default routes, they are [' + defaultWhens.join(', ') + ']. Try to correct it');
         }
 
-        var routeWhens = pluck(routes, 'when').sort();
+        var routeWhens = pluck(this.routes, 'when').sort();
 
         for (var i = 0; i < routeWhens.length - 1; i++) {
             if (routeWhens[i] === routeWhens[i + 1]) {
@@ -77,10 +77,15 @@ class Configurator extends ConfiguratorBase {
             }
         }
 
-        this.constant('Routes', routes);
+        this.constant('Routes', this.routes);
 
-        this.routeConfig.$inject = ['$locationProvider', '$routeProvider'];
-        this.config(this.routeConfig);
+        var routeConfig = this.routeConfig.bind(this);
+
+        routeConfig.$inject = [
+            '$locationProvider',
+            '$routeProvider'
+        ];
+        this.config(routeConfig);
     }
 }
 

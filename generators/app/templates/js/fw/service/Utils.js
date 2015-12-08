@@ -67,11 +67,14 @@ class Service extends ServiceBase {
         };
 
         this.getApi = function(path) {
+            if (!path) {
+                return CONF.api;
+            }
             var newPath = path;
-            if (_.startsWith(path, '/')) {
+            if (path.indexOf('/') === 0) {
                 newPath = path.substring(1);
             }
-            if (_.endsWith(CONF.api, '/')) {
+            if (CONF.api.lastIndexOf('/') === (CONF.api.length - 1)) {
                 return CONF.api + newPath;
             }
             return CONF.api + '/' + newPath;

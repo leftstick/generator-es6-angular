@@ -8,6 +8,8 @@
 'use strict';
 
 import FeatureBase from 'lib/FeatureBase';
+import { merge } from 'angular';
+import omit from 'lib/Omit';
 
 var defaults = {
     animation: 'am-fade',
@@ -33,8 +35,9 @@ class Feature extends FeatureBase {
 
     modalEvent(events, $modal) {
         events.on('modal', function(opts) {
-            var options = _.defaults(opts, defaults);
+            var options = merge({}, defaults, omit(opts, ['scope']));
             options.title = opts.title;
+            options.scope = opts.scope;
             $modal(options);
         });
     }
