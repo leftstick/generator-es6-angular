@@ -16,7 +16,7 @@ class Feature extends FeatureBase {
 
     constructor() {
         super('RouteIndicator');
-        this.$body = angular.element(document.body);
+        this.$body = element(document.body);
     }
 
     indicator($rootScope, Routes) {
