@@ -11,6 +11,11 @@ import InitBase from 'lib/InitBase';
 import { element } from 'angular';
 
 class Initializer extends InitBase {
+
+    constructor(features) {
+        super(features);
+    }
+
     execute() {
         element(document.body).append('<div ng-view autoscroll="true" class="main"></div>');
     }

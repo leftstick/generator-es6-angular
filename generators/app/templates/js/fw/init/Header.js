@@ -12,8 +12,8 @@ import { element } from 'angular';
 import __config from 'etc/config';
 
 class Initializer extends InitBase {
-    constructor(features, app) {
-        super(features, app);
+    constructor(features) {
+        super(features);
         this.head = element(document.head);
     }
 

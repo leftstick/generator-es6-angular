@@ -11,8 +11,8 @@ import InitBase from 'lib/InitBase';
 import pluck from 'lib/Pluck';
 
 class Initializer extends InitBase {
-    constructor(features, app) {
-        super(features, app);
+    constructor(features) {
+        super(features);
     }
 
     execute() {
