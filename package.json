@@ -1,6 +1,6 @@
 {
   "name": "generator-es6-angular",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "generator-es6-angular",
   "repository": {
     "type": "git",
@@ -14,13 +14,15 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator", "es6", "webpack"
+    "yeoman-generator",
+    "es6",
+    "webpack"
   ],
   "author": "Howard.Zuo",
   "license": "MIT",
   "dependencies": {
     "date-util": "^1.2.1",
     "lodash": "^3.10.1",
-    "yeoman-generator": "^0.21.1"
+    "yeoman-generator": "^0.22.2"
   }
 }

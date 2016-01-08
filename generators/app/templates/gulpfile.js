@@ -3,16 +3,21 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var webpack = require('webpack');
+var del = require('del');
 
-gulp.task('release', function(callback) {
+gulp.task('clean', function() {
+    return del(['./build/**/*']);;
+});
+
+gulp.task('copy', ['clean'], function() {
+    return gulp.src(['img/*', 'mock/*'], {'base': '.'})
+        .pipe(gulp.dest('build/'));
+});
+
+gulp.task('release', ['copy'], function(callback) {
     var path = require('path');
     var replace = require('gulp-replace');
     var config = require('./webpack.config.prod');
-
-    require('rimraf').sync('build/');
-
-    gulp.src(['img/*', 'mock/*'], {'base': '.'})
-        .pipe(gulp.dest('build/'));
 
     webpack(config, function(err, stats) {
         if (err) {
