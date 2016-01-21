@@ -1,141 +1,65 @@
-<div class="container" role="main">
+<md-content class="md-padding" layout-align="start center" layout="column" >
+    <md-card>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-display-2" style="text-align: center;">ES2015 AngularJS Skeleton</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+          <p class="md-headline">
+            This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register issue while encountering problems
+          </p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+          <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+        </md-card-actions>
+    </md-card>
 
-    <div class="jumbotron" style="padding: 10px 60px;">
-        <h1>es6 AngularJS Skeleton</h1>
-        <p>This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register <a href="https://github.com/leftstick/generator-es6-angular/issues" target="_blank">issue</a> while encountering problems, Or send me e-mail(<a href="mailto:leftstick@qq.com">leftstick@qq.com</a>)</p>
-    </div>
+    <md-content class="md-padding" style="width: 100%;">
+        <md-grid-list md-cols="1" md-cols-gt-sm="2" md-row-height="80px" md-gutter="8px">
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-autocomplete
+                      md-search-text="state.searchText"
+                      md-items="item in states"
+                      md-item-text="item"
+                      placeholder="What is your favorite US state?"
+                      style="width: 100%;">
+                    <md-item-template>
+                      <span md-highlight-text="state.searchText" md-highlight-flags="^i">{{ item }}</span>
+                    </md-item-template>
+                </md-autocomplete>
+            </md-grid-tile>
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-button aria-label="flat">flat</md-button>
+                <md-button class="md-raised" aria-label="raised">raised button</md-button>
+                <md-button class="md-fab" aria-label="Eat cake" style="width: 40px;height: 20px;">
+                    <md-icon md-font-icon="icon-paper-plane-empty" style="font-size: 20px;vertical-align: super;"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="icon">
+                    <md-icon md-font-icon="icon-reddit" style="font-size: 20px;"></md-icon>
+                </md-button>
+            </md-grid-tile>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>noty usage</h1>
-            </div>
-            <p>
-                <button type="button" class="btn btn-success" ng-click="showSuccessNoty()">Success</button>
-                <button type="button" class="btn btn-info" ng-click="showInfoNoty()">Information</button>
-                <button type="button" class="btn btn-danger" ng-click="showErrorNoty()">Failure</button>
-            </p>
-        </div>
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-button class="md-raised" aria-label="toast" ng-click="toast($event)">toast</md-button>
+            </md-grid-tile>
 
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>modal usage</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 hidden-xs hidden-sm">
-                    <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
-                    <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
-                    <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
-                    <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
-                </div>
-                <div class="col-xs-12 hidden-md hidden-lg">
-                    <button type="button" class="btn btn-default" ng-click="showInfo()">Info modal</button>
-                    <button type="button" class="btn btn-danger" ng-click="showError()">Error modal</button>
-                </div>
-                <div class="col-xs-12 hidden-md hidden-lg" style="margin-top: 10px;">
-                    <button type="button" class="btn btn-primary" ng-click="showCustom()">Custom modal</button>
-                    <button type="button" class="btn btn-warning" ng-click="showConfirm()">Confirm modal</button>
-                </div>
-            </div>
-        </div>
-    </div>
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-button class="md-raised" aria-label="dialog" ng-click="dialog($event)">dialog</md-button>
+            </md-grid-tile>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Tooltips usage</h1>
-            </div>
-            <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button" data-trigger="click" data-placement="bottom" data-type="success" data-title="Punch me, now!" bs-tooltip>Click me</button>
-                </span>
-                <input type="text" class="form-control" data-placement="right" data-container="body" placeholder="Focus tooltip" data-trigger="focus" bs-tooltip data-title="I'm here">
-            </div>
-        </div>
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+            </md-grid-tile>
 
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Popover usage</h1>
-            </div>
-            <p>
-                <button type="button" class="btn btn-info" data-placement="bottom" data-animation="am-flip-x" bs-popover data-title="popver" data-content="I'm waiting for you!">
-                    Click me
-                </button>
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Typeaheads usage</h1>
-            </div>
-            <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i>&nbsp;nations</span>
-                <input type="text" class="form-control" ng-model="selectedState" bs-options="state for state in states" placeholder="Typing nation" bs-typeahead>
-            </div>
-            <br/>
-            Your choice is:  <span class="label label-primary">{{ selectedState }}</span>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Datepickers usage</h1>
-            </div>
-            <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i>&nbsp;Choose Date</span>
-                <input type="text" class="form-control" ng-model="selectedDate" data-trigger="focus" data-autoclose="true" bs-datepicker data-container="body">
-            </div>
-            <br/>
-            Your choice is:  <span class="label label-warning">{{ selectedDate | date:'yyyy-MM-dd' }}</span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Select usage</h1>
-            </div>
-            <div class="input-group col-xs-8 col-sm-6">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-menu-hamburger"></i>&nbsp;Dropdown</span>
-                <button type="button" class="btn btn-default" ng-model="selectedMenu" bs-options="menu.value as menu.label for menu in menus" bs-select>
-                    Action <span class="caret"></span>
-                </button>
-            </div>
-            <br/>
-            Your choice is:  <span class="label label-primary">{{ selectedMenu }}</span>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Radio usage</h1>
-            </div>
-            <div class="btn-group" ng-model="button.radio" bs-radio-group>
-                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="left"/>Left</label>
-                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="middle"/>Middle</label>
-                <label class="btn btn-default"><input type="radio" class="btn btn-default" value="right"/>Right</label>
-            </div>
-            <br/><br/>
-            Your choice is:  <span class="label label-danger">{{ button.radio }}</span>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="page-header">
-                <h1>Dropdown usage</h1>
-            </div>
-            <div class="input-group col-xs-8 col-sm-6">
-                <button type="button" class="btn btn-danger" data-animation="am-flip-x" bs-dropdown="dropdowns" data-html="true">
-                    Click to active
-                </button>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-
-        </div>
-    </div>
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-switch ng-model="data.cb1" aria-label="Switch 1">
+                    Switch 1: {{ data.cb1 }}
+                </md-switch>
+            </md-grid-tile>
+        </md-grid-list>
+    </md-content>
 
 
-</div> <!-- /container -->
+</md-content>

@@ -6,8 +6,8 @@
  *
  */
 'use strict';
-import about from './about/main';
 import common from './common/main';
 import home from './home/main';
+import list from './list/main';
 
-export default [about, ...common, home];
+export default [list, ...common, home];

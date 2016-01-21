@@ -1,29 +1,22 @@
-@import "../node_modules/angular-sweetnotifier/src/angular-sweetnotifier.less";
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
-@import "../node_modules/bootstrap-additions/dist/bootstrap-additions.css";
-@import "../node_modules/angular-motion/dist/angular-motion.css";
-@import "../node_modules/angular-theme-spinner/dist/angular-theme-spinner.min.css";
+@import "../node_modules/angular-material/angular-material.css";
+@import "./fontello";
 
-@import "./variables";
-@import "./topnav";
-@import "./stTable";
-@import "./datapicker";
-@import "./footer";
 
-html,
-body{
-    height: 100%;
-}
+md-toolbar{
+    .logo{
+        height: 64px;
+    }
 
-body{
-    min-height: 100vh;
-}
+    @media screen and (max-width: 1200px) {
+      .logo {
+          height: 48px;
+      }
+    }
 
-.main{
-    min-height: 100%;
-    padding-bottom: 45px;
-    margin-bottom: -45px;
-    > .container{
-        min-height: 100%;
+    .toolbar-icon{
+        padding: 0 !important;
+        md-icon{
+            font-size: 20px;
+        }
     }
 }

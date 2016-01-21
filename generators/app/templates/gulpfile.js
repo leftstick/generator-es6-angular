@@ -46,30 +46,5 @@ gulp.task('dev', function(callback) {
         }
         // Server listening
         gutil.log('[webpack-dev-server]', 'http://localhost:8080/webpack-dev-server/index.html');
-
-    // keep the server alive or continue?
-    // callback();
     });
-});
-
-gulp.task('test', function(callback) {
-    var resolve = require('path').resolve;
-    var config = require('./webpack.config.test');
-    var karma = require('karma');
-    var Server = karma.Server;
-
-    var compiler = webpack(config);
-    compiler.run(function(err, stats) {
-        if (err) {
-            gutil.log('webpack', err);
-            return;
-        }
-        Server.start({
-            configFile: resolve(__dirname, 'karma.conf.js')
-        }, function(exitCode) {
-            gutil.log('Karma has exited with ' + exitCode);
-            process.exit(exitCode);
-        });
-    });
-
 });

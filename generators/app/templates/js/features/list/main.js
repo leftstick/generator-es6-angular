@@ -1,7 +1,7 @@
 /**
  * ******************************************************************************************************
  *
- *   Defines a home feature
+ *   Defines a about feature
  *
  *  @author  <%= answers.username %>
  *  @date    <%= answers.date %>
@@ -11,19 +11,19 @@
 'use strict';
 import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
-import HomeController from './controller/HomeController';
-import HomeService from './service/HomeService';
+import ListController from './controller/ListController';
+import ListService from './service/ListService';
 
 class Feature extends FeatureBase {
 
     constructor() {
-        super('home');
+        super('about');
         this.routes = Routes;
     }
 
     execute() {
-        this.controller('HomeController', HomeController);
-        this.service('HomeService', HomeService);
+        this.controller('ListController', ListController);
+        this.service('ListService', ListService);
     }
 }
 

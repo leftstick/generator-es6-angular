@@ -7,14 +7,9 @@
  *
  */
 'use strict';
-import app from './AppConfig';
-import notifier from './NotifierConfig';
+
+import material from './MaterialConfig';
 import router from './RouterConfig';
 import sso from './SSOConfig';
 
-export default [
-    app,
-    notifier,
-    router,
-    sso
-];
+export default [material, router, sso];

@@ -6,6 +6,8 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
+
 import FeatureBase from 'lib/FeatureBase';
 
 class Feature extends FeatureBase {

@@ -10,9 +10,6 @@
 
 export default {
     'appname': '<%= answers.name %>',
-    'base': '',
     'version': '1.0.0',
-    'icp': 'ICP here',
-    'protocol': 'https://raw.githubusercontent.com/leftstick/generator-es6-angular/master/LICENSE',
     'api': '/mock'
 };

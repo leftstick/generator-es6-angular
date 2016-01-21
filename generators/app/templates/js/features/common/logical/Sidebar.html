@@ -1,0 +1,12 @@
+<md-sidenav class="md-whiteframe-z1" md-component-id="left-side" layout="column">
+    <md-list layout="column" ng-controller="SidebarController">
+        <md-list-item class="toolbar-icon" ng-click="go($event, '/home')">
+            <md-icon md-font-icon="icon-home-outline" class="group-logo"></md-icon>
+            <p> HOME </p>
+        </md-list-item>
+        <md-list-item class="toolbar-icon" ng-click="go($event, '/list')">
+            <md-icon md-font-icon="icon-th-outline" class="group-logo"></md-icon>
+            <p> LIST </p>
+        </md-list-item>
+    </md-list>
+</md-sidenav>

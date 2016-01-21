@@ -6,95 +6,34 @@
  *
  */
 'use strict';
-var HomeController = function($scope, events, utils, HomeService, $alert) {
+var HomeController = function($scope, utils, HomeService, $mdToast, $mdDialog) {
 
-    $scope.$alert = $alert;
-
-    var noty = function(type, msg) {
-        events.emit('alert', {type: type, message: msg});
-    };
-
-    $scope.showSuccessNoty = function() {
-        noty('success', 'This is success noty');
-    };
-
-    $scope.showErrorNoty = function() {
-        noty('error', 'This is error noty');
-    };
-
-    $scope.showInfoNoty = function() {
-        noty('info', 'This is info noty');
-    };
-
-    $scope.showInfo = function() {
-        events.emit('info', {
-            content: 'It\'s simple info dialog',
-            onClose: function() {
-                noty('info', 'Dialog closed!');
-            }
-        });
-    };
-
-    $scope.showError = function() {
-        events.emit('error', {
-            content: 'It\'s error dialog',
-            onClose: function() {
-                noty('info', 'Error Dialog closed!');
-            }
-        });
-    };
-
-    $scope.showConfirm = function() {
-        events.emit('confirm', {
-            content: 'It\'s confirm dialog',
-            onConfirm: function() {
-                noty('info', 'Confirmed!');
-            }
-        });
-    };
-
-    $scope.showCustom = function() {
-        events.emit('modal', {
-            scope: $scope,
-            title: 'It\'s custom dialog',
-            animation: 'am-fade-and-slide-top',
-            templateUrl: 'customTpl'
-        });
-    };
-
-    $scope.closeCustom = function($hide) {
-        $hide();
-        noty('info', 'custom modal closed!');
-    };
+    $scope.state = {};
 
     HomeService.getStates()
         .success(function(data) {
             $scope.states = data;
         });
 
-    HomeService.getMenus()
-        .success(function(data) {
-            $scope.menus = data;
-        });
+    $scope.toast = function() {
+        $mdToast.show(
+            $mdToast.simple()
+                .textContent('Simple Toast!')
+                .position('top')
+                .hideDelay(3000)
+        );
+    };
 
-    $scope.button = {radio: 'right'};
-
-    HomeService.getDropdown()
-        .success(function(data) {
-            $scope.dropdowns = data;
-        });
-
-    $scope.selectTab = function(tab, $event) {
-        utils.stopEvent($event);
-        if (tab.active) {
-            return;
-        }
-        tab.active = true;
-        _.chain($scope.tabs)
-            .reject({name: tab.name})
-            .each(function(t) {
-                t.active = false;
-            });
+    $scope.dialog = function($event) {
+        $mdDialog.show(
+            $mdDialog.alert()
+                .clickOutsideToClose(true)
+                .title('This is an alert title')
+                .textContent('You can specify some description text in here.')
+                .ariaLabel('Alert Dialog Demo')
+                .ok('Got it!')
+                .targetEvent($event)
+        );
     };
 
     $scope.$on('$destroy', function() {});
@@ -102,10 +41,10 @@ var HomeController = function($scope, events, utils, HomeService, $alert) {
 
 HomeController.$inject = [
     '$scope',
-    'events',
     'utils',
     'HomeService',
-    '$alert'
+    '$mdToast',
+    '$mdDialog'
 ];
 
 export default HomeController;
