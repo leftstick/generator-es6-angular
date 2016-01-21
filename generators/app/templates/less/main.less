@@ -1,8 +1,12 @@
 @import "../node_modules/angular-material/angular-material.css";
 @import "./fontello";
 
-html, body{
-    min-height: 100%;
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 md-toolbar{
@@ -26,17 +30,6 @@ md-toolbar{
         padding: 0 !important;
         md-icon{
             font-size: 20px;
-        }
-    }
-}
-
-.home{
-    @media screen and (max-width: 450px) {
-        md-card md-card-title-text span{
-            font-size: 20px;
-        }
-        md-card md-card-content{
-            display: none;
         }
     }
 }

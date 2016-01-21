@@ -1,4 +1,4 @@
-<md-toolbar layout="row" layout-align="center center" class="md-whiteframe-z1" ng-controller="ToolbarController">
+<md-toolbar layout="row" class="md-whiteframe-z1" ng-controller="ToolbarController">
     <div class="md-toolbar-tools">
         <md-button class="md-icon-button toolbar-icon" hide-gt-sm ng-click="toggleSidebar('left-side')" aria-label="Show sidebar">
             <md-icon md-font-icon="icon-menu"></md-icon>
@@ -11,6 +11,8 @@
         <md-button class="md-icon-button toolbar-icon" aria-label="show list" ng-click="go($event, '/list')">
             <md-icon md-font-icon="icon-th-outline"></md-icon>
         </md-button>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <md-button class="md-icon-button toolbar-icon" aria-label="github" href="https://github.com/leftstick/generator-es6-angular" target="_blank" style="line-height: 40px;">
+            <md-icon md-font-icon="icon-github"></md-icon>
+        </md-button>
     </div>
 </md-toolbar>

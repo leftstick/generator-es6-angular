@@ -7,7 +7,7 @@
         </md-card-title>
         <md-card-content>
           <p class="md-headline">
-            This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register issue while encountering problems
+            This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register <a href="https://github.com/leftstick/generator-es6-angular/issues" target="_blank">issue</a> while encountering problems
           </p>
         </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
@@ -33,9 +33,6 @@
             <md-grid-tile md-rowspan="1" md-colspan="1">
                 <md-button aria-label="flat">flat</md-button>
                 <md-button class="md-raised" aria-label="raised">raised button</md-button>
-                <md-button class="md-fab" aria-label="Eat cake" style="width: 40px;height: 20px;">
-                    <md-icon md-font-icon="icon-paper-plane-empty" style="font-size: 20px;vertical-align: super;"></md-icon>
-                </md-button>
                 <md-button class="md-icon-button" aria-label="icon">
                     <md-icon md-font-icon="icon-reddit" style="font-size: 20px;"></md-icon>
                 </md-button>
@@ -57,6 +54,37 @@
                 <md-switch ng-model="data.cb1" aria-label="Switch 1">
                     Switch 1: {{ data.cb1 }}
                 </md-switch>
+            </md-grid-tile>
+
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-checkbox
+                    ng-model="state.checkbox"
+                    aria-label="Checkbox"
+                    ng-true-value="'YES'"
+                    ng-false-value="'NO'"
+                    class="md-warn md-align-top-left" flex>
+                    Checkbox 2 (md-warn)  <br/>
+                    <span>
+                        You would never know what is this! But you can click it
+                    </span>
+                    <br/>
+                    {{ state.checkbox }}
+                </md-checkbox>
+            </md-grid-tile>
+
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-input-container>
+                    <label>Title</label>
+                    <input ng-model="user.title">
+                </md-input-container>
+            </md-grid-tile>
+
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-progress-circular ></md-progress-circular>
+            </md-grid-tile>
+
+            <md-grid-tile md-rowspan="1" md-colspan="1">
+                <md-progress-linear ></md-progress-linear>
             </md-grid-tile>
         </md-grid-list>
     </md-content>
