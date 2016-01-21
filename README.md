@@ -9,9 +9,6 @@ Yeoman generator for es6 based angular skeleton with webpack
 
 > You can view the online demo at: [http://leftstick.github.io/generator-es6-angular](http://leftstick.github.io/generator-es6-angular)
 
-> You can checkout the brief introduction of this skeleton at: [introduction-es6-angular](http://leftstick.github.io/introduction-es6-angular/)
-
-
 ## Prerequisites ##
 
 1. Install [yeoman](http://yeoman.io/): `npm install -g yo`
@@ -60,14 +57,6 @@ Run `sero server -r . -p 8080`, a static web server launched at port 8080.
 Open [http://localhost:8080](http://localhost:8080) to watch the released version.
 
 
-## Execute unit-test ##
-
-Move the root of the created project.
-
-Run `gulp test` to execute all unit-test cases.
-
-> I've only implemented few references, if you'd like to write more unit-test cases, follow the reference would be a good idea
-
 ## note ##
 
 If you'd like to add [jquery](http://jquery.com/) as replacement of `jqLite`, you have to modify the `webpack.config.dev.js` and `webpack.config.prod.js` with following plugin added:
@@ -86,14 +75,7 @@ new webpack.ProvidePlugin({
 3. [webpack](http://webpack.github.io/)
 4. [es6-features](https://github.com/lukehoban/es6features)
 5. [angular](https://angularjs.org/)
-6. [Bootstrap](http://getbootstrap.com/)
-7. [angular-strap](http://mgcrea.github.io/angular-strap/)
-8. [angular-smart-table](http://lorenzofox3.github.io/smart-table-website/)
-9. [angular-sweetnotifier](https://github.com/leftstick/angular-sweetnotifier)
-10. [karma](http://karma-runner.github.io/0.13/index.html)
-11. [mocha](https://mochajs.org/)
-12. [chai](http://chaijs.com/)
-13. [sinon](http://sinonjs.org/)
+6. [angular-material](https://material.angularjs.org/latest/)
 
 
 ## LICENSE ##
