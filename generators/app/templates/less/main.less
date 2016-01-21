@@ -1,6 +1,9 @@
 @import "../node_modules/angular-material/angular-material.css";
 @import "./fontello";
 
+html, body{
+    min-height: 100%;
+}
 
 md-toolbar{
     .logo{
@@ -13,10 +16,27 @@ md-toolbar{
       }
     }
 
+    @media screen and (max-width: 450px) {
+      .logo {
+          display: none;
+      }
+    }
+
     .toolbar-icon{
         padding: 0 !important;
         md-icon{
             font-size: 20px;
+        }
+    }
+}
+
+.home{
+    @media screen and (max-width: 450px) {
+        md-card md-card-title-text span{
+            font-size: 20px;
+        }
+        md-card md-card-content{
+            display: none;
         }
     }
 }

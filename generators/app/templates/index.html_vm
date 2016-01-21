@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><% if (answers.pushState) { %><base href="/"><% } %><link rel="shortcut icon" type="image/ico" href="img/favicon.ico" /></head>
-<body>
+<body layout="column">
     <div flex layout="row" id="main">
         <div ng-view autoscroll="true" class="main" flex layout="column"></div>
     </div>
