@@ -11,5 +11,5 @@
 export default {
     'appname': '<%= answers.name %>',
     'version': '1.0.0',
-    'api': '/mock'
+    'api': 'mock'
 };
