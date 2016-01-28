@@ -14,12 +14,13 @@ class Configurator extends ConfiguratorBase {
     }
 
     httpConfig($httpProvider) {
+        'ngInject';
+
         $httpProvider.defaults.headers.common.Accept = 'application/json;charset=utf-8';
         $httpProvider.defaults.withCredentials = true;
     }
 
     execute() {
-        this.httpConfig.$inject = ['$httpProvider'];
         this.config(this.httpConfig);
     }
 }

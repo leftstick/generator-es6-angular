@@ -18,8 +18,9 @@ class Feature extends FeatureBase {
         super('RouteIndicator');
     }
 
-    /*@ngInject*/
     indicator($rootScope, Routes) {
+        'ngInject';
+
         var $body = element(document.body);
         var classes = pluck(Routes, 'id').join(' ');
 

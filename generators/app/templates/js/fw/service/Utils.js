@@ -16,8 +16,9 @@ class Service extends ServiceBase {
         super(features, app);
     }
 
-    /*@ngInject*/
+
     _utils($q, $window) {
+        'ngInject';
 
         this.base64ToString = function(str) {
             return decodeURIComponent(escape(atob(str)));

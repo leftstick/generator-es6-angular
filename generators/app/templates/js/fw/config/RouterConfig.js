@@ -80,11 +80,8 @@ class Configurator extends ConfiguratorBase {
         this.constant('Routes', this.routes);
 
         var routeConfig = this.routeConfig.bind(this);
+        routeConfig.$inject = ['$locationProvider', '$routeProvider'];
 
-        routeConfig.$inject = [
-            '$locationProvider',
-            '$routeProvider'
-        ];
         this.config(routeConfig);
     }
 }

@@ -15,16 +15,15 @@ class Configurator extends ConfiguratorBase {
     }
 
     execute() {
-        this.config([
-            '$mdThemingProvider',
-            function($mdThemingProvider) {
-                $mdThemingProvider
-                    .theme('default')
-                    .primaryPalette('indigo')
-                    .accentPalette('green')
-                    .warnPalette('red');
-            }
-        ]);
+        this.config(function($mdThemingProvider) {
+            'ngInject';
+
+            $mdThemingProvider
+                .theme('default')
+                .primaryPalette('indigo')
+                .accentPalette('green')
+                .warnPalette('red');
+        });
     }
 }
 
