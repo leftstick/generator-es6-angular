@@ -21,6 +21,7 @@ class Feature extends FeatureBase {
         element(document.querySelector('#main')).prepend(SidebarTpl);
     }
 
+    /*@ngInject*/
     _SidebarController($scope, $mdSidenav, utils, $location) {
         $scope.go = function($event, target) {
             utils.stopEvent($event);
@@ -30,12 +31,6 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this._SidebarController.$inject = [
-            '$scope',
-            '$mdSidenav',
-            'utils',
-            '$location'
-        ];
         this.controller('SidebarController', this._SidebarController);
     }
 }

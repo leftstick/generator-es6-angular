@@ -6,16 +6,28 @@
  *
  */
 'use strict';
-var ListController = function($scope, ListService) {
 
-    ListService.getDemoList()
-        .success(function(data) {
-            $scope.demolist = data;
-        }).error(function(err) {});
+class ListController {
 
-    $scope.$on('$destroy', function() {});
-};
+    /*@ngInject*/
+    constructor($scope, ListService) {
+        this.$scope = $scope;
+        this.ListService = ListService;
 
-ListController.$inject = ['$scope', 'ListService'];
+        this._init_();
+        this._destroy_();
+    }
+
+    _init_() {
+        this.ListService
+            .getDemoList()
+            .success((data) => this.demolist = data)
+            .error((err) => console.log(err));
+    }
+
+    _destroy_() {
+        this.$scope.$on('$destroy', function() {});
+    }
+}
 
 export default ListController;

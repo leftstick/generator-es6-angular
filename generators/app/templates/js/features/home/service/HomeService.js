@@ -6,22 +6,19 @@
  *
  */
 'use strict';
-var HomeService = function($http, utils) {
 
-    this.getStates = function() {
-        return $http.get(utils.getApi('/states'));
-    };
+class HomeService {
 
-    this.getMenus = function() {
-        return $http.get(utils.getApi('/menus'));
-    };
+    /*@ngInject*/
+    constructor($http, utils) {
+        this.$http = $http;
+        this.utils = utils;
+    }
 
-    this.getDropdown = function() {
-        return $http.get(utils.getApi('/dropdown'));
-    };
+    getStates() {
+        return this.$http.get(this.utils.getApi('/states'));
+    }
 
-};
-
-HomeService.$inject = ['$http', 'utils'];
+}
 
 export default HomeService;

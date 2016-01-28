@@ -3,6 +3,8 @@
 
 [![NPM version][npm-image]][npm-url]
 ![][david-url]
+![][dt-url]
+![][license-url]
 
 Yeoman generator for es6 based angular skeleton with webpack
 
@@ -88,3 +90,5 @@ new webpack.ProvidePlugin({
 [npm-url]: https://npmjs.org/package/generator-es6-angular
 [npm-image]: https://badge.fury.io/js/generator-es6-angular.png
 [david-url]: https://david-dm.org/leftstick/generator-es6-angular.png
+[dt-url]:https://img.shields.io/npm/dt/generator-es6-angular.svg
+[license-url]:https://img.shields.io/npm/l/generator-es6-angular.svg

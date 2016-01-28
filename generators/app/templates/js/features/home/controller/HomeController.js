@@ -6,27 +6,39 @@
  *
  */
 'use strict';
-var HomeController = function($scope, utils, HomeService, $mdToast, $mdDialog) {
 
-    $scope.state = {};
+class HomeController {
 
-    HomeService.getStates()
-        .success(function(data) {
-            $scope.states = data;
-        });
+    /*@ngInject*/
+    constructor($scope, utils, HomeService, $mdToast, $mdDialog) {
+        this.$scope = $scope;
+        this.utils = utils;
+        this.HomeService = HomeService;
+        this.$mdToast = $mdToast;
+        this.$mdDialog = $mdDialog;
 
-    $scope.toast = function() {
-        $mdToast.show(
-            $mdToast.simple()
+        this._init_();
+        this._destroy_();
+    }
+
+    _init_() {
+        this.state = {};
+        this.HomeService.getStates()
+            .success((data) => this.states = data);
+    }
+
+    toast() {
+        this.$mdToast.show(
+            this.$mdToast.simple()
                 .textContent('Simple Toast!')
                 .position('top')
                 .hideDelay(3000)
         );
-    };
+    }
 
-    $scope.dialog = function($event) {
-        $mdDialog.show(
-            $mdDialog.alert()
+    dialog($event) {
+        this.$mdDialog.show(
+            this.$mdDialog.alert()
                 .clickOutsideToClose(true)
                 .title('This is an alert title')
                 .textContent('You can specify some description text in here.')
@@ -34,17 +46,13 @@ var HomeController = function($scope, utils, HomeService, $mdToast, $mdDialog) {
                 .ok('Got it!')
                 .targetEvent($event)
         );
-    };
+    }
 
-    $scope.$on('$destroy', function() {});
-};
-
-HomeController.$inject = [
-    '$scope',
-    'utils',
-    'HomeService',
-    '$mdToast',
-    '$mdDialog'
-];
+    _destroy_() {
+        this.$scope.$on('$destroy', function() {
+            console.log('asdfsafa');
+        });
+    }
+}
 
 export default HomeController;

@@ -15,7 +15,7 @@ class Configurator extends ConfiguratorBase {
     }
 
     execute() {
-        this.app.config([
+        this.config([
             '$mdThemingProvider',
             function($mdThemingProvider) {
                 $mdThemingProvider

@@ -6,6 +6,7 @@
  *
  */
 'use strict';
+
 import 'angular-animate';
 import 'angular-route';
 import 'angular-sanitize';

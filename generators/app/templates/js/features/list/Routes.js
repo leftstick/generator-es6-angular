@@ -15,6 +15,7 @@ export default [
         isDefault: false,
         when: '/list',
         controller: 'ListController',
+        controllerAs: 'list',
         template: tpl
     }
 ];

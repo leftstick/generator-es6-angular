@@ -6,6 +6,8 @@
  *  @date    <%= answers.date %>
  *
  */
+'use strict';
+
 import tpl from './partials/home.html';
 
 export default [
@@ -14,6 +16,7 @@ export default [
         isDefault: true,
         when: '/home',
         controller: 'HomeController',
+        controllerAs: 'home',
         template: tpl
     }
 ];

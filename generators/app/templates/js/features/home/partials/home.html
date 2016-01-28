@@ -21,7 +21,7 @@
             <md-grid-tile md-rowspan="1" md-colspan="1">
                 <md-autocomplete
                       md-search-text="state.searchText"
-                      md-items="item in states"
+                      md-items="item in home.states"
                       md-item-text="item"
                       placeholder="What is your favorite US state?"
                       style="width: 100%;">
@@ -39,11 +39,11 @@
             </md-grid-tile>
 
             <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-button class="md-raised" aria-label="toast" ng-click="toast($event)">toast</md-button>
+                <md-button class="md-raised" aria-label="toast" ng-click="home.toast($event)">toast</md-button>
             </md-grid-tile>
 
             <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-button class="md-raised" aria-label="dialog" ng-click="dialog($event)">dialog</md-button>
+                <md-button class="md-raised" aria-label="dialog" ng-click="home.dialog($event)">dialog</md-button>
             </md-grid-tile>
 
             <md-grid-tile md-rowspan="1" md-colspan="1">

@@ -22,6 +22,7 @@ class Feature extends FeatureBase {
         this.$body.prepend(ToolbarTpl);
     }
 
+    /*@ngInject*/
     _ToolbarController($scope, $mdSidenav, utils, $location) {
         $scope.toggleSidebar = function(componentId) {
             $mdSidenav(componentId).toggle();
@@ -34,12 +35,6 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this._ToolbarController.$inject = [
-            '$scope',
-            '$mdSidenav',
-            'utils',
-            '$location'
-        ];
         this.controller('ToolbarController', this._ToolbarController);
     }
 }

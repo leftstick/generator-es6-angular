@@ -16,6 +16,7 @@ class Service extends ServiceBase {
         super(features, app);
     }
 
+    /*@ngInject*/
     _utils($q, $window) {
 
         this.base64ToString = function(str) {
@@ -54,7 +55,6 @@ class Service extends ServiceBase {
     }
 
     execute() {
-        this._utils.$inject = ['$q', '$window'];
         this.service('utils', this._utils);
     }
 }

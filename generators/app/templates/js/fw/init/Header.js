@@ -23,13 +23,6 @@ class Initializer extends InitBase {
         this.head.append(title);
     }
 
-    base(attr) {
-        var base = element('<base>');
-        base.attr(attr);
-        this.head.find('base').remove();
-        this.head.append(base);
-    }
-
     meta(attr) {
         var meta = element('<meta>');
         meta.attr(attr);
