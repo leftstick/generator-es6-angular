@@ -21,8 +21,8 @@ class ListController {
     _init_() {
         this.ListService
             .getDemoList()
-            .success((data) => this.demolist = data)
-            .error((err) => console.log(err));
+            .success(data => this.demolist = data)
+            .error(err => console.log(err));
     }
 
     _destroy_() {

@@ -24,7 +24,7 @@ class HomeController {
     _init_() {
         this.state = {};
         this.HomeService.getStates()
-            .success((data) => this.states = data);
+            .success(data => this.states = data);
     }
 
     toast() {
@@ -49,9 +49,7 @@ class HomeController {
     }
 
     _destroy_() {
-        this.$scope.$on('$destroy', function() {
-            console.log('asdfsafa');
-        });
+        this.$scope.$on('$destroy', function() {});
     }
 }
 

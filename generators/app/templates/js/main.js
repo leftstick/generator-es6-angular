@@ -18,20 +18,18 @@ class App {
 
     constructor() {
         this.appName = '<%= answers.name %>';
-        this.features = [];
         Features.forEach(function(Feature) {
-            this.features.push(new Feature());
-        }, this);
+            this.push(new Feature());
+        }, this.features = []);
     }
 
     findDependencies() {
         this.depends = Extensions.slice(0);
-        var featureNames = this.features.filter(function(feature) {
-            return feature.export;
-        })
-            .map(function(feature) {
-                return feature.export;
-            });
+
+        var featureNames = this.features
+            .filter(feature => feature.export)
+            .map(feature => feature.export);
+
         this.depends.push(...featureNames);
     }
 
@@ -40,15 +38,12 @@ class App {
             (new Initializer(this.features)).execute();
         }, this);
 
-        this.features.forEach(function(feature) {
-            feature.beforeStart();
-        });
+        this.features.forEach(feature => feature.beforeStart());
     }
 
     createApp() {
-        this.features.forEach(function(feature) {
-            feature.execute();
-        });
+        this.features.forEach(feature => feature.execute());
+
         this.app = angular.module(this.appName, this.depends);
     }
 
