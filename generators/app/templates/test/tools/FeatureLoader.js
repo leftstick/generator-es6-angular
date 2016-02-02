@@ -9,7 +9,7 @@
 
 var loader = function(Feature) {
     var feature = new Feature();
-    feature.run();
+    feature.execute();
     return feature;
 };
 
