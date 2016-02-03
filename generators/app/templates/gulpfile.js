@@ -10,7 +10,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', ['clean'], function() {
-    return gulp.src(['img/*', 'mock/*'], {'base': '.'})
+    return gulp.src(['img/**/*', 'mock/**/*'], {'base': '.'})
         .pipe(gulp.dest('build/'));
 });
 
