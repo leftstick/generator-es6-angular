@@ -5,47 +5,48 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
+import logoUrl from 'img/AngularJS-large.png';
 
 class HomeController {
 
     /*@ngInject*/
-    constructor($scope, utils, HomeService, $mdToast, $mdDialog) {
+    constructor($scope, HomeService) {
         this.$scope = $scope;
-        this.utils = utils;
         this.HomeService = HomeService;
-        this.$mdToast = $mdToast;
-        this.$mdDialog = $mdDialog;
 
         this._init_();
         this._destroy_();
     }
 
     _init_() {
-        this.state = {};
-        this.HomeService.getStates()
-            .success(data => this.states = data);
+        this.logoUrl = logoUrl;
+        this.todos = [];
+        this.HomeService
+            .getInitTodos()
+            .then(todos => {
+                this.todos = todos;
+            });
     }
 
-    toast() {
-        this.$mdToast.show(
-            this.$mdToast.simple()
-                .textContent('Simple Toast!')
-                .position('top')
-                .hideDelay(3000)
-        );
+    addTodo(e) {
+        if (e.keyCode !== 13) {
+            return;
+        }
+        this.todos.push({txt: e.target.value});
+        e.target.value = '';
     }
 
-    dialog($event) {
-        this.$mdDialog.show(
-            this.$mdDialog.alert()
-                .clickOutsideToClose(true)
-                .title('This is an alert title')
-                .textContent('You can specify some description text in here.')
-                .ariaLabel('Alert Dialog Demo')
-                .ok('Got it!')
-                .targetEvent($event)
-        );
+    toggleTodo(todo) {
+        todo.finished = !todo.finished;
+    }
+
+    remaining() {
+        return this.todos.reduce((n, todo) => n + Number(!todo.finished), 0);
+    }
+
+    archive() {
+        this.todos = this.todos.filter(todo => !todo.finished);
     }
 
     _destroy_() {

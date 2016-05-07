@@ -5,9 +5,8 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
-import { isArray } from 'angular';
+import {isArray} from 'angular';
 
 var pluck = function(arr, key) {
     if (!isArray(arr) || arr.length === 0) {

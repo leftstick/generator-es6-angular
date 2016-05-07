@@ -6,15 +6,14 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 class InitBase {
 
     constructor(features) {
         this.features = features;
     }
 
-    execute() {
-    }
+    execute() {}
 }
 
 export default InitBase;

@@ -5,9 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
-import toolbar from './Toolbar';
-import sidebar from './Sidebar';
+import header from './Header';
 
-export default [sidebar, toolbar];
+export default [header];

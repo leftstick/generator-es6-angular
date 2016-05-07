@@ -6,7 +6,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
 import tpl from './partials/home.html';
 

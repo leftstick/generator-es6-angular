@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 import angular from 'angular';
 import Initializers from 'init/main';
 import Extensions from 'ext/main';

@@ -9,7 +9,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 import header from './Header';
 import validator from './Validator';
 

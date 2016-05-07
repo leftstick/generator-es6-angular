@@ -6,7 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 class ConfiguratorBase {
 
     constructor(features, app) {
@@ -18,8 +18,7 @@ class ConfiguratorBase {
         this.value = app.value;
     }
 
-    execute() {
-    }
+    execute() {}
 }
 
 export default ConfiguratorBase;

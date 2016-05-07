@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
 class HomeService {
 
@@ -15,8 +14,22 @@ class HomeService {
         this.utils = utils;
     }
 
-    getStates() {
-        return this.$http.get(this.utils.getApi('/states'));
+    getInitTodos() {
+        return Promise.resolve([
+            {
+                finished: true,
+                txt: 'Learn JavaScript'
+            },
+            {
+                txt: 'Learn AngularJS'
+            },
+            {
+                txt: 'Learn webpack'
+            },
+            {
+                txt: 'Learn node'
+            }
+        ]);
     }
 
 }

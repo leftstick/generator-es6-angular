@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><% if (answers.pushState) { %><base href="/"><% } %><link rel="shortcut icon" type="image/ico" href="img/favicon.ico" /></head>
-<body layout="column">
+    <head>
+        <% if (htmlWebpackPlugin.options.pushState) { %><base href="/"><% } %>
+    </head>
+    <body>
 
-    <div flex layout="row" id="main">
-        <div ng-view autoscroll="true" class="main" flex></div>
-    </div>
+        <div ng-view autoscroll="true"></div>
 
-    <script type="text/javascript" src="js/common.bundle.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/index.bundle.js" charset="utf-8"></script>
-</body>
+    </body>
 </html>

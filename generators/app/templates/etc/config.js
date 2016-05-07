@@ -6,10 +6,5 @@
  *  @date    <%= answers.date %>
  *
  **/
-'use strict';
 
-export default {
-    'appname': '<%= answers.name %>',
-    'version': '1.0.0',
-    'api': 'mock'
-};
+export default {appname: '<%= answers.name %>', version: '1.0.0'};

@@ -5,7 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 import utils from './Utils';
 
 export default [utils];

@@ -1,0 +1,8 @@
+<ul id="nav" ng-controller="HeaderController">
+    <li ng-click="activeRoute('home')">
+        <a href="<%= answers.pushState ? '' : '#' %>/home" class="nav-link" ng-class="{active: route === 'home'}">HOME</a>
+    </li>
+    <li ng-click="activeRoute('about')">
+        <a href="<%= answers.pushState ? '' : '#' %>/about" class="nav-link" ng-class="{active: route === 'about'}">ABOUT</a>
+    </li>
+</ul>

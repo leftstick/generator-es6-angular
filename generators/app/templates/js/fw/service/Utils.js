@@ -7,7 +7,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 import ServiceBase from 'lib/ServiceBase';
 import config from 'etc/config';
 
@@ -38,20 +38,6 @@ class Service extends ServiceBase {
             if (e.preventDefault) {
                 e.preventDefault();
             }
-        };
-
-        this.getApi = function(path) {
-            if (!path) {
-                return config.api;
-            }
-            var newPath = path;
-            if (path.indexOf('/') === 0) {
-                newPath = path.substring(1);
-            }
-            if (config.api.lastIndexOf('/') === (config.api.length - 1)) {
-                return config.api + newPath;
-            }
-            return config.api + '/' + newPath;
         };
     }
 

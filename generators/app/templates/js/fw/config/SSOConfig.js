@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 import ConfiguratorBase from 'lib/ConfiguratorBase';
 
 class Configurator extends ConfiguratorBase {
@@ -13,7 +12,7 @@ class Configurator extends ConfiguratorBase {
         super(features, app);
     }
 
-    httpConfig($httpProvider) {
+    _httpConfig($httpProvider) {
         'ngInject';
 
         $httpProvider.defaults.headers.common.Accept = 'application/json;charset=utf-8';
@@ -21,7 +20,7 @@ class Configurator extends ConfiguratorBase {
     }
 
     execute() {
-        this.config(this.httpConfig);
+        this.config(this._httpConfig);
     }
 }
 

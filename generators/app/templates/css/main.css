@@ -1,0 +1,177 @@
+/* body */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a[disabled]{
+    pointer-events: none;
+    color: #7f8c8d;
+}
+
+a{
+    text-decoration: none;
+    color: #2E64FE;
+}
+
+[ng-view]{
+    text-align: center;
+}
+
+/* nav */
+#nav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.nav-link {
+    color: #7f8c8d;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 3px;
+    margin: 0 25px;
+}
+
+.nav-link.active {
+    color: #424242;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #dd1b16;
+}
+
+/* logo */
+#logo-wrap {
+    margin: 55px 0 20px 0;
+}
+
+#logo-wrap img{
+    margin-bottom: 15px;
+}
+
+#logo-wrap h1 {
+    font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+#desc {
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+    margin: 10px auto;
+    color: #7f8c8d;
+}
+
+#github{
+    margin: 30px 0 30px 0;
+}
+
+#todo-app{
+    width: 250px;
+    margin: 0 auto;
+}
+
+#todo-app input[type="text"]{
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#todo-app .todos{
+    width: 100%;
+    list-style-type: none;
+    margin: 10px 0 10px 0 ;
+    padding: 0;
+    text-align: left;
+}
+
+#todo-app .todos li{
+    padding-top: 4px;
+}
+
+#todo-app .todos li span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 225px;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#todo-app .archive{
+    text-decoration: none;
+}
+
+#why{
+    width: 600px;
+    margin: 55px auto 15px auto;
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #D8D8D8;
+    border-radius: 2px;
+    background-color: #f7f7f9;
+}
+
+#why h4{
+    margin-top: 0;
+}
+
+#why ul li {
+    padding-top: 5px;
+}
+
+#more{
+    width: 600px;
+    margin: 30px auto 15px auto;
+    padding: 5px;
+}
+
+#more .button{
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 2px;
+    border-width: 0;
+    background-color: #FE2E2E;
+    box-shadow: 2px 2px 1px #a6120d;
+    transition: all 0.3s ease 0s;
+}
+
+#more .button:hover{
+    box-shadow: 4px 4px 2px #a6120d;
+}
+
+/* footer */
+#footer{
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #D8D8D8;
+}

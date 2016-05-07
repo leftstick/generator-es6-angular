@@ -6,7 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 import InitBase from 'lib/InitBase';
 import pluck from 'lib/Pluck';
 
@@ -17,8 +17,7 @@ class Initializer extends InitBase {
 
     execute() {
         if (!this.features || this.features.length === 0) {
-            console.warn('No features loaded');
-            return;
+            return console.warn('No features loaded');
         }
 
         var modNames = pluck(this.features, 'export').sort();

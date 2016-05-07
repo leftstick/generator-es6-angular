@@ -6,9 +6,8 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
-import { element } from 'angular';
+import {element} from 'angular';
 import pluck from 'lib/Pluck';
 import FeatureBase from 'lib/FeatureBase';
 
@@ -18,7 +17,7 @@ class Feature extends FeatureBase {
         super('RouteIndicator');
     }
 
-    indicator($rootScope, Routes) {
+    _indicator($rootScope, Routes) {
         'ngInject';
 
         var $body = element(document.body);
@@ -33,7 +32,7 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this.run(this.indicator);
+        this.run(this._indicator);
     }
 }
 

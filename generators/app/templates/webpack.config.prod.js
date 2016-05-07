@@ -1,17 +1,17 @@
-'use strict';
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
         index: './js/index.js'
     },
     output: {
-        path: path.resolve(__dirname, 'build', 'js'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[hash].[name].bundle.js',
         chunkFilename: '[hash].[id].bundle.js',
-        publicPath: 'js/'
+        publicPath: '/'
     },
     module: {
         loaders: [
@@ -20,16 +20,12 @@ module.exports = {
                 loader: 'style/useable!css!postcss!'
             },
             {
-                test: /\.less$/,
-                loader: 'style!css!postcss!less!'
-            },
-            {
                 test: /\.js$/,
                 loader: 'ng-annotate!babel?{"presets":["es2015"]}',
-                exclude: /(node_modules|bower_components)/
+                exclude: /(node_modules)/
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2)\w*/,
+                test: /\.(eot|svg|ttf|woff|woff2|png)\w*/,
                 loader: 'file'
             },
             {
@@ -56,6 +52,14 @@ module.exports = {
                 warnings: false
             }
         }),
-        new webpack.optimize.CommonsChunkPlugin('[hash].common.bundle.js')
+        new webpack.optimize.CommonsChunkPlugin('[hash].common.bundle.js'),
+        new HtmlWebpackPlugin({
+            pushState: <%= answers.pushState %>,
+            filename: 'index.html',
+            inject: 'body',
+            template: 'index.html_vm',
+            favicon: 'img/favicon.ico',
+            hash: false
+        })
     ]
 };

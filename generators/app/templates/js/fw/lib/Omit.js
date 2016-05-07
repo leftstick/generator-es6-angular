@@ -6,9 +6,8 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
-import { isObject, isArray, isString } from 'angular';
+import {isObject, isArray, isString} from 'angular';
 
 var clone = function(obj) {
     if (typeof obj !== 'object' || !obj) {

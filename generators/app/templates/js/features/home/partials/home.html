@@ -1,93 +1,38 @@
-<md-content class="md-padding" layout-align="start center" layout="column" flex>
-    <md-card flex>
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-display-2" style="text-align: center;">ES2015 AngularJS Skeleton</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-          <p class="md-headline">
-            This page demonstrate you the basis of this skeleton. And some common components were implemented for use. Feel free to register <a href="https://github.com/leftstick/generator-es6-angular/issues" target="_blank">issue</a> while encountering problems
-          </p>
-        </md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
-          <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
-        </md-card-actions>
-    </md-card>
+<div id="logo-wrap">
+      <img id="logo" ng-src="{{ home.logoUrl }}">
+      <h1>generator-es6-angular</h1>
+</div>
 
-    <md-content flex class="md-padding" style="width: 100%;">
-        <md-grid-list md-cols="1" md-cols-gt-sm="2" md-row-height="80px" md-gutter="8px">
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-autocomplete
-                      md-search-text="state.searchText"
-                      md-items="item in home.states"
-                      md-item-text="item"
-                      placeholder="What is your favorite US state?"
-                      style="width: 100%;">
-                    <md-item-template>
-                      <span md-highlight-text="state.searchText" md-highlight-flags="^i">{{ item }}</span>
-                    </md-item-template>
-                </md-autocomplete>
-            </md-grid-tile>
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-button aria-label="flat">flat</md-button>
-                <md-button class="md-raised" aria-label="raised">raised button</md-button>
-                <md-button class="md-icon-button" aria-label="icon">
-                    <md-icon md-font-icon="icon-reddit" style="font-size: 20px;"></md-icon>
-                </md-button>
-            </md-grid-tile>
+<p id="desc">
+    Flexible, robust skeleton for AngularJS, including full featured dev/release process<br/><br/>
+    Very welcome to give me feedbacks! <br/><br/>
+    Stars would be the best^^!!
+</p>
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-button class="md-raised" aria-label="toast" ng-click="home.toast($event)">toast</md-button>
-            </md-grid-tile>
+<div id="github">
+    <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+    <iframe src="http://ghbtns.com/github-btn.html?user=leftstick&repo=generator-es6-angular&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+</div>
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-button class="md-raised" aria-label="dialog" ng-click="home.dialog($event)">dialog</md-button>
-            </md-grid-tile>
+<div id="todo-app">
+    <h2>Simple TODO app</h2>
+    <input type="text" placeholder="Typing here..." ng-keyup="home.addTodo($event)">
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
-            </md-grid-tile>
+    <span>{{ home.remaining() }} of {{ home.todos.length }} remaining</span>
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-switch ng-model="data.cb1" aria-label="Switch 1">
-                    Switch 1: {{ data.cb1 }}
-                </md-switch>
-            </md-grid-tile>
+    <ul class="todos">
+        <li ng-repeat="todo in home.todos">
+            <input type="checkbox" ng-model="todo.finished">
+            <span ng-style="{'text-decoration': todo.finished ? 'line-through' : 'none'}">
+                {{ todo.txt }}
+            </span>
+        </li>
+    </ul>
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-checkbox
-                    ng-model="state.checkbox"
-                    aria-label="Checkbox"
-                    ng-true-value="'YES'"
-                    ng-false-value="'NO'"
-                    class="md-warn md-align-top-left" flex>
-                    Checkbox 2 (md-warn)  <br/>
-                    <span>
-                        You would never know what is this! But you can click it
-                    </span>
-                    <br/>
-                    {{ state.checkbox }}
-                </md-checkbox>
-            </md-grid-tile>
+    <a href="" class="archive" ng-disabled="home.remaining() === home.todos.length" ng-click="home.archive()">archive</a>
+</div>
 
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-input-container>
-                    <label>Title</label>
-                    <input ng-model="user.title">
-                </md-input-container>
-            </md-grid-tile>
-
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-progress-circular ></md-progress-circular>
-            </md-grid-tile>
-
-            <md-grid-tile md-rowspan="1" md-colspan="1">
-                <md-progress-linear ></md-progress-linear>
-            </md-grid-tile>
-        </md-grid-list>
-    </md-content>
-
-
-</md-content>
+<div id="footer">
+    <p>Released under the <a href="http://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
+    <p>Copyright (c) 2016 <a href="https://github.com/leftstick" target="_blank">Howard.Zuo</a></p>
+</div>

@@ -6,14 +6,14 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
-import angular from 'angular';
+
+import {module} from 'angular';
 
 class FeatureBase {
 
     constructor(name) {
         this.export = name;
-        this.mod = angular.module(this.export, []);
+        this.mod = module(this.export, []);
 
         this.controller = this.mod.controller;
         this.factory = this.mod.factory;
@@ -24,11 +24,9 @@ class FeatureBase {
         this.run = this.mod.run;
     }
 
-    beforeStart() {
-    }
+    beforeStart() {}
 
-    execute() {
-    }
+    execute() {}
 }
 
 export default FeatureBase;

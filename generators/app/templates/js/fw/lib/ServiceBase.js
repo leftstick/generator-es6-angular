@@ -6,7 +6,7 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 class ServiceBase {
 
     constructor(features, app) {
@@ -17,8 +17,7 @@ class ServiceBase {
         this.service = app.service;
     }
 
-    execute() {
-    }
+    execute() {}
 }
 
 export default ServiceBase;

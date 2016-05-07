@@ -6,7 +6,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
 import FeatureBase from 'lib/FeatureBase';
 
@@ -16,7 +15,7 @@ class Feature extends FeatureBase {
         super('AutofocusModule');
     }
 
-    autoFocus() {
+    _autoFocus() {
         return {
             restrict: 'A',
             link: function($scope, element) {
@@ -26,7 +25,7 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this.directive('autofocus', this.autoFocus);
+        this.directive('autofocus', this._autoFocus);
     }
 }
 

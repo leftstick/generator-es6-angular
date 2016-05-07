@@ -8,11 +8,10 @@
  *
  * ******************************************************************************************************
  */
-'use strict';
+
 import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
-import ListController from './controller/ListController';
-import ListService from './service/ListService';
+import AboutController from './controller/AboutController';
 
 class Feature extends FeatureBase {
 
@@ -22,8 +21,7 @@ class Feature extends FeatureBase {
     }
 
     execute() {
-        this.controller('ListController', ListController);
-        this.service('ListService', ListService);
+        this.controller('AboutController', AboutController);
     }
 }
 

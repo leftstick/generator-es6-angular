@@ -6,9 +6,9 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
+
 import InitBase from 'lib/InitBase';
-import { element } from 'angular';
+import {element} from 'angular';
 import __config from 'etc/config';
 
 class Initializer extends InitBase {

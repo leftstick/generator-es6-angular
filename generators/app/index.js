@@ -71,15 +71,16 @@ var gen = generators.Base.extend({
                     'https://registry.npmjs.org'
                 ]
             }
-        ], function(answers) {
-            require('date-util');
-            this.answers = answers;
-            this.answers.date = new Date().format('mmm d, yyyy');
-            this.obj = {answers: this.answers};
-            done();
-        }.bind(this));
+        ])
+            .then(function(answers) {
+                require('date-util');
+                self.answers = answers;
+                self.answers.date = new Date().format('mmm d, yyyy');
+                self.obj = {answers: self.answers};
+                done();
+            });
     },
-    configuring: function() {
+    configuring: function(answers) {
         var path = require('path');
         var fs = require('fs');
         var self = this;
@@ -104,20 +105,21 @@ var gen = generators.Base.extend({
                 interpolate: /<%=([\s\S]+?)%>/g
             })(self.obj);
         });
-        self.directory(self.templatePath('less'), self.destinationPath('less'));
-        self.directory(self.templatePath('font'), self.destinationPath('font'));
-        self.directory(self.templatePath('mock'), self.destinationPath('mock'));
-        self.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
-        self.copy(self.templatePath('gulpfile.js'), self.destinationPath('gulpfile.js'));
-        self.fs.copyTpl(self.templatePath('index.html_vm'), self.destinationPath('index.html'), self.obj);
+        self.directory(self.templatePath('css'), self.destinationPath('css'));
+        self.fs.copy(self.templatePath('eslintrc'), self.destinationPath('.eslintrc'));
+        self.fs.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
+        self.fs.copy(self.templatePath('index.html_vm'), self.destinationPath('index.html_vm'));
+
         self.fs.copyTpl(self.templatePath('package.json_vm'), self.destinationPath('package.json'), self.obj);
-        self.copy(self.templatePath('webpack.config.dev.js'), self.destinationPath('webpack.config.dev.js'));
-        self.copy(self.templatePath('webpack.config.prod.js'), self.destinationPath('webpack.config.prod.js'));
+
+        self.fs.copyTpl(self.templatePath('webpack.config.dev.js'),
+            self.destinationPath('webpack.config.dev.js'), self.obj);
+
+        self.fs.copyTpl(self.templatePath('webpack.config.prod.js'),
+            self.destinationPath('webpack.config.prod.js'), self.obj);
     },
     install: function() {
-        this.npmInstall(undefined, {
-            registry: this.answers.registry
-        });
+        this.npmInstall(null, {registry: this.answers.registry});
     },
     end: function() {
         this.log.ok('Project ' + this.answers.name + ' generated!!!');

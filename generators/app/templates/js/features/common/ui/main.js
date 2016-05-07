@@ -5,7 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-'use strict';
 
 import autofocus from './Autofocus';
 import routeIndicator from './RouteIndicator';
