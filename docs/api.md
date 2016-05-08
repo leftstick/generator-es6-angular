@@ -41,8 +41,6 @@ new webpack.ProvidePlugin({
 ## References ##
 
 1. [yeoman](http://yeoman.io/)
-2. [gulp](http://gulpjs.com/)
-3. [webpack](http://webpack.github.io/)
-4. [es6-features](https://github.com/lukehoban/es6features)
-5. [angular](https://angularjs.org/)
-6. [angular-material](https://material.angularjs.org/latest/)
+2. [webpack](http://webpack.github.io/)
+3. [es6-features](https://github.com/lukehoban/es6features)
+4. [angular](https://angularjs.org/)
