@@ -11,7 +11,7 @@ import Extensions from 'ext/main';
 import Configurators from 'config/main';
 import Services from 'service/main';
 import Features from 'features/main';
-import Splash from 'splash-screen';
+import {Splash} from 'splash-screen';
 
 class App {
 
@@ -61,7 +61,7 @@ class App {
     destroySplash() {
         var _this = this;
         Splash.destroy();
-        require('splash-screen/splash.min.css').unuse();
+        require('splash-screen/dist/splash.min.css').unuse();
         setTimeout(function() {
             if (Splash.isRunning()) {
                 _this.destroySplash();
