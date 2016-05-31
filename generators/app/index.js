@@ -60,7 +60,7 @@ var gen = generators.Base.extend({
                 type: 'confirm',
                 name: 'pushState',
                 message: 'Use html5 mode?',
-                default: true
+                default: false
             },
             {
                 type: 'list',

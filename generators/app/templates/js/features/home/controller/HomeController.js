@@ -6,8 +6,6 @@
  *
  */
 
-import logoUrl from 'img/AngularJS-large.png';
-
 class HomeController {
 
     /*@ngInject*/
@@ -20,7 +18,6 @@ class HomeController {
     }
 
     _init_() {
-        this.logoUrl = logoUrl;
         this.todos = [];
         this.HomeService
             .getInitTodos()
