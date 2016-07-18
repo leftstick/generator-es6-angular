@@ -175,3 +175,15 @@ a{
     padding: 20px 0;
     background-color: #D8D8D8;
 }
+
+@media screen and (max-width: 450px) {
+    #logo{
+        width: 80%;
+    }
+    #why{
+        width: 100%;
+    }
+    #more {
+        width: 100%;
+    }
+}
