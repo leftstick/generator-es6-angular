@@ -3,21 +3,17 @@
   "version": "1.0.0",
   "description": "<%= answers.description %>",
   "scripts": {
-    "dev": "rm -rf build; webpack --config webpack.config.dev.js",
     "release": "rm -rf build; webpack --config webpack.config.prod.js",
-    "start": "webpack-dev-server --content-base build/ --config webpack.config.dev.js --history-api-fallback --hot --inline"
+    "start": "webpack-dev-server --content-base build/ --history-api-fallback --hot --inline"
   },
   "files": [
+    "css",
     "etc",
     "img",
     "js",
-    "css",
     "index.html",
-    "webpack.config.dev.js",
+    "webpack.config.js",
     "webpack.config.prod.js"
-  ],
-  "keywords": [
-      "es6", "<%= answers.name %>"
   ],
   "author": "<%= answers.username %> <% if(answers.email){ %><<%= answers.email %>><% } %>",
   "license": "MIT",

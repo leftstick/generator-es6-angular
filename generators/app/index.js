@@ -112,8 +112,8 @@ var gen = generators.Base.extend({
 
         self.fs.copyTpl(self.templatePath('package.json_vm'), self.destinationPath('package.json'), self.obj);
 
-        self.fs.copyTpl(self.templatePath('webpack.config.dev.js'),
-            self.destinationPath('webpack.config.dev.js'), self.obj);
+        self.fs.copyTpl(self.templatePath('webpack.config.js'),
+            self.destinationPath('webpack.config.js'), self.obj);
 
         self.fs.copyTpl(self.templatePath('webpack.config.prod.js'),
             self.destinationPath('webpack.config.prod.js'), self.obj);
