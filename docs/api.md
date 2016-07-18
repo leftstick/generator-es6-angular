@@ -26,7 +26,7 @@ The `main.js` in each folder takes the responsibility for managing all modules i
 npm install --save jquery
 ```
 
-If you'd like to add [jquery](http://jquery.com/) as replacement of `jqLite`, you have to modify the `webpack.config.dev.js` and `webpack.config.prod.js` with following plugin added:
+If you'd like to add [jquery](http://jquery.com/) as replacement of `jqLite`, you have to modify the `webpack.config.js` and `webpack.config.prod.js` with following plugin added:
 
 ```javascript
 new webpack.ProvidePlugin({
