@@ -1,10 +1,14 @@
 {
   "name": "generator-es6-angular",
-  "version": "4.2.2",
+  "version": "5.0.0",
   "description": "generator-es6-angular",
   "repository": {
     "type": "git",
     "url": "https://github.com/leftstick/generator-es6-angular.git"
+  },
+  "engines": {
+    "node": ">=7.0",
+    "npm": ">=3.0"
   },
   "bugs": {
     "url": "https://github.com/leftstick/generator-es6-angular/issues"
@@ -22,7 +26,7 @@
   "license": "MIT",
   "dependencies": {
     "date-util": "^1.2.1",
-    "lodash": "^4.13.1",
-    "yeoman-generator": "^0.24.1"
+    "lodash": "^4.17.4",
+    "yeoman-generator": "^1.0.1"
   }
 }

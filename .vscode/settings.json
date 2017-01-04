@@ -1,0 +1,6 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.formatOnSave": true,
+    "javascript.format.enable": true,
+    "eslint.enable": true
+}

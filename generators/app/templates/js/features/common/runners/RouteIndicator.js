@@ -6,22 +6,16 @@
  *  @date    <%= answers.date %>
  *
  */
-
 import {element} from 'angular';
-import pluck from 'lib/Pluck';
-import FeatureBase from 'lib/FeatureBase';
+import {pluck} from '../../../fw/helper/Object';
 
-class Feature extends FeatureBase {
-
-    constructor() {
-        super('RouteIndicator');
-    }
-
-    _indicator($rootScope, Routes) {
+export default {
+    type: 'runner',
+    run($rootScope, Routes) {
         'ngInject';
 
-        var $body = element(document.body);
-        var classes = pluck(Routes, 'id').join(' ');
+        const $body = element(document.body);
+        const classes = pluck(Routes, 'id').join(' ');
 
         $rootScope.$on('$routeChangeSuccess', function(e, route) {
             $body.removeClass(classes);
@@ -30,10 +24,4 @@ class Feature extends FeatureBase {
             }
         });
     }
-
-    execute() {
-        this.run(this._indicator);
-    }
-}
-
-export default Feature;
+};

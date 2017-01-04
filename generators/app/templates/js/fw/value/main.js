@@ -1,11 +1,10 @@
 /**
- *  Entrance of services
+ *  Entrance of value
  *
  *  @author  <%= answers.username %>
  *  @date    <%= answers.date %>
  *
  */
+import routes from './RoutesValue';
 
-import utils from './Utils';
-
-export default [utils];
+export default [routes];

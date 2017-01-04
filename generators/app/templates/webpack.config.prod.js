@@ -1,7 +1,7 @@
-var path = require('path');
-var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -42,8 +42,7 @@ module.exports = {
     resolve: {
         root: [
             path.resolve(__dirname),
-            path.resolve(__dirname, 'js/'),
-            path.resolve(__dirname, 'js/fw/')
+            path.resolve(__dirname, 'js/')
         ]
     },
     plugins: [

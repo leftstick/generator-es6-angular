@@ -7,7 +7,7 @@
  *
  */
 
-import logical from './logical/main';
-import ui from './ui/main';
+import directives from './directives/main';
+import runners from './runners/main';
 
-export default [...logical, ...ui];
+export default [...runners, ...directives];

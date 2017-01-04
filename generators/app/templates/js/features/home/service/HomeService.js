@@ -5,33 +5,33 @@
  *  @date    <%= answers.date %>
  *
  */
-
-class HomeService {
+export default class {
 
     /*@ngInject*/
-    constructor($http, utils) {
-        this.$http = $http;
-        this.utils = utils;
+    /*@ngInject*/
+    constructor($q) {
+        this.$q = $q;
     }
 
     getInitTodos() {
-        return Promise.resolve([
-            {
-                finished: true,
-                txt: 'Learn JavaScript'
-            },
-            {
-                txt: 'Learn AngularJS'
-            },
-            {
-                txt: 'Learn webpack'
-            },
-            {
-                txt: 'Learn node'
-            }
-        ]);
+        return this.$q(resolve => {
+            setTimeout(function() {
+                resolve([
+                    {
+                        finished: true,
+                        txt: 'Learn JavaScript'
+                    },
+                    {
+                        txt: 'Learn AngularJS'
+                    },
+                    {
+                        txt: 'Learn webpack'
+                    },
+                    {
+                        txt: 'Learn node'
+                    }
+                ]);
+            }, 2000);
+        });
     }
-
 }
-
-export default HomeService;

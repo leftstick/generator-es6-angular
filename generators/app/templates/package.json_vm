@@ -4,7 +4,7 @@
   "description": "<%= answers.description %>",
   "scripts": {
     "release": "rm -rf build; webpack --config webpack.config.prod.js",
-    "start": "webpack-dev-server --content-base build/ --history-api-fallback --hot --inline"
+    "start": "webpack-dev-server --content-base build/ --history-api-fallback --hot --inline --host 0.0.0.0"
   },
   "files": [
     "css",
@@ -18,23 +18,23 @@
   "author": "<%= answers.username %> <% if(answers.email){ %><<%= answers.email %>><% } %>",
   "license": "MIT",
   "dependencies":{
-    "angular": "^1.5.6",
-    "angular-route": "^1.5.6",
-    "splash-screen": "^3.0.0"
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1",
+    "splash-screen": "^3.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
-    "babel-core": "^6.10.4",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "css-loader": "^0.23.1",
+    "autoprefixer": "^6.6.1",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.26.1",
     "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.22.0",
-    "ng-annotate-loader": "^0.1.0",
-    "postcss-loader": "^0.9.1",
-    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.26.0",
+    "ng-annotate-loader": "^0.2.0",
+    "postcss-loader": "^1.2.1",
+    "html-loader": "^0.4.4",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   }
 }

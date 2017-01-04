@@ -8,6 +8,5 @@
 
 import common from './common/main';
 import home from './home/main';
-import about from './about/main';
 
-export default [about, ...common, home];
+export default [...common, home];

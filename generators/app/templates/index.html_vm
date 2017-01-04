@@ -2,10 +2,12 @@
 <html lang="en">
     <head>
         <% if (htmlWebpackPlugin.options.pushState) { %><base href="/"><% } %>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     </head>
     <body>
 
-        <div ng-view autoscroll="true"></div>
+        <application></application>
 
     </body>
 </html>

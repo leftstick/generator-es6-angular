@@ -1,0 +1,19 @@
+/**
+ *  Defines the Description sub component
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
+export default {
+    template: `
+        <p id="desc">
+            Flexible, robust skeleton for AngularJS, including full featured dev/release process<br/><br/>
+            Very welcome to give me feedbacks! <br/><br/>
+            Stars would be the best^^!!
+        </p>
+    `,
+    controller: class {
+        constructor() {}
+    }
+};

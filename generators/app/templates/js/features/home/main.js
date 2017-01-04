@@ -8,23 +8,30 @@
  *
  * ******************************************************************************************************
  */
-
-import FeatureBase from 'lib/FeatureBase';
 import Routes from './Routes';
-import HomeController from './controller/HomeController';
+
+import Home from './components/home';
+import Logo from './components/subs/Logo';
+import Description from './components/subs/Description';
+import Github from './components/subs/Github';
+import TodoApp from './components/subs/Todo';
+import Footer from './components/subs/Footer';
+
 import HomeService from './service/HomeService';
 
-class Feature extends FeatureBase {
-
-    constructor() {
-        super('home');
-        this.routes = Routes;
+export default {
+    type: 'feature',
+    name: 'home',
+    routes: Routes,
+    component: {
+        home: Home,
+        logo: Logo,
+        description: Description,
+        github: Github,
+        todoApp: TodoApp,
+        footer: Footer
+    },
+    service: {
+        HomeService
     }
-
-    execute() {
-        this.controller('HomeController', HomeController);
-        this.service('HomeService', HomeService);
-    }
-}
-
-export default Feature;
+};

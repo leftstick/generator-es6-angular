@@ -6,65 +6,64 @@
  *
  */
 import angular from 'angular';
-import Initializers from 'init/main';
-import Extensions from 'ext/main';
-import Configurators from 'config/main';
-import Services from 'service/main';
-import Features from 'features/main';
+import {pluck} from './fw/helper/Object';
+import {declareFeatures, declareValues, declareDirectives, declareRunners} from './fw/helper/ngDeclare';
+import Extensions from './fw/ext/main';
+import Configurators from './fw/config/main';
+import Values from './fw/value/main';
+import Things from './features/main';
+import Application from './application';
 import {Splash} from 'splash-screen';
 
-class App {
+export default class {
 
     constructor() {
         this.appName = '<%= answers.name %>';
-        Features.forEach(function(Feature) {
-            this.push(new Feature());
-        }, this.features = []);
+        this.features = Things.filter(t => t.type === 'feature' && t.name);
+    }
+
+    validate() {
+        if (!this.features || this.features.length === 0) {
+            return console.warn('No features loaded');
+        }
+
+        const modNames = pluck(this.features, 'name').sort();
+        for (let i = 0; i < modNames.length - 1; i++) {
+            if (modNames[i] === modNames[i + 1]) {
+                throw new Error('Duplicated Module: [ ' + modNames[i] + ' ], you have to specify another name');
+            }
+        }
     }
 
     findDependencies() {
-        this.depends = Extensions.slice(0);
-
-        var featureNames = this.features
-            .filter(feature => feature.export)
-            .map(feature => feature.export);
-
-        this.depends.push(...featureNames);
-    }
-
-    beforeStart() {
-        Initializers.forEach(function(Initializer) {
-            (new Initializer(this.features)).execute();
-        }, this);
-
-        this.features.forEach(feature => feature.beforeStart());
+        this.depends = [...Extensions, ...this.features.map(f => f.name)];
     }
 
     createApp() {
-        this.features.forEach(feature => feature.execute());
+        declareFeatures(this.features);
 
         this.app = angular.module(this.appName, this.depends);
+        this.app.component('application', Application);
     }
 
     configApp() {
-        Configurators.forEach(function(Configurator) {
-            (new Configurator(this.features, this.app)).execute();
-        }, this);
+        Configurators.forEach(Configurator => {
+            this.app.config(Configurator.config);
+        });
     }
 
-    registerService() {
-        Services.forEach(function(Service) {
-            (new Service(this.features, this.app)).execute();
-        }, this);
+    registerServices() {
+        declareValues(this.app, Values);
+        declareDirectives(this.app, Things.filter(t => t.type === 'directive'));
+        declareRunners(this.app, Things.filter(t => t.type === 'runner'));
     }
 
     destroySplash() {
-        var _this = this;
         Splash.destroy();
         require('splash-screen/dist/splash.min.css').unuse();
-        setTimeout(function() {
+        setTimeout(() => {
             if (Splash.isRunning()) {
-                _this.destroySplash();
+                this.destroySplash();
             }
         }, 100);
     }
@@ -74,15 +73,12 @@ class App {
     }
 
     run() {
+        this.validate();
         this.findDependencies();
-        this.beforeStart();
         this.createApp();
         this.configApp();
-        this.registerService();
+        this.registerServices();
         this.destroySplash();
         this.launch();
     }
-
 }
-
-export default App;

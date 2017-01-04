@@ -1,26 +1,26 @@
-'use strict';
+const Generator = require('yeoman-generator');
 
-var generators = require('yeoman-generator');
+class gen extends Generator {
+    constructor(args, opts) {
+        super(args, opts);
+    }
 
-var gen = generators.Base.extend({
-    initializing: function() {
+    initializing() {
 
         try {
             this.username = process.env.USER || process.env.USERPROFILE.split(require('path').sep)[2];
         } catch (e) {
             this.username = '';
         }
-    },
-    prompting: function() {
-        var done = this.async();
-        var self = this;
+    }
 
-        this.prompt([
+    prompting() {
+        return this.prompt([
             {
                 type: 'input',
                 name: 'name',
                 message: 'Your project name',
-                validate: function(name) {
+                validate: name => {
                     if (!name) {
                         return 'Project name cannot be empty';
                     }
@@ -28,11 +28,11 @@ var gen = generators.Base.extend({
                         return 'Project name should only consist of 0~9, a~z, A~Z, _, .';
                     }
 
-                    var fs = require('fs');
-                    if (!fs.existsSync(self.destinationPath(name))) {
+                    const fs = require('fs');
+                    if (!fs.existsSync(this.destinationPath(name))) {
                         return true;
                     }
-                    if (require('fs').statSync(self.destinationPath(name)).isDirectory()) {
+                    if (require('fs').statSync(this.destinationPath(name)).isDirectory()) {
                         return 'Project already exist';
                     }
                     return true;
@@ -72,58 +72,58 @@ var gen = generators.Base.extend({
                 ]
             }
         ])
-            .then(function(answers) {
+            .then(answers => {
                 require('date-util');
-                self.answers = answers;
-                self.answers.date = new Date().format('mmm d, yyyy');
-                self.obj = {answers: self.answers};
-                done();
+                this.answers = answers;
+                this.answers.date = new Date().format('mmm d, yyyy');
+                this.obj = {answers: this.answers};
             });
-    },
-    configuring: function(answers) {
-        var path = require('path');
-        var fs = require('fs');
-        var self = this;
-        var done = this.async();
-        fs.exists(this.destinationPath(this.answers.name), function(exists) {
-            if (exists && fs.statSync(self.destinationPath(self.answers.name)).isDirectory()) {
-                self.log.error('Directory [' + self.answers.name + '] exists');
+    }
+
+    configuring(answers) {
+        const path = require('path');
+        const fs = require('fs');
+        const done = this.async();
+        fs.exists(this.destinationPath(this.answers.name), exists => {
+            if (exists && fs.statSync(this.destinationPath(this.answers.name)).isDirectory()) {
+                this.log.error(`Directory [${this.answers.name}] exists`);
                 process.exit(1);
             }
-            self.destinationRoot(path.join(self.destinationRoot(), self.answers.name));
+            this.destinationRoot(path.join(this.destinationRoot(), this.answers.name));
             done();
         });
-    },
-    writing: function() {
-        var self = this;
-        var _ = require('lodash');
-
-        self.fs.copyTpl(self.templatePath('etc/config.js'), self.destinationPath('etc/config.js'), self.obj);
-        self.directory(self.templatePath('img'), self.destinationPath('img'));
-        self.directory(self.templatePath('js'), self.destinationPath('js'), function(body) {
-            return _.template(body, {
-                interpolate: /<%=([\s\S]+?)%>/g
-            })(self.obj);
-        });
-        self.directory(self.templatePath('css'), self.destinationPath('css'));
-        self.fs.copy(self.templatePath('eslintrc'), self.destinationPath('.eslintrc'));
-        self.fs.copy(self.templatePath('gitignore'), self.destinationPath('.gitignore'));
-        self.fs.copy(self.templatePath('index.html_vm'), self.destinationPath('index.html_vm'));
-
-        self.fs.copyTpl(self.templatePath('package.json_vm'), self.destinationPath('package.json'), self.obj);
-
-        self.fs.copyTpl(self.templatePath('webpack.config.js'),
-            self.destinationPath('webpack.config.js'), self.obj);
-
-        self.fs.copyTpl(self.templatePath('webpack.config.prod.js'),
-            self.destinationPath('webpack.config.prod.js'), self.obj);
-    },
-    install: function() {
-        this.npmInstall(null, {registry: this.answers.registry});
-    },
-    end: function() {
-        this.log.ok('Project ' + this.answers.name + ' generated!!!');
     }
-});
+
+    writing() {
+        const _ = require('lodash');
+
+        this.fs.copyTpl(this.templatePath('etc/config.js'), this.destinationPath('etc/config.js'), this.obj);
+        this.fs.copy(this.templatePath('img', '*'), this.destinationPath('img'));
+        this.fs.copyTpl(this.templatePath('js'), this.destinationPath('js'), this.obj, {
+            interpolate: /<%=([\s\S]+?)%>/g
+        });
+        this.fs.copy(this.templatePath('css', '*'), this.destinationPath('css'));
+        this.fs.copy(this.templatePath('eslintrc'), this.destinationPath('.eslintrc'));
+        this.fs.copy(this.templatePath('esformatter'), this.destinationPath('.esformatter'));
+        this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
+        this.fs.copy(this.templatePath('index.html_vm'), this.destinationPath('index.html_vm'));
+
+        this.fs.copyTpl(this.templatePath('package.json_vm'), this.destinationPath('package.json'), this.obj);
+
+        this.fs.copyTpl(this.templatePath('webpack.config.js'),
+            this.destinationPath('webpack.config.js'), this.obj);
+
+        this.fs.copyTpl(this.templatePath('webpack.config.prod.js'),
+            this.destinationPath('webpack.config.prod.js'), this.obj);
+    }
+
+    install() {
+        this.npmInstall(null, {registry: this.answers.registry});
+    }
+
+    end() {
+        this.log.ok(`Project ${this.answers.name} generated!!!`);
+    }
+}
 
 module.exports = gen;
