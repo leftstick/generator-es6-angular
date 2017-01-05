@@ -5,7 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
-import router from './RouterConfig';
+import router from './routerConfig';
 import sso from './SSOConfig';
 
 export default [router, sso];

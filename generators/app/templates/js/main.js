@@ -7,7 +7,7 @@
  */
 import angular from 'angular';
 import {pluck} from './fw/helper/Object';
-import {declareFeatures, declareValues, declareDirectives, declareRunners} from './fw/helper/ngDeclare';
+import {declareFeatures, declareValues, declareDirectives, declareComponents, declareRunners} from './fw/helper/ngDeclare';
 import Extensions from './fw/ext/main';
 import Configurators from './fw/config/main';
 import Values from './fw/value/main';
@@ -55,6 +55,7 @@ export default class {
     registerServices() {
         declareValues(this.app, Values);
         declareDirectives(this.app, Things.filter(t => t.type === 'directive'));
+        declareComponents(this.app, Things.filter(t => t.type === 'component'));
         declareRunners(this.app, Things.filter(t => t.type === 'runner'));
     }
 

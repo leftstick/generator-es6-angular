@@ -6,7 +6,7 @@
  *
  */
 import angular from 'angular';
-import {isString, isClass, isFunction, isObject, isArray} from './Object';
+import {isArray, isObject, isInjectedFunction, flatten} from './object';
 
 const FEATURE_SET = [
     'provider', 'factory', 'service', 'decorator',
@@ -17,7 +17,7 @@ const FEATURE_SET = [
     'directive', 'component'
 ];
 const FUNCTIONS_SET = ['provider', 'factory', 'service', 'decorator', 'animation', 'filter', 'controller', 'directive'];
-const ANYTHING_SET = ['value', 'constant'];
+const ANYTHING_SET = ['value', 'constant', 'component'];
 const NO_KEY_SET = ['run', 'config'];
 export function declareFeatures(features) {
     features
@@ -34,17 +34,11 @@ export function declareFeatures(features) {
             obj
                 .defines
                 .forEach(defined => {
-                    if (defined.method === 'directive') {
-                        if (isClass(defined.value)) {
-                            return featureModule[defined.method](defined.key, () => new defined.value());
-                        }
-                    }
-                    if (defined.method === 'component') {
-                        return featureModule[defined.method](defined.key, defined.value);
-                    }
                     if (FUNCTIONS_SET.includes(defined.method)) {
                         if (isInjectedFunction(defined.value)) {
                             return featureModule[defined.method](defined.key, defined.value);
+                        } else {
+                            console.warn(`[${defined.key}] is not a proper factory method`);
                         }
                     }
                     if (ANYTHING_SET.includes(defined.method)) {
@@ -60,29 +54,35 @@ export function declareValues(app, valueObjs) {
         .map(valueObj => getDefinedPairs(valueObj, VALUE_SET))
         .reduce(flatten, [])
         .forEach(obj => {
-            if (isFunction(obj.value)) {
-                return app[obj.method](obj.key, obj.value());
-            }
-            if (isObject(obj.value)) {
-                return app[obj.method](obj.key, obj.value);
-            }
+            return app[obj.method](obj.key, obj.value);
         });
 }
 
 export function declareDirectives(app, directives) {
     directives
         .filter(dir => {
-            const shouldUse = (isClass(dir.directiveFactory) || isInjectedFunction(dir.directiveFactory)) && dir.name;
+            const shouldUse = isInjectedFunction(dir.directiveFactory) && dir.name;
             if (!shouldUse) {
                 console.warn('directive defined without property [name], or method [directiveFactory]');
             }
             return shouldUse;
         })
         .forEach(dir => {
-            if (isFunction(dir.directiveFactory)) {
-                return app.directive(dir.name, dir.directiveFactory);
+            return app.directive(dir.name, dir.directiveFactory);
+        });
+}
+
+export function declareComponents(app, components) {
+    components
+        .filter(dir => {
+            const shouldUse = isObject(dir.componentDefinitionObject) && dir.name;
+            if (!shouldUse) {
+                console.warn('component defined without property [name], or [componentDefinitionObject]');
             }
-            app.directive(dir.name, () => new dir.directiveFactory());
+            return shouldUse;
+        })
+        .forEach(dir => {
+            return app.component(dir.name, dir.componentDefinitionObject);
         });
 }
 
@@ -104,13 +104,13 @@ function getDefinedPairs(valueObj, SETS) {
     return Object
         .keys(valueObj)
         .filter(method => SETS.includes(method) && Object.keys(valueObj[method]).length)
-        .map(method => ({method: method, defines: valueObj[method]}))
+        .map(method => ({method, defines: valueObj[method]}))
         .map(combine => {
             return Object
                 .keys(combine.defines)
                 .map(key => ({
                     method: combine.method,
-                    key: key,
+                    key,
                     value: combine.defines[key]
                 }));
         })
@@ -133,31 +133,4 @@ function getDefinedMethods(valueObj, SETS) {
                 .map(v => ({method: method, value: v}));
         })
         .reduce(flatten, []);
-}
-
-
-function flatten(previous, current) {
-    return previous.concat(current);
-}
-
-function isInjectedFunction(func) {
-    if (!isArray(func) && !isFunction(func)) {
-        return false;
-    }
-    if (isFunction(func)) {
-        return true;
-    }
-    if (!func.length) {
-        return false;
-    }
-    if (func.length > 1) {
-        if (!func.slice(0, func.length - 1).every(k => isString(k))) {
-            return false;
-        }
-    }
-    if (!isFunction(func[func.length - 1])) {
-        return false;
-    }
-
-    return true;
 }

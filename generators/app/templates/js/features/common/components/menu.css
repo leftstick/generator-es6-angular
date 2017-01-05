@@ -1,0 +1,32 @@
+/* nav */
+#nav {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#nav li {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.nav-link {
+    color: #7f8c8d;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 3px;
+    margin: 0 25px;
+}
+
+.nav-link.active {
+    color: #424242;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #dd1b16;
+}

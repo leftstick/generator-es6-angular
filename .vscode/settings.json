@@ -2,5 +2,8 @@
 {
     "editor.formatOnSave": true,
     "javascript.format.enable": true,
-    "eslint.enable": true
+    "eslint.enable": true,
+    "files.associations": {
+        "*.co": "javascript"
+    }
 }

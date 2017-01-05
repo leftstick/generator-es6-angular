@@ -1,0 +1,24 @@
+/**
+ *  Defines the Why sub component
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
+import './why.css';
+export default {
+    template: `
+        <div id="why">
+            <h4>You may choose it if you are looking for skeleton with:</h4>
+            <ul>
+                <li>full featured dev/dist tools</li>
+                <li>flexible structure, external libraries can be easily injected</li>
+                <li>robust functionality, no black magic behind, just <code>AngularJS</code> usage</li>
+                <li>ES2015 implementation</li>
+            </ul>
+        </div>
+    `,
+    controller: class {
+        constructor() {}
+    }
+};

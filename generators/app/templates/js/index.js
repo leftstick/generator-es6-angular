@@ -11,9 +11,7 @@ require.ensure(['splash-screen/dist/splash.min.css', 'splash-screen'], function(
     require('splash-screen').Splash.enable('circular');
 });
 
-require.ensure(['css/main.css', 'splash-screen', './main'], function(require) {
-
-    require('css/main.css').use();
+require.ensure(['splash-screen', './main'], function(require) {
 
     var App = require('./main').default;
     (new App()).run();

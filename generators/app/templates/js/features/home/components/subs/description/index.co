@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './description.css';
 export default {
     template: `
         <p id="desc">

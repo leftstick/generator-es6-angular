@@ -5,6 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-import routeIndicator from './RouteIndicator';
+import routeIndicator from './routeIndicator';
 
 export default [routeIndicator];

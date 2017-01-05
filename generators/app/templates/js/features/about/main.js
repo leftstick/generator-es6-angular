@@ -8,21 +8,19 @@
  *
  * ******************************************************************************************************
  */
+import routes from './routes';
 
-import FeatureBase from 'lib/FeatureBase';
-import Routes from './Routes';
-import AboutController from './controller/AboutController';
+import about from './components/about';
+import why from './components/subs/why';
+import more from './components/subs/more';
 
-class Feature extends FeatureBase {
-
-    constructor() {
-        super('about');
-        this.routes = Routes;
+export default {
+    type: 'feature',
+    name: 'about',
+    routes,
+    component: {
+        about,
+        why,
+        more
     }
-
-    execute() {
-        this.controller('AboutController', AboutController);
-    }
-}
-
-export default Feature;
+};

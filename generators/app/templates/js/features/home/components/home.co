@@ -10,7 +10,7 @@ export default {
         <logo></logo>
         <description></description>
         <github></github>
-        <todo-app list="home.todos" on-toggle="home.toggleTodo(todo)" on-add="home.addTodo(todo)" on-archive="home.archive()"></todo-app>
+        <todo-app list="$ctrl.todos" loading="$ctrl.loading" on-toggle="$ctrl.toggleTodo(todo)" on-add="$ctrl.addTodo(todo)" on-archive="$ctrl.archive()"></todo-app>
         <footer></footer>
     `,
     controller: class {
@@ -18,6 +18,7 @@ export default {
         constructor(HomeService) {
             this.HomeService = HomeService;
             this.todos = [];
+            this.loading = true;
         }
 
         $onInit() {
@@ -25,6 +26,7 @@ export default {
                 .getInitTodos()
                 .then(todos => {
                     this.todos = todos;
+                    this.loading = false;
                 });
         }
 
@@ -33,10 +35,12 @@ export default {
         }
 
         toggleTodo(todo) {
-            this.todos = this.todos.map(t => t.txt === todo.txt ? {
-                finished: !todo.finished,
-                txt: t.txt
-            } : t);
+            this.todos = this.todos.map(t => {
+                if (t.txt !== todo.txt) {
+                    return t;
+                }
+                return {finished: !todo.finished, txt: t.txt};
+            });
         }
 
         archive() {
@@ -44,6 +48,5 @@ export default {
         }
 
         $onDestroy() {}
-    },
-    controllerAs: 'home'
+    }
 };

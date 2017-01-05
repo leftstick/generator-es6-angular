@@ -1,0 +1,42 @@
+/**
+ *  Defines the Menu component.
+ *  This component is used to display a menu on top of the app
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
+import './menu.css';
+export default {
+    type: 'component',
+    name: 'menu',
+
+    componentDefinitionObject: {
+        template: `
+        <ul id="nav">
+            <li ng-click="$ctrl.activeRoute('home')">
+                <a href="#!/home" class="nav-link" ng-class="{active: $ctrl.route === 'home'}">HOME</a>
+            </li>
+            <li ng-click="$ctrl.activeRoute('about')">
+                <a href="#!/about" class="nav-link" ng-class="{active: $ctrl.route === 'about'}">ABOUT</a>
+            </li>
+        </ul>
+        `,
+        controller: class {
+            /* @ngInject */
+            constructor($rootScope) {
+                this.route = 'home';
+
+                $rootScope.$on('$routeChangeSuccess', (e, next) => {
+                    if (next.$$route && next.$$route.id) {
+                        this.route = next.$$route.id;
+                    }
+                });
+            }
+
+            activeRoute(name) {
+                this.route = name;
+            }
+        }
+    }
+};

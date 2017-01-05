@@ -1,0 +1,20 @@
+/**
+ *  Defines the More sub component
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
+import './more.css';
+export default {
+    template: `
+        <div id="more">
+            <a href="https://github.com/leftstick/generator-es6-angular/blob/master/docs/api.md" target="_blank" class="button">
+                More read
+            </a>
+        </div>
+    `,
+    controller: class {
+        constructor() {}
+    }
+};

@@ -1,0 +1,29 @@
+/* body */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a[disabled]{
+    pointer-events: none;
+    color: #7f8c8d;
+}
+
+a{
+    text-decoration: none;
+    color: #2E64FE;
+}
+
+[ng-view]{
+    text-align: center;
+}

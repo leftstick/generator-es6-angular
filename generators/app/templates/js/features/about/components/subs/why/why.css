@@ -1,0 +1,23 @@
+#why{
+    width: 600px;
+    margin: 55px auto 15px auto;
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #D8D8D8;
+    border-radius: 2px;
+    background-color: #f7f7f9;
+}
+
+#why h4{
+    margin-top: 0;
+}
+
+#why ul li {
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 450px) {
+    #why{
+        width: 100%;
+    }
+}

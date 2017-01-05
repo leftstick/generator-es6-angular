@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './logo.css';
 import logoUrl from 'img/AngularJS-large.png';
 
 export default {

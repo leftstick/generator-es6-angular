@@ -16,8 +16,12 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.css$/,
-                loader: 'style/useable!css!postcss!'
+                test: /splash\.min\.css$/,
+                loader: 'style/useable'
+            },
+            {
+                test: /(?!min)\.css$/,
+                loader: 'style!css!postcss!'
             },
             {
                 test: /\.js$/,
@@ -43,6 +47,11 @@ module.exports = {
         root: [
             path.resolve(__dirname),
             path.resolve(__dirname, 'js/')
+        ],
+        extensions: [
+            '',
+            '.js',
+            '.co'
         ]
     },
     plugins: [
@@ -53,7 +62,6 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin('[hash].common.bundle.js'),
         new HtmlWebpackPlugin({
-            pushState: <%= answers.pushState %>,
             filename: 'index.html',
             inject: 'body',
             template: 'index.html_vm',

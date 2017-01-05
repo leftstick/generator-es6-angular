@@ -1,0 +1,16 @@
+/**
+ *  Defines the About component
+ *
+ *  @author  <%= answers.username %>
+ *  @date    <%= answers.date %>
+ *
+ */
+export default {
+    template: `
+        <why></why>
+        <more></more>
+    `,
+    controller: class {
+        constructor() {}
+    }
+};

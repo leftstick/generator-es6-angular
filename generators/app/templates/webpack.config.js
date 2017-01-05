@@ -18,11 +18,15 @@ module.exports = {
     module: {
         loaders: [
             {
-                test: /\.css$/,
-                loader: 'style/useable!css!postcss!'
+                test: /splash\.min\.css$/,
+                loader: 'style/useable'
             },
             {
-                test: /\.js$/,
+                test: /(?!min)\.css$/,
+                loader: 'style!css!postcss!'
+            },
+            {
+                test: /\.(js|co)$/,
                 loader: 'ng-annotate!babel?{"presets":["es2015"]}',
                 exclude: /(node_modules)/
             },
@@ -45,12 +49,16 @@ module.exports = {
         root: [
             path.resolve(__dirname),
             path.resolve(__dirname, 'js/')
+        ],
+        extensions: [
+            '',
+            '.js',
+            '.co'
         ]
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin('common.bundle.js'),
         new HtmlWebpackPlugin({
-            pushState: <%= answers.pushState %>,
             filename: 'index.html',
             inject: 'body',
             template: 'index.html_vm',

@@ -1,10 +1,10 @@
 /**
- *  Entrance of value
+ *  Entrance of common components
  *
  *  @author  <%= answers.username %>
  *  @date    <%= answers.date %>
  *
  */
-import routes from './routesValue';
+import menu from './Menu';
 
-export default [routes];
+export default [menu];

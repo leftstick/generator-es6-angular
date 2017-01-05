@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './github.css';
 export default {
     template: `
         <div id="github">

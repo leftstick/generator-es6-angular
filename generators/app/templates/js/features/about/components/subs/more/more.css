@@ -1,0 +1,28 @@
+#more{
+    width: 600px;
+    margin: 30px auto 15px auto;
+    padding: 5px;
+}
+
+#more .button{
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 2px;
+    border-width: 0;
+    background-color: #FE2E2E;
+    box-shadow: 2px 2px 1px #a6120d;
+    transition: all 0.3s ease 0s;
+}
+
+#more .button:hover{
+    box-shadow: 4px 4px 2px #a6120d;
+}
+
+@media screen and (max-width: 450px) {
+    #more {
+        width: 100%;
+    }
+}

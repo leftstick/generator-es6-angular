@@ -5,6 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-import autofocus from './Autofocus';
+import autofocus from './autofocus';
 
 export default [autofocus];

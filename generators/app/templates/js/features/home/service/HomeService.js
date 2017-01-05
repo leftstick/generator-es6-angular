@@ -8,7 +8,6 @@
 export default class {
 
     /*@ngInject*/
-    /*@ngInject*/
     constructor($q) {
         this.$q = $q;
     }
@@ -31,7 +30,7 @@ export default class {
                         txt: 'Learn node'
                     }
                 ]);
-            }, 2000);
+            }, 1500);
         });
     }
 }

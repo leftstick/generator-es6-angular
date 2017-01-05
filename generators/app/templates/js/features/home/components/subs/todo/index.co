@@ -5,33 +5,39 @@
  *  @date    <%= answers.date %>
  *
  */
-import {stop} from '../../../../fw/helper/Event';
+import './todo.css';
+
+import {stop} from '../../../../fw/helper/event';
 
 export default {
     bindings: {
+        loading: '<',
         list: '<',
         onAdd: '&',
-        onDelete: '&',
         onToggle: '&',
         onArchive: '&'
     },
     template: `
         <div id="todo-app">
             <h2>Simple TODO app</h2>
-            <input type="text" placeholder="Typing here..." ng-keyup="todo.addTodo($event)">
+            <input autofocus type="text" placeholder="Typing here..." ng-keyup="$ctrl.addTodo($event)">
 
-            <span>{{ todo.remaining() }} of {{ todo.list.length }} remaining</span>
+            <p ng-if="$ctrl.loading">Loading...</p>
 
-            <ul class="todos">
-                <li ng-repeat="item in todo.list">
-                    <input type="checkbox" ng-checked="::item.finished" ng-click="todo.toggleTodo($event, item)">
-                    <span ng-style="{'text-decoration': item.finished ? 'line-through' : 'none'}">
-                        {{ item.txt }}
+            <span ng-if="!$ctrl.loading">{{ $ctrl.remaining() }} of {{ $ctrl.list.length }} remaining</span>
+
+            <ul class="todos" ng-if="!$ctrl.loading">
+                <li ng-repeat="todo in $ctrl.list">
+                    <input type="checkbox" ng-checked="::todo.finished" ng-click="$ctrl.toggleTodo($event, todo)">
+                    <span ng-style="{'text-decoration': todo.finished ? 'line-through' : 'none'}">
+                        {{ todo.txt }}
                     </span>
                 </li>
             </ul>
 
-            <a href="" class="archive" ng-disabled="todo.remaining() === todo.list.length" ng-click="todo.onArchive()">archive</a>
+            <a ng-if="!$ctrl.loading" href="" class="archive" ng-disabled="$ctrl.remaining() === $ctrl.list.length" ng-click="$ctrl.onArchive()">
+                archive
+            </a>
         </div>
     `,
     controller: class {
@@ -67,6 +73,5 @@ export default {
             return this.list.reduce((n, todo) => n + +!todo.finished, 0);
         }
 
-    },
-    controllerAs: 'todo'
+    }
 };

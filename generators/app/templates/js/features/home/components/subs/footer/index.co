@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './logo.css';
 export default {
     template: `
         <div id="footer">

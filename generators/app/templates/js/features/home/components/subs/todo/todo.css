@@ -1,0 +1,40 @@
+#todo-app{
+    width: 250px;
+    margin: 0 auto;
+}
+
+#todo-app input[type="text"]{
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#todo-app .todos{
+    width: 100%;
+    list-style-type: none;
+    margin: 10px 0 10px 0 ;
+    padding: 0;
+    text-align: left;
+}
+
+#todo-app .todos li{
+    padding-top: 4px;
+}
+
+#todo-app .todos li span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 225px;
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+#todo-app .archive{
+    text-decoration: none;
+}

@@ -6,7 +6,8 @@
  *
  */
 
+import about from './about/main';
 import common from './common/main';
 import home from './home/main';
 
-export default [...common, home];
+export default [about, ...common, home];

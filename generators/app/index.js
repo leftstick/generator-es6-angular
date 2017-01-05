@@ -106,7 +106,7 @@ class gen extends Generator {
         this.fs.copy(this.templatePath('eslintrc'), this.destinationPath('.eslintrc'));
         this.fs.copy(this.templatePath('esformatter'), this.destinationPath('.esformatter'));
         this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
-        this.fs.copy(this.templatePath('index.html_vm'), this.destinationPath('index.html_vm'));
+        this.fs.copyTpl(this.templatePath('index.html_vm'), this.destinationPath('index.html_vm'), this.obj);
 
         this.fs.copyTpl(this.templatePath('package.json_vm'), this.destinationPath('package.json'), this.obj);
 
