@@ -100,11 +100,28 @@ export function declareRunners(app, runners) {
         });
 }
 
+export function declareFilters(app, filters) {
+    filters
+        .filter(dir => {
+            const shouldUse = isInjectedFunction(dir.filterFactory) && dir.name;
+            if (!shouldUse) {
+                console.warn('filter defined without property [name], or method [filterFactory]');
+            }
+            return shouldUse;
+        })
+        .forEach(dir => {
+            return app.filter(dir.name, dir.filterFactory);
+        });
+}
+
 function getDefinedPairs(valueObj, SETS) {
     return Object
         .keys(valueObj)
         .filter(method => SETS.includes(method) && Object.keys(valueObj[method]).length)
-        .map(method => ({method, defines: valueObj[method]}))
+        .map(method => ({
+            method,
+            defines: valueObj[method]
+        }))
         .map(combine => {
             return Object
                 .keys(combine.defines)
@@ -130,7 +147,10 @@ function getDefinedMethods(valueObj, SETS) {
             }
             return valueObj[method]
                 .filter(v => isInjectedFunction(v))
-                .map(v => ({method: method, value: v}));
+                .map(v => ({
+                    method: method,
+                    value: v
+                }));
         })
         .reduce(flatten, []);
 }

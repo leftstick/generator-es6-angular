@@ -48,7 +48,20 @@ export default {
 export default {
     type: 'runner',//declare as runner
 
-    run($rootScope, Routes) {//must define run
+    run($rootScope) {//must define run
+        'ngInject';
+    }
+};
+```
+
+>About `run`, see: [Define angular.run](https://docs.angularjs.org/api/ng/type/angular.Module#run)
+
+#### filters ####
+```javascript
+export default {
+    type: 'filter',//declare as filter
+
+    filterFactory($rootScope) {//must define filterFactory
         'ngInject';
     }
 };

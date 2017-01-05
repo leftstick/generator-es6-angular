@@ -7,7 +7,7 @@
  */
 import angular from 'angular';
 import {pluck} from './fw/helper/object';
-import {declareFeatures, declareValues, declareDirectives, declareComponents, declareRunners} from './fw/helper/ngDeclare';
+import {declareFeatures, declareValues, declareDirectives, declareComponents, declareRunners, declareFilters} from './fw/helper/ngDeclare';
 import Extensions from './fw/ext/main';
 import Configurators from './fw/config/main';
 import Values from './fw/value/main';
@@ -57,6 +57,7 @@ export default class {
         declareDirectives(this.app, Things.filter(t => t.type === 'directive'));
         declareComponents(this.app, Things.filter(t => t.type === 'component'));
         declareRunners(this.app, Things.filter(t => t.type === 'runner'));
+        declareFilters(this.app, Things.filter(t => t.type === 'filter'));
     }
 
     destroySplash() {
