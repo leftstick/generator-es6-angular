@@ -68,7 +68,7 @@ export default {
 };
 ```
 
->About `run`, see: [Define angular.run](https://docs.angularjs.org/api/ng/type/angular.Module#run)
+>About `filterFactory`, see: [Define angular.filter](https://docs.angularjs.org/api/ng/type/angular.Module#filter)
 
 ### feature ###
 
