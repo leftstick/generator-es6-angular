@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './home.css';
 export default {
     template: `
         <logo></logo>
@@ -39,7 +40,10 @@ export default {
                 if (t.txt !== todo.txt) {
                     return t;
                 }
-                return {finished: !todo.finished, txt: t.txt};
+                return {
+                    finished: !todo.finished,
+                    txt: t.txt
+                };
             });
         }
 

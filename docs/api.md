@@ -1,3 +1,53 @@
+## The Core ##
+
+### js/features/common ###
+
+Three folers `components`, `directives`, `runners` are used to categorize global stuff, with a `describable structure`. The module placed there have to follow the concept:
+
+#### component ####
+```
+export default {
+    type: 'component',
+    name: 'todo',//component selector, will be used as "<menu></menu>" in template
+
+    componentDefinitionObject: {//must define componentDefinitionObject, see: https://github.com/toddmotto/angular-styleguide#stateless-components
+        template: ``,
+        controller: class {
+            /* @ngInject */
+            constructor() { }
+        }
+    }
+};
+```
+
+#### directive ####
+```
+export default {
+    type: 'directive',
+    name: '',//directive name
+
+    directiveFactory: function() {//must define directiveFactory, see: https://github.com/toddmotto/angular-styleguide#constants-or-classes
+        'ngInject';
+
+        return {
+            restrict: 'A',
+            link($scope, element) { }
+        };
+    }
+};
+```
+
+#### runners ####
+```
+export default {
+    type: 'runner',
+
+    run($rootScope, Routes) {//must define run, see: https://docs.angularjs.org/api/ng/type/angular.Module#run
+        'ngInject';
+    }
+};
+```
+
 ## How to involve external library ##
 
 ```bash
@@ -12,7 +62,7 @@ This is because [ng-annotate](https://github.com/olov/ng-annotate) is chosen for
 
 ## How to add new route ##
 
-You will find a `Routes.js` in each "feature" folder, it's an `Array` to be exported, and each `object` in it is used to describe a `Route`.
+You will find a `routes.js` in each "feature" folder, it's an `Array` to be exported, and each `object` in it is used to describe a `Route`.
 
 You can easily append more to an exist `feature`, or add a new `feature` with route.
 

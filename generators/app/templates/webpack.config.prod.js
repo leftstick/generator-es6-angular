@@ -24,7 +24,7 @@ module.exports = {
                 loader: 'style!css!postcss!'
             },
             {
-                test: /\.js$/,
+                test: /\.(js|co)$/,
                 loader: 'ng-annotate!babel?{"presets":["es2015"]}',
                 exclude: /(node_modules)/
             },
@@ -40,7 +40,9 @@ module.exports = {
     },
     postcss: function() {
         return [
-            autoprefixer({browsers: ['last 5 versions']})
+            autoprefixer({
+                browsers: ['last 5 versions']
+            })
         ];
     },
     resolve: {

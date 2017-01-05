@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './about.css';
 export default {
     template: `
         <why></why>

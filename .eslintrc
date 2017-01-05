@@ -144,7 +144,7 @@
         "linebreak-style": [1, "unix"],
         "lines-around-comment": [1, { "beforeBlockComment": true, "afterBlockComment": false, "beforeLineComment": true, "afterLineComment": false, "allowBlockStart": true, "allowBlockEnd": true, "allowObjectStart": true, "allowArrayStart": false, "allowArrayEnd": false }],
         "max-depth": [1, 5],
-        "max-len": [1, {"code": 150, "comments": 150, "tabWidth": 4, "ignoreUrls": true}],
+        "max-len": [1, {"code": 170, "comments": 170, "tabWidth": 4, "ignoreUrls": true}],
         "max-nested-callbacks": [1, 5],
         "max-params": [1, 10],
         "max-statements": [1, 12, {"ignoreTopLevelFunctions": true}],
