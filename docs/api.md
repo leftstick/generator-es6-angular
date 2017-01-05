@@ -60,6 +60,7 @@ export default {
 ```javascript
 export default {
     type: 'filter',//declare as filter
+    name: 'todo',//filter name, will be used as: angular.module{'app'}.filter(name, filterFactory)
 
     filterFactory($rootScope) {//must define filterFactory
         'ngInject';
