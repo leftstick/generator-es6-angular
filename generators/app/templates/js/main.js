@@ -6,7 +6,7 @@
  *
  */
 import angular from 'angular';
-import {pluck} from './fw/helper/Object';
+import {pluck} from './fw/helper/object';
 import {declareFeatures, declareValues, declareDirectives, declareComponents, declareRunners} from './fw/helper/ngDeclare';
 import Extensions from './fw/ext/main';
 import Configurators from './fw/config/main';
