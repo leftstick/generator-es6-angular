@@ -5,9 +5,10 @@
 Three folers `components`, `directives`, `runners` are used to categorize global stuff, with a `describable structure`. The module placed there have to follow the concept:
 
 #### component ####
-```
+
+```javascript
 export default {
-    type: 'component',
+    type: 'component',//declare as component
     name: 'todo',//component selector, will be used as "<menu></menu>" in template
 
     componentDefinitionObject: {//must define componentDefinitionObject
@@ -23,9 +24,10 @@ export default {
 >About `componentDefinitionObject`, see: [Define Component](https://github.com/toddmotto/angular-styleguide#stateless-components)
 
 #### directive ####
-```
+
+```javascript
 export default {
-    type: 'directive',
+    type: 'directive',//declare as directive
     name: '',//directive name
 
     directiveFactory: function() {//must define directiveFactory
@@ -42,9 +44,9 @@ export default {
 >About `directiveFactory`, see: [Define Directive](https://github.com/toddmotto/angular-styleguide#constants-or-classes)
 
 #### runners ####
-```
+```javascript
 export default {
-    type: 'runner',
+    type: 'runner',//declare as runner
 
     run($rootScope, Routes) {//must define run
         'ngInject';
@@ -53,6 +55,30 @@ export default {
 ```
 
 >About `run`, see: [Define angular.run](https://docs.angularjs.org/api/ng/type/angular.Module#run)
+
+### feature ###
+
+`feature` follows the `describable structure` concept as well, see following:
+
+```javascript
+export default {
+    type: 'feature',//declare as feature
+    name: 'home',//feature name, used to create a new module like: angular.module('home', [])
+    routes,//routes, route array defined in routes.js
+    component: {//component, used to register component like: angular.module('home').component('logo', componentDefinitionObject)
+        logo: componentDefinitionObject
+    },
+    service: {//service, used to register service like: angular.module('home').service('HomeService', ServiceDefinition)
+        HomeService: ServiceDefinition
+    },
+    directive: {//directive, used to register directive like: angular.module('home').directive('sayHi', directiveFactory)
+        sayHi: directiveFactory
+    },
+    filter: {//filter, used to register filter like: angular.module('home').filter('range', filterFactory)
+        range: filterFactory
+    }
+};
+```
 
 ## How to involve external library ##
 
