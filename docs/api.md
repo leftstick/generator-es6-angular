@@ -65,16 +65,16 @@ export default {
     type: 'feature',//declare as feature
     name: 'home',//feature name, used to create a new module like: angular.module('home', [])
     routes,//routes, route array defined in routes.js
-    component: {//component, used to register component like: angular.module('home').component('logo', componentDefinitionObject)
+    component: {//used to register component like: angular.module('home').component('logo', componentDefinitionObject)
         logo: componentDefinitionObject
     },
-    service: {//service, used to register service like: angular.module('home').service('HomeService', ServiceDefinition)
+    service: {//used to register service like: angular.module('home').service('HomeService', ServiceDefinition)
         HomeService: ServiceDefinition
     },
-    directive: {//directive, used to register directive like: angular.module('home').directive('sayHi', directiveFactory)
+    directive: {//used to register directive like: angular.module('home').directive('sayHi', directiveFactory)
         sayHi: directiveFactory
     },
-    filter: {//filter, used to register filter like: angular.module('home').filter('range', filterFactory)
+    filter: {//used to register filter like: angular.module('home').filter('range', filterFactory)
         range: filterFactory
     }
 };
