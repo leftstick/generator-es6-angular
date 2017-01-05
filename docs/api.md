@@ -10,7 +10,7 @@ export default {
     type: 'component',
     name: 'todo',//component selector, will be used as "<menu></menu>" in template
 
-    componentDefinitionObject: {//must define componentDefinitionObject, see: https://github.com/toddmotto/angular-styleguide#stateless-components
+    componentDefinitionObject: {//must define componentDefinitionObject
         template: ``,
         controller: class {
             /* @ngInject */
@@ -20,13 +20,15 @@ export default {
 };
 ```
 
+>About `componentDefinitionObject`, see: [Define Component](https://github.com/toddmotto/angular-styleguide#stateless-components)
+
 #### directive ####
 ```
 export default {
     type: 'directive',
     name: '',//directive name
 
-    directiveFactory: function() {//must define directiveFactory, see: https://github.com/toddmotto/angular-styleguide#constants-or-classes
+    directiveFactory: function() {//must define directiveFactory
         'ngInject';
 
         return {
@@ -37,16 +39,20 @@ export default {
 };
 ```
 
+>About `directiveFactory`, see: [Define Directive](https://github.com/toddmotto/angular-styleguide#constants-or-classes)
+
 #### runners ####
 ```
 export default {
     type: 'runner',
 
-    run($rootScope, Routes) {//must define run, see: https://docs.angularjs.org/api/ng/type/angular.Module#run
+    run($rootScope, Routes) {//must define run
         'ngInject';
     }
 };
 ```
+
+>About `run`, see: [Define angular.run](https://docs.angularjs.org/api/ng/type/angular.Module#run)
 
 ## How to involve external library ##
 
