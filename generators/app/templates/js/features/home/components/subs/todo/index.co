@@ -7,7 +7,7 @@
  */
 import './todo.css';
 
-import {stop} from '../../../../fw/helper/event';
+import {stop} from '../../../../../fw/helper/event';
 
 export default {
     bindings: {

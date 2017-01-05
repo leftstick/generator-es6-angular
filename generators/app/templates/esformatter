@@ -445,7 +445,6 @@
     },
     "plugins": [
         "esformatter-braces",
-        "esformatter-collapse-objects",
         "esformatter-dot-notation",
         "esformatter-literal-notation",
         "esformatter-quotes"

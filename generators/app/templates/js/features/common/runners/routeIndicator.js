@@ -7,7 +7,7 @@
  *
  */
 import {element} from 'angular';
-import {pluck} from '../../../fw/helper/Object';
+import {pluck} from '../../../fw/helper/object';
 
 export default {
     type: 'runner',

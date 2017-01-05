@@ -15,7 +15,7 @@ import logo from './components/subs/logo';
 import description from './components/subs/description';
 import github from './components/subs/github';
 import todoApp from './components/subs/todo';
-import footer from './components/subs/tooter';
+import footer from './components/subs/footer';
 
 import HomeService from './service/HomeService';
 
