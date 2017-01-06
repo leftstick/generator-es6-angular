@@ -5,6 +5,6 @@
  *  @date    <%= answers.date %>
  *
  */
-import menu from './Menu';
+import menu from './menu';
 
 export default [menu];

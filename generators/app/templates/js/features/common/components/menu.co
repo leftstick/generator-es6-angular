@@ -15,10 +15,10 @@ export default {
         template: `
         <ul id="nav">
             <li ng-click="$ctrl.activeRoute('home')">
-                <a href="#!/home" class="nav-link" ng-class="{active: $ctrl.route === 'home'}">HOME</a>
+                <a href="<%= answers.pushState ? '' : '#!' %>/home" class="nav-link" ng-class="{active: $ctrl.route === 'home'}">HOME</a>
             </li>
             <li ng-click="$ctrl.activeRoute('about')">
-                <a href="#!/about" class="nav-link" ng-class="{active: $ctrl.route === 'about'}">ABOUT</a>
+                <a href="<%= answers.pushState ? '' : '#!' %>/about" class="nav-link" ng-class="{active: $ctrl.route === 'about'}">ABOUT</a>
             </li>
         </ul>
         `,
