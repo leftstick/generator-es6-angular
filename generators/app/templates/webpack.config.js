@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -13,45 +12,63 @@ module.exports = {
         chunkFilename: '[id].bundle.js',
         publicPath: '/'
     },
-    debug: true,
     devtool: 'source-map',
+    devServer: {
+        contentBase: path.resolve(__dirname, 'build'),
+        historyApiFallback: true
+    },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /splash\.min\.css$/,
-                loader: 'style/useable'
+                use: [
+                    'style-loader/useable'
+                ]
             },
             {
                 test: /(?!min)\.css$/,
-                loader: 'style!css!postcss!'
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'postcss-loader'
+                ]
             },
             {
                 test: /\.(js|co)$/,
-                loader: 'ng-annotate!babel?{"presets":["es2015"]}',
+                use: [
+                    {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [['es2015', {
+                                modules: false
+                            }]],
+                            plugins: ['angularjs-annotate']
+                        }
+                    }
+                ],
                 exclude: /(node_modules)/
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png)\w*/,
-                loader: 'file'
+                use: [
+                    'file-loader'
+                ]
             },
             {
                 test: /\.html$/,
-                loader: 'html'
+                use: [
+                    'html-loader'
+                ]
             }
         ]
     },
-    postcss: function() {
-        return [
-            autoprefixer({browsers: ['last 5 versions']})
-        ];
-    },
     resolve: {
-        root: [
+        modules: [
+            path.resolve(__dirname, 'node_modules'),
             path.resolve(__dirname),
-            path.resolve(__dirname, 'js/')
+            path.resolve(__dirname, 'js')
         ],
         extensions: [
-            '',
             '.js',
             '.co'
         ]

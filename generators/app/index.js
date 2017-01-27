@@ -76,7 +76,9 @@ class gen extends Generator {
                 require('date-util');
                 this.answers = answers;
                 this.answers.date = new Date().format('mmm d, yyyy');
-                this.obj = {answers: this.answers};
+                this.obj = {
+                    answers: this.answers
+                };
             });
     }
 
@@ -102,13 +104,13 @@ class gen extends Generator {
         this.fs.copyTpl(this.templatePath('js'), this.destinationPath('js'), this.obj, {
             interpolate: /<%=([\s\S]+?)%>/g
         });
-        this.fs.copy(this.templatePath('css', '*'), this.destinationPath('css'));
         this.fs.copy(this.templatePath('eslintrc'), this.destinationPath('.eslintrc'));
         this.fs.copy(this.templatePath('esformatter'), this.destinationPath('.esformatter'));
         this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
         this.fs.copyTpl(this.templatePath('index.html_vm'), this.destinationPath('index.html_vm'), this.obj);
 
         this.fs.copyTpl(this.templatePath('package.json_vm'), this.destinationPath('package.json'), this.obj);
+        this.fs.copy(this.templatePath('postcss.config.js'), this.destinationPath('postcss.config.js'));
 
         this.fs.copyTpl(this.templatePath('webpack.config.js'),
             this.destinationPath('webpack.config.js'), this.obj);
@@ -118,7 +120,9 @@ class gen extends Generator {
     }
 
     install() {
-        this.npmInstall(null, {registry: this.answers.registry});
+        this.npmInstall(null, {
+            registry: this.answers.registry
+        });
     }
 
     end() {
