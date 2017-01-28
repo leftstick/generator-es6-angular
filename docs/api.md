@@ -104,7 +104,7 @@ Open `js/fw/ext/main.js`, `import` it, and append the module name to `export` ar
 
 ## Why Dependency Injection looks so weird in this skeleton ##
 
-This is because [ng-annotate](https://github.com/olov/ng-annotate) is chosen for for providing quick DI.
+This is because [babel-plugin-angularjs-annotate](https://github.com/schmod/babel-plugin-angularjs-annotate) is chosen for for providing quick DI.
 
 ## How to add new route ##
 
