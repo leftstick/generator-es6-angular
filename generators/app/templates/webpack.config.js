@@ -21,44 +21,24 @@ module.exports = {
         rules: [
             {
                 test: /splash\.min\.css$/,
-                use: [
-                    'style-loader/useable'
-                ]
+                use: ['style-loader/useable']
             },
             {
                 test: /(?!min)\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'postcss-loader'
-                ]
+                use: ['style-loader', 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.(js|co)$/,
-                use: [
-                    {
-                        loader: 'babel-loader',
-                        options: {
-                            presets: [['es2015', {
-                                modules: false
-                            }]],
-                            plugins: ['angularjs-annotate']
-                        }
-                    }
-                ],
+                use: ['babel-loader'],
                 exclude: /(node_modules)/
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png)\w*/,
-                use: [
-                    'file-loader'
-                ]
+                use: ['file-loader']
             },
             {
                 test: /\.html$/,
-                use: [
-                    'html-loader'
-                ]
+                use: ['html-loader']
             }
         ]
     },

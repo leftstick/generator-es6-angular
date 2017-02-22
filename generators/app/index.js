@@ -104,6 +104,7 @@ class gen extends Generator {
         this.fs.copyTpl(this.templatePath('js'), this.destinationPath('js'), this.obj, {
             interpolate: /<%=([\s\S]+?)%>/g
         });
+        this.fs.copy(this.templatePath('babelrc'), this.destinationPath('.babelrc'));
         this.fs.copy(this.templatePath('eslintrc'), this.destinationPath('.eslintrc'));
         this.fs.copy(this.templatePath('esformatter'), this.destinationPath('.esformatter'));
         this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
