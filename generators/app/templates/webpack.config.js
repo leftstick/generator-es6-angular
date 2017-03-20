@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: './js/index.js'
+        index: './js/main.js'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -15,14 +15,12 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         contentBase: path.resolve(__dirname, 'build'),
-        historyApiFallback: true
+        historyApiFallback: true,
+        port: 8080,
+        host: '0.0.0.0'
     },
     module: {
         rules: [
-            {
-                test: /splash\.min\.css$/,
-                use: ['style-loader/useable']
-            },
             {
                 test: /(?!min)\.css$/,
                 use: ['style-loader', 'css-loader', 'postcss-loader']

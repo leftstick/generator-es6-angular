@@ -5,6 +5,7 @@
  *  @date    <%= answers.date %>
  *
  */
+import './fw/ext/polyfill';
 import angular from 'angular';
 import {pluck} from './fw/helper/object';
 import {declareFeatures, declareValues, declareDirectives, declareComponents, declareRunners, declareFilters} from './fw/helper/ngDeclare';
@@ -13,9 +14,8 @@ import Configurators from './fw/config/main';
 import Values from './fw/value/main';
 import Things from './features/main';
 import Application from './application';
-import {Splash} from 'splash-screen';
 
-export default class {
+class App {
 
     constructor() {
         this.appName = '<%= answers.name %>';
@@ -61,13 +61,8 @@ export default class {
     }
 
     destroySplash() {
-        Splash.destroy();
-        require('splash-screen/dist/splash.min.css').unuse();
-        setTimeout(() => {
-            if (Splash.isRunning()) {
-                this.destroySplash();
-            }
-        }, 100);
+        document.head.removeChild(document.querySelector('#style-spinner'));
+        document.body.removeChild(document.querySelector('#spinner-loader'));
     }
 
     launch() {
@@ -84,3 +79,5 @@ export default class {
         this.launch();
     }
 }
+
+new App().run();
